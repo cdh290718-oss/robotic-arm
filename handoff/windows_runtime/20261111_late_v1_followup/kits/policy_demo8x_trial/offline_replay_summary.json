@@ -1,0 +1,36 @@
+{
+  "a_age_index": {
+    "ticks": 3558,
+    "hold_ticks": 0,
+    "gripper": {
+      "closed_frac": 0.09359190556492411,
+      "closed_s": 11.1,
+      "longest_s": 4.566666666666666,
+      "episodes": 18
+    }
+  },
+  "b_full_sequential": {
+    "frames": 19500,
+    "first120_gripper": {
+      "closed_frac": 0.21305555555555555,
+      "closed_s": 25.566666666666666,
+      "longest_s": 12.833333333333334,
+      "episodes": 25
+    },
+    "all_gripper": {
+      "closed_frac": 0.1545128205128205,
+      "closed_s": 100.43333333333334,
+      "longest_s": 12.833333333333334,
+      "episodes": 171
+    }
+  },
+  "c_25_sequential": {
+    "frames": 9750,
+    "first120_gripper": {
+      "closed_frac": 0.1661111111111111,
+      "closed_s": 19.933333333333334,
+      "longest_s": 13.266666666666667,
+      "episodes": 20
+    }
+  }
+}

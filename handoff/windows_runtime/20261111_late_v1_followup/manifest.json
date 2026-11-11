@@ -1,0 +1,996 @@
+{
+  "description": "8x baseline, independent candidate, V1 refined runtime and non-image evidence",
+  "file_count": 112,
+  "files": [
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/8x夹爪时间线.png",
+      "sha256": "cb0391b986320c1f9bead7b1e95ccd84e41ff658ec3f966b7858e32d569a6453",
+      "bytes": 23102,
+      "source_sha256": "cb0391b986320c1f9bead7b1e95ccd84e41ff658ec3f966b7858e32d569a6453",
+      "source_bytes": 23102,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/8倍速失败分析_20261111.md",
+      "sha256": "8c72228fdc78a407dff745b94543b22402246377f5e1e0a4a22fcbcd4aa8fc2b",
+      "bytes": 11307,
+      "source_sha256": "8c72228fdc78a407dff745b94543b22402246377f5e1e0a4a22fcbcd4aa8fc2b",
+      "source_bytes": 11307,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/analyze_8x.py",
+      "sha256": "1458fcf65853dd4bfbd294183b116dca316fd8a9fe68e6ae706ec044655ff9f8",
+      "bytes": 6374,
+      "source_sha256": "1458fcf65853dd4bfbd294183b116dca316fd8a9fe68e6ae706ec044655ff9f8",
+      "source_bytes": 6374,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/analyze_8x_round2.py",
+      "sha256": "782f1990b3bd0ddfbe1ad03a30e1182515684efceb0b80d97a8fd2f764864164",
+      "bytes": 3915,
+      "source_sha256": "782f1990b3bd0ddfbe1ad03a30e1182515684efceb0b80d97a8fd2f764864164",
+      "source_bytes": 3915,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/analyze_8x_round3.py",
+      "sha256": "84226955ae298709416f5eec9c89d6b0132114da93758823eb342fbceefd78f4",
+      "bytes": 2742,
+      "source_sha256": "84226955ae298709416f5eec9c89d6b0132114da93758823eb342fbceefd78f4",
+      "source_bytes": 2742,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/analyze_8x_round4.py",
+      "sha256": "6a13f0d89c60bfea4d1d1c44522c20759f99911ff192b9852dd290e24ec042d5",
+      "bytes": 2686,
+      "source_sha256": "6a13f0d89c60bfea4d1d1c44522c20759f99911ff192b9852dd290e24ec042d5",
+      "source_bytes": 2686,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/analyze_8x_round5.py",
+      "sha256": "045527373d575fd56fd6b041050b3faf7f6445076ed5d1e46f9f10bfc84a49bd",
+      "bytes": 2287,
+      "source_sha256": "045527373d575fd56fd6b041050b3faf7f6445076ed5d1e46f9f10bfc84a49bd",
+      "source_bytes": 2287,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/bounded_run.py",
+      "sha256": "9e33ac4a7a585624372951a16f5050fc9bd63b4de8bbb5d0983a59d9071f42e4",
+      "bytes": 28993,
+      "source_sha256": "9e33ac4a7a585624372951a16f5050fc9bd63b4de8bbb5d0983a59d9071f42e4",
+      "source_bytes": 28993,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/checkpoint_manifest.json",
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "bytes": 3182,
+      "source_sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "source_bytes": 3182,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/compare_policies.py",
+      "sha256": "bcba76fa395bf6f9973e213e8b881bd68af240625955e136f18e0e08cd41cf49",
+      "bytes": 2752,
+      "source_sha256": "bcba76fa395bf6f9973e213e8b881bd68af240625955e136f18e0e08cd41cf49",
+      "source_bytes": 2752,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/consumption_policy_summary.json",
+      "sha256": "0a8d5d650415ac894944b683dc9012d717cc09ab291a156b396a341950c56b14",
+      "bytes": 1138,
+      "source_sha256": "0a8d5d650415ac894944b683dc9012d717cc09ab291a156b396a341950c56b14",
+      "source_bytes": 1138,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/control_core.py",
+      "sha256": "53f94ebb765ab9d196ee1e3372bed643cd68d1e5cbd0d4679d60334c7963126e",
+      "bytes": 17321,
+      "source_sha256": "53f94ebb765ab9d196ee1e3372bed643cd68d1e5cbd0d4679d60334c7963126e",
+      "source_bytes": 17321,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/live_probe.py",
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "bytes": 26773,
+      "source_sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "source_bytes": 26773,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/make_chart.py",
+      "sha256": "050322ea395123878cfbc96ac0fd625994ff18e6ae8c70f2237e780949875fba",
+      "bytes": 1590,
+      "source_sha256": "050322ea395123878cfbc96ac0fd625994ff18e6ae8c70f2237e780949875fba",
+      "source_bytes": 1590,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/offline_replay_summary.json",
+      "sha256": "3176c49ac3405ac726e0ee9a317ef9133a247535c4da5213d6c73c8d8968819a",
+      "bytes": 859,
+      "source_sha256": "3176c49ac3405ac726e0ee9a317ef9133a247535c4da5213d6c73c8d8968819a",
+      "source_bytes": 859,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/probe_cameras_readonly.py",
+      "sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "bytes": 1825,
+      "source_sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "source_bytes": 1825,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/readonly_bus.py",
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "bytes": 4054,
+      "source_sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "source_bytes": 4054,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/readonly_state_check.py",
+      "sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "bytes": 1280,
+      "source_sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "source_bytes": 1280,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/reference_calibration.json",
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "bytes": 921,
+      "source_sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "source_bytes": 921,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/replay_offline.py",
+      "sha256": "3c2df739b8ce905ca72e9eccf76f6f0b9dd941dd1f54b092dfc3579d77e408ea",
+      "bytes": 4752,
+      "source_sha256": "3c2df739b8ce905ca72e9eccf76f6f0b9dd941dd1f54b092dfc3579d77e408ea",
+      "source_bytes": 4752,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/robot_config_fixed_wrist.json",
+      "sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "bytes": 690,
+      "source_sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "source_bytes": 690,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/Run-Policy.ps1",
+      "sha256": "18a9196df806797466fd70e94fc95652584e62bd130408e87b7ca5337b5f4760",
+      "bytes": 3048,
+      "source_sha256": "18a9196df806797466fd70e94fc95652584e62bd130408e87b7ca5337b5f4760",
+      "source_bytes": 3048,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/selftest_run1.log",
+      "sha256": "b827c20e313272c5f84a723332e8c65f00bda9ddea39b1b2fa844c24842b17fd",
+      "bytes": 37456,
+      "source_sha256": "b827c20e313272c5f84a723332e8c65f00bda9ddea39b1b2fa844c24842b17fd",
+      "source_bytes": 37456,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/sim_consumption_policy.py",
+      "sha256": "4c8081f642626dbe328e1a68182d00c8fa139c19c93bc8dff7665355a02d6798",
+      "bytes": 4079,
+      "source_sha256": "4c8081f642626dbe328e1a68182d00c8fa139c19c93bc8dff7665355a02d6798",
+      "source_bytes": 4079,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/sweep_consumption.py",
+      "sha256": "92a2c3af71b86b69112ccfd55607944a16463202fdc383d28506bf36bd026cc4",
+      "bytes": 2987,
+      "source_sha256": "92a2c3af71b86b69112ccfd55607944a16463202fdc383d28506bf36bd026cc4",
+      "source_bytes": 2987,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/test_control.py",
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "bytes": 9432,
+      "source_sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "source_bytes": 9432,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/test_fixed_wrist.py",
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "bytes": 5675,
+      "source_sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "source_bytes": 5675,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/test_grasp_limits.py",
+      "sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "bytes": 2930,
+      "source_sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "source_bytes": 2930,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/test_integration.py",
+      "sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "bytes": 8082,
+      "source_sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "source_bytes": 8082,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/test_policy_startup.py",
+      "sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "bytes": 2037,
+      "source_sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "source_bytes": 2037,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/validation_fixed_wrist.json",
+      "sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "bytes": 1157,
+      "source_sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "source_bytes": 1157,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/validation_real_model.json",
+      "sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "bytes": 591,
+      "source_sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "source_bytes": 591,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/validation_simulated_summary.json",
+      "sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "bytes": 4831,
+      "source_sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "source_bytes": 4831,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial/运行记录_20261111.md",
+      "sha256": "4648bf5aac538669ed32dfc52a8273a1e3054a946f858d805f1bb5d645330f7f",
+      "bytes": 3323,
+      "source_sha256": "4648bf5aac538669ed32dfc52a8273a1e3054a946f858d805f1bb5d645330f7f",
+      "source_bytes": 3323,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/chunks.jsonl.gz",
+      "sha256": "9dac785e762676f43d9a046f5ef67089ac8db79f829eabd2319ce1051949208b",
+      "bytes": 1009657,
+      "source_sha256": "129cb046b1e11769e1573f09a4e4da064b44736dd0390689726a20bd7f4717b1",
+      "source_bytes": 2516343,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/control.jsonl.gz",
+      "sha256": "41973d2edfe07f9dfb6ac70e39fe930a2a45b048f975d0532cb89e51eaaad89d",
+      "bytes": 635334,
+      "source_sha256": "5155cab173eb7d500284b15594d9e6021829ffb6deaf1c639cc9d2084ef0a069",
+      "source_bytes": 2660433,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/gpu_telemetry.csv",
+      "sha256": "83acf0f4ded924bcfcd621b63f542179f5f8c8f4b2417d7c63c25972f9bdf34d",
+      "bytes": 13936,
+      "source_sha256": "83acf0f4ded924bcfcd621b63f542179f5f8c8f4b2417d7c63c25972f9bdf34d",
+      "source_bytes": 13936,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/inference.log",
+      "sha256": "9eda1ae13685cd4d3c4bdd3f3db8251f16e651e4e6c442222ca9ee98eaff78fe",
+      "bytes": 1146,
+      "source_sha256": "9eda1ae13685cd4d3c4bdd3f3db8251f16e651e4e6c442222ca9ee98eaff78fe",
+      "source_bytes": 1146,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/inference_summary.json",
+      "sha256": "05570e6b50884c8820ceda5afb25c1693e1a0807e17346735d2157042253c0d5",
+      "bytes": 593,
+      "source_sha256": "05570e6b50884c8820ceda5afb25c1693e1a0807e17346735d2157042253c0d5",
+      "source_bytes": 593,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/predictions.npz",
+      "sha256": "ba5b9343614443a590c1bb79d4824ddfa15d29d8bec2d671261462fdc98a368d",
+      "bytes": 437820,
+      "source_sha256": "ba5b9343614443a590c1bb79d4824ddfa15d29d8bec2d671261462fdc98a368d",
+      "source_bytes": 437820,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213457_906_Grasp_bf16/summary.json",
+      "sha256": "763fffc4605f73938a01ca8f58c648a0219535ef054df8854ef71e11d63434c9",
+      "bytes": 10060,
+      "source_sha256": "763fffc4605f73938a01ca8f58c648a0219535ef054df8854ef71e11d63434c9",
+      "source_bytes": 10060,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213824_712_Release_bf16/control.jsonl.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_demo8x_trial/20261111_213824_712_Release_bf16/summary.json",
+      "sha256": "9fea0d9722aad9d4c0c94e9bb4c7eb478c53bf915ab69d10e66159fc57d19a1e",
+      "bytes": 3841,
+      "source_sha256": "9fea0d9722aad9d4c0c94e9bb4c7eb478c53bf915ab69d10e66159fc57d19a1e",
+      "source_bytes": 3841,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/bounded_run.py",
+      "sha256": "590679bd5402e15a7166a0550097698ed0469041f6992026bd01c9b6c00ea8ec",
+      "bytes": 30907,
+      "source_sha256": "590679bd5402e15a7166a0550097698ed0469041f6992026bd01c9b6c00ea8ec",
+      "source_bytes": 30907,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/checkpoint_manifest.json",
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "bytes": 3182,
+      "source_sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "source_bytes": 3182,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/consumption_policy.patch",
+      "sha256": "c54fc78af1048aaad54616e9416f048a61aed68fab1cbd34b38caec21c0f7383",
+      "bytes": 12014,
+      "source_sha256": "c54fc78af1048aaad54616e9416f048a61aed68fab1cbd34b38caec21c0f7383",
+      "source_bytes": 12014,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/control_core.py",
+      "sha256": "4001a7ca9c023d9dfc2247256b341062fdf68a31c4dd15b47ddb9d14e90abc11",
+      "bytes": 17328,
+      "source_sha256": "4001a7ca9c023d9dfc2247256b341062fdf68a31c4dd15b47ddb9d14e90abc11",
+      "source_bytes": 17328,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/live_probe.py",
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "bytes": 26773,
+      "source_sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "source_bytes": 26773,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/probe_cameras_readonly.py",
+      "sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "bytes": 1825,
+      "source_sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "source_bytes": 1825,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/readonly_bus.py",
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "bytes": 4054,
+      "source_sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "source_bytes": 4054,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/readonly_state_check.py",
+      "sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "bytes": 1280,
+      "source_sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "source_bytes": 1280,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/reference_calibration.json",
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "bytes": 921,
+      "source_sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "source_bytes": 921,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/robot_config_fixed_wrist.json",
+      "sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "bytes": 690,
+      "source_sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "source_bytes": 690,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/Run-Policy.ps1",
+      "sha256": "5840680393a7dece1f9fb36b685c48f18ad1026703c6288d4107ee47bc826bd2",
+      "bytes": 3381,
+      "source_sha256": "5840680393a7dece1f9fb36b685c48f18ad1026703c6288d4107ee47bc826bd2",
+      "source_bytes": 3381,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/selftest_candidate.log",
+      "sha256": "66ad1c4a95b0293865cd0274bf203840491e9fcb9160779a2205ebb5bf46bb96",
+      "bytes": 37786,
+      "source_sha256": "66ad1c4a95b0293865cd0274bf203840491e9fcb9160779a2205ebb5bf46bb96",
+      "source_bytes": 37786,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/test_control.py",
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "bytes": 9432,
+      "source_sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "source_bytes": 9432,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/test_fixed_wrist.py",
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "bytes": 5675,
+      "source_sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "source_bytes": 5675,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/test_grasp_limits.py",
+      "sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "bytes": 2930,
+      "source_sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "source_bytes": 2930,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/test_integration.py",
+      "sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "bytes": 8082,
+      "source_sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "source_bytes": 8082,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/test_policy_startup.py",
+      "sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "bytes": 2037,
+      "source_sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "source_bytes": 2037,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/validation_fixed_wrist.json",
+      "sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "bytes": 1157,
+      "source_sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "source_bytes": 1157,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/validation_real_model.json",
+      "sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "bytes": 591,
+      "source_sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "source_bytes": 591,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_demo8x_trial_candidate/validation_simulated_summary.json",
+      "sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "bytes": 4831,
+      "source_sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "source_bytes": 4831,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/bounded_run.py",
+      "sha256": "81948f5481f732cba6b46aa4ce4866b9a9ca5557837a80b81844d301b6b9a994",
+      "bytes": 31953,
+      "source_sha256": "81948f5481f732cba6b46aa4ce4866b9a9ca5557837a80b81844d301b6b9a994",
+      "source_bytes": 31953,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/checkpoint_manifest.json",
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "bytes": 3182,
+      "source_sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe",
+      "source_bytes": 3182,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/control_core.py",
+      "sha256": "4001a7ca9c023d9dfc2247256b341062fdf68a31c4dd15b47ddb9d14e90abc11",
+      "bytes": 17328,
+      "source_sha256": "4001a7ca9c023d9dfc2247256b341062fdf68a31c4dd15b47ddb9d14e90abc11",
+      "source_bytes": 17328,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/live_probe.py",
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "bytes": 26773,
+      "source_sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "source_bytes": 26773,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/offline_replay_v1.json",
+      "sha256": "f05fb1e3c1096afb517528f2d78ce96acdc4ec6dc522c8c491d874e3592d8b57",
+      "bytes": 898,
+      "source_sha256": "f05fb1e3c1096afb517528f2d78ce96acdc4ec6dc522c8c491d874e3592d8b57",
+      "source_bytes": 898,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/probe_cameras_readonly.py",
+      "sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "bytes": 1825,
+      "source_sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+      "source_bytes": 1825,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/quick_rerun_summary.py",
+      "sha256": "966930b4945d25b368404d5c71a0b3164b3171849123112cf422d77c9cdeb921",
+      "bytes": 2283,
+      "source_sha256": "966930b4945d25b368404d5c71a0b3164b3171849123112cf422d77c9cdeb921",
+      "source_bytes": 2283,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/readonly_bus.py",
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "bytes": 4054,
+      "source_sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "source_bytes": 4054,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/readonly_state_check.py",
+      "sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "bytes": 1280,
+      "source_sha256": "1a6e33b639bc62d1c55be838c00f96a1c251c4e3ca7ecc2d0a96929d4af741d5",
+      "source_bytes": 1280,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/reference_calibration.json",
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "bytes": 921,
+      "source_sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+      "source_bytes": 921,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/replay_recorded.py",
+      "sha256": "f013a6ad075d5508751a0e9669c30dc6e8f4c31cb64bddf5631f45e4be9891b6",
+      "bytes": 2544,
+      "source_sha256": "f013a6ad075d5508751a0e9669c30dc6e8f4c31cb64bddf5631f45e4be9891b6",
+      "source_bytes": 2544,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/robot_config_fixed_wrist.json",
+      "sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "bytes": 690,
+      "source_sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+      "source_bytes": 690,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/Run-Policy.ps1",
+      "sha256": "5840680393a7dece1f9fb36b685c48f18ad1026703c6288d4107ee47bc826bd2",
+      "bytes": 3381,
+      "source_sha256": "5840680393a7dece1f9fb36b685c48f18ad1026703c6288d4107ee47bc826bd2",
+      "source_bytes": 3381,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_chunk_policy.py",
+      "sha256": "3e5f20fa2842f3add67e95035dcb7da97fb738046f804679274f35e0dd8f8fba",
+      "bytes": 1704,
+      "source_sha256": "3e5f20fa2842f3add67e95035dcb7da97fb738046f804679274f35e0dd8f8fba",
+      "source_bytes": 1704,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_control.py",
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "bytes": 9432,
+      "source_sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+      "source_bytes": 9432,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_fixed_wrist.py",
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "bytes": 5675,
+      "source_sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+      "source_bytes": 5675,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_grasp_limits.py",
+      "sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "bytes": 2930,
+      "source_sha256": "ca94c5130d82612feade64167e3b4f23851d3f36203abed4d903f98268690a46",
+      "source_bytes": 2930,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_integration.py",
+      "sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "bytes": 8082,
+      "source_sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+      "source_bytes": 8082,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/test_policy_startup.py",
+      "sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "bytes": 2037,
+      "source_sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686",
+      "source_bytes": 2037,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/validation_fixed_wrist.json",
+      "sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "bytes": 1157,
+      "source_sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd",
+      "source_bytes": 1157,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/validation_real_model.json",
+      "sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "bytes": 591,
+      "source_sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7",
+      "source_bytes": 591,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/kits/policy_v1_refined/validation_simulated_summary.json",
+      "sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "bytes": 4831,
+      "source_sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584",
+      "source_bytes": 4831,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/chunks.jsonl.gz",
+      "sha256": "9e821d7afdff7e45b3111870ec4afcf382f3bbe2978d41231e2afcb9759d7a59",
+      "bytes": 27492,
+      "source_sha256": "b1a454ce18a679196247901a118d5d598fc2ced7319d09356d12f6ffdf6ad38c",
+      "source_bytes": 64257,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/control.jsonl.gz",
+      "sha256": "f5f5b3a51b8816681db1f4bf9eb41017d6ce61417df4594a2588fbfd449cfd37",
+      "bytes": 21990,
+      "source_sha256": "f043b01526177c63148c39dfb814d303d7d5e22830119705352f0079ad2244ab",
+      "source_bytes": 113413,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/gpu_telemetry.csv",
+      "sha256": "0d5a08fe0aa142b358a17a2da43ee487673cf87a4f1946147b860098b1c94611",
+      "bytes": 4634,
+      "source_sha256": "0d5a08fe0aa142b358a17a2da43ee487673cf87a4f1946147b860098b1c94611",
+      "source_bytes": 4634,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/inference.log",
+      "sha256": "680161c86328aad35d865f056575ee3cbf2eb1e7218c5c56737ce24f8bb87df3",
+      "bytes": 1144,
+      "source_sha256": "680161c86328aad35d865f056575ee3cbf2eb1e7218c5c56737ce24f8bb87df3",
+      "source_bytes": 1144,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/inference_summary.json",
+      "sha256": "c17bd2598e9fc723975852b454bb873be572fc412ff65c80a6bfd8f91812fccc",
+      "bytes": 591,
+      "source_sha256": "c17bd2598e9fc723975852b454bb873be572fc412ff65c80a6bfd8f91812fccc",
+      "source_bytes": 591,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/predictions.npz",
+      "sha256": "30aafd6028fb22cd85ad360af4a3bc6d4c011a8ebae44ccc7e4aa0ed83a571de",
+      "bytes": 11563,
+      "source_sha256": "30aafd6028fb22cd85ad360af4a3bc6d4c011a8ebae44ccc7e4aa0ed83a571de",
+      "source_bytes": 11563,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221300_404_GraspPredict_bf16/summary.json",
+      "sha256": "9b628cb68f2142da81eb5a3cf75474e18e31f6ab1277dd327db30430e68e62e1",
+      "bytes": 8327,
+      "source_sha256": "9b628cb68f2142da81eb5a3cf75474e18e31f6ab1277dd327db30430e68e62e1",
+      "source_bytes": 8327,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/chunks.jsonl.gz",
+      "sha256": "4922190cb6ad89f863f4abb76f3d337fe0c82fe56cefa87e4b7f62a1820ccdb7",
+      "bytes": 75379,
+      "source_sha256": "6c7338a9e623fb3ab72fd452528521d110333f23fd16b55c7244763a9aff723d",
+      "source_bytes": 185566,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/control.jsonl.gz",
+      "sha256": "da09228563706173a34a4173e833cc14ae86114a2404d6bab01fcb82d32da4ba",
+      "bytes": 89621,
+      "source_sha256": "d862b596093cbc63d5aa5fa3afa95345942307219742178c675a164cb41f40cb",
+      "source_bytes": 374703,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/gpu_telemetry.csv",
+      "sha256": "193060c3ce0dd6c3fe592a152582dd617d5c34eb821734ae4588c28018824944",
+      "bytes": 5489,
+      "source_sha256": "193060c3ce0dd6c3fe592a152582dd617d5c34eb821734ae4588c28018824944",
+      "source_bytes": 5489,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/inference.log",
+      "sha256": "31a339f4498377eedae382c146e982eb2fd4db6688a427adf53787692472c9f6",
+      "bytes": 1070,
+      "source_sha256": "31a339f4498377eedae382c146e982eb2fd4db6688a427adf53787692472c9f6",
+      "source_bytes": 1070,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/inference_summary.json",
+      "sha256": "3479ceb60235a52b089e74076e464c72b03a109a151331b1f9e7d9c64c3a4f90",
+      "bytes": 592,
+      "source_sha256": "3479ceb60235a52b089e74076e464c72b03a109a151331b1f9e7d9c64c3a4f90",
+      "source_bytes": 592,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/predictions.npz",
+      "sha256": "2c038f10976f091fff43620e724a8c5b0050da38b1017b418e09e40c32949707",
+      "bytes": 32921,
+      "source_sha256": "2c038f10976f091fff43620e724a8c5b0050da38b1017b418e09e40c32949707",
+      "source_bytes": 32921,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221438_804_Grasp_bf16/summary.json",
+      "sha256": "1534fa5b437d4887685af4de7e91ea174ed8e03324df1aa88367e547c75703c3",
+      "bytes": 11271,
+      "source_sha256": "1534fa5b437d4887685af4de7e91ea174ed8e03324df1aa88367e547c75703c3",
+      "source_bytes": 11271,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221745_334_Release_bf16/control.jsonl.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221745_334_Release_bf16/summary.json",
+      "sha256": "8e8b8381d954d1fc98060c09a3351ef4c782c602e23e842b8b4115fded37efa3",
+      "bytes": 4229,
+      "source_sha256": "8e8b8381d954d1fc98060c09a3351ef4c782c602e23e842b8b4115fded37efa3",
+      "source_bytes": 4229,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/chunks.jsonl.gz",
+      "sha256": "cea5c74abe428de4de6517cd9d6d0aa1fc429390b65ea89dd9514cc977f9c37a",
+      "bytes": 1023523,
+      "source_sha256": "560dad0b74172a162e8766034d2c10021eac04faec8d93e161403beb4785dc67",
+      "source_bytes": 2549849,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/control.jsonl.gz",
+      "sha256": "4abbeb04101d2a67fdabe0ac69f68afe22e4ec90f7c592112fbc91835483c67b",
+      "bytes": 651082,
+      "source_sha256": "9750c6fa6b12578c9706c1aef3e558055b0d80f1247aa8be9cb25047d85f5166",
+      "source_bytes": 2764813,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/gpu_telemetry.csv",
+      "sha256": "18bf4b0f02fc8663fe113588d5429356d786203c8bcb592698b7a5add47adf44",
+      "bytes": 13751,
+      "source_sha256": "18bf4b0f02fc8663fe113588d5429356d786203c8bcb592698b7a5add47adf44",
+      "source_bytes": 13751,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/inference.log",
+      "sha256": "e22a8dff20257cb3ac99a6b126870c9675bc465fffc25a106c7629194054898c",
+      "bytes": 984,
+      "source_sha256": "e22a8dff20257cb3ac99a6b126870c9675bc465fffc25a106c7629194054898c",
+      "source_bytes": 984,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/inference_summary.json",
+      "sha256": "0d7c3e4d83085e607aff4bc191d583e209e600e10611bfbe2782f99504646c38",
+      "bytes": 593,
+      "source_sha256": "0d7c3e4d83085e607aff4bc191d583e209e600e10611bfbe2782f99504646c38",
+      "source_bytes": 593,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/predictions.npz",
+      "sha256": "56bcc1d26c2bcc955e2175312d281eb58fb80b12ee1017646cb6811fa534b5d9",
+      "bytes": 443851,
+      "source_sha256": "56bcc1d26c2bcc955e2175312d281eb58fb80b12ee1017646cb6811fa534b5d9",
+      "source_bytes": 443851,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_221952_936_Grasp_bf16/summary.json",
+      "sha256": "a1d8fee9350ab0362f9885c9875b2c907a840b9df4d136a571a601469dd7a87b",
+      "bytes": 10438,
+      "source_sha256": "a1d8fee9350ab0362f9885c9875b2c907a840b9df4d136a571a601469dd7a87b",
+      "source_bytes": 10438,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_222325_163_Release_bf16/control.jsonl.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_bytes": 0,
+      "encoding": "gzip"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/records/policy_v1_refined/20261111_222325_163_Release_bf16/summary.json",
+      "sha256": "6a9583fed5ae4ef4063daf3347691fd6637eeb6a9d54de46da95ae2356e67b87",
+      "bytes": 4229,
+      "source_sha256": "6a9583fed5ae4ef4063daf3347691fd6637eeb6a9d54de46da95ae2356e67b87",
+      "source_bytes": 4229,
+      "encoding": "identity"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/README.md",
+      "sha256": "e3219b00019324322a276c9098b030a954fcb959c2205b75d5860b6d6d88b98d",
+      "bytes": 912,
+      "source_sha256": "e3219b00019324322a276c9098b030a954fcb959c2205b75d5860b6d6d88b98d",
+      "source_bytes": 912,
+      "encoding": "identity",
+      "note": "handoff-generated"
+    },
+    {
+      "path": "handoff/windows_runtime/20261111_late_v1_followup/verify_manifest.py",
+      "sha256": "be690717a42eb6bf5d19ad5aee4f975c6b83b3a066c84b1f71b6bb6cae00307e",
+      "bytes": 1089,
+      "source_sha256": "be690717a42eb6bf5d19ad5aee4f975c6b83b3a066c84b1f71b6bb6cae00307e",
+      "source_bytes": 1089,
+      "encoding": "identity",
+      "note": "handoff-generated"
+    }
+  ],
+  "local_only_evidence": [
+    {
+      "local_path": "D:\\桌面\\机械臂\\policy_demo8x_trial\\results\\20261111_213457_906_Grasp_bf16\\camera_before.jpg",
+      "sha256": "fb97a7a98a2b4f9e54ac7ea3b787871bb36d2bb6a90867d3437c5dc2e867d73f",
+      "bytes": 153595,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\机械臂\\policy_demo8x_trial\\results\\20261111_213457_906_Grasp_bf16\\camera_last_observation.jpg",
+      "sha256": "d5e60380cbf463e48d6d709585de556a919fd1f45b0e0863222cfee6e234e96d",
+      "bytes": 152710,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\机械臂\\policy_demo8x_trial\\results\\20261111_213457_906_Grasp_bf16_return.zip",
+      "sha256": "3bd8f728c468c4584f9ff655082405eb3f53c5b80391c6ce64ff380fffb78e57",
+      "bytes": 2414534,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\机械臂\\policy_demo8x_trial\\results\\20261111_213824_712_Release_bf16_return.zip",
+      "sha256": "d18759251a4fa12b5e153a5f14a9f65881edb2a67ba5749ae497fad45e367ad3",
+      "bytes": 1998,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221300_404_GraspPredict_bf16\\camera_before.jpg",
+      "sha256": "385b7c751f4c5351e62238020233b691c9d10c315ea97585f48f9e6437100386",
+      "bytes": 155940,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221300_404_GraspPredict_bf16\\camera_last_observation.jpg",
+      "sha256": "c942b35b07023abb3af2c50b612d263bea9f8b10da3332efb9e01f9fcb179399",
+      "bytes": 151433,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221300_404_GraspPredict_bf16_return.zip",
+      "sha256": "263c1480e93007d80e943952bbe1ef5304877272acd34eff8c281604c336f072",
+      "bytes": 372212,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221438_804_Grasp_bf16\\camera_before.jpg",
+      "sha256": "3e5d5e8802fd854a81ef8bd74993d2b3221a801a93f7a4267d275ddb2f745e91",
+      "bytes": 152572,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221438_804_Grasp_bf16\\camera_last_observation.jpg",
+      "sha256": "7aa0fdc33919ec4ea320e45f93fba232fd6d0d220b13080eac743c15c6a786cb",
+      "bytes": 149765,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221438_804_Grasp_bf16_return.zip",
+      "sha256": "9120b27bc955702a7a4dc859d0d15ea287d728f2d13978f38453ca924ea17285",
+      "bytes": 506626,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221745_334_Release_bf16_return.zip",
+      "sha256": "c9ccdccf70f98c313c07324972a5b4971c9c5d8182ef5757194239bb2da3eb65",
+      "bytes": 2154,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221952_936_Grasp_bf16\\camera_before.jpg",
+      "sha256": "affadaeee4e78f447586eba72afd92174d1cb5553c8580e7a64646bf6be0b1b3",
+      "bytes": 149164,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221952_936_Grasp_bf16\\camera_last_observation.jpg",
+      "sha256": "b54d354e51e5282403f8ef33d167174da5acd5a55e579fc1a5aec5d833e75d0b",
+      "bytes": 168612,
+      "reason": "local camera image; not published"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_221952_936_Grasp_bf16_return.zip",
+      "sha256": "068c0b3f5a34dbf82379d3daa675fac2b7b109ca1678006a717aa8467804042a",
+      "bytes": 2459512,
+      "reason": "original local ZIP may contain camera images"
+    },
+    {
+      "local_path": "D:\\桌面\\萌芽杯\\policy_v1_refined\\results\\20261111_222325_163_Release_bf16_return.zip",
+      "sha256": "5e10ebbc9803244e0d292b3725f7ae5bddf05b2205d30239b1b486ed2d4ad221",
+      "bytes": 2156,
+      "reason": "original local ZIP may contain camera images"
+    }
+  ]
+}

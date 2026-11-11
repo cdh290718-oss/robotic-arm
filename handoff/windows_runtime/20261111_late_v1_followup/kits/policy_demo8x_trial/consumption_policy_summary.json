@@ -1,0 +1,50 @@
+{
+  "baseline 30Hz replace-each-tick": {
+    "hold_ticks": 0,
+    "closed_s": 11.6,
+    "longest_s": 5.066666666666666,
+    "eps": 25,
+    "frac_frames_25_49": 0.0,
+    "body_jumps": {
+      "gt2": 2786,
+      "gt5": 397,
+      "path_deg": 19576.890380442142
+    }
+  },
+  "V1 hold>=20ticks 30Hz": {
+    "hold_ticks": 0,
+    "closed_s": 13.9,
+    "longest_s": 5.2,
+    "eps": 36,
+    "frac_frames_25_49": 0.03888888888888889,
+    "body_jumps": {
+      "gt2": 2005,
+      "gt5": 277,
+      "path_deg": 16527.225673615932
+    }
+  },
+  "V1b hold>=25ticks 30Hz": {
+    "hold_ticks": 0,
+    "closed_s": 15.033333333333333,
+    "longest_s": 5.066666666666666,
+    "eps": 43,
+    "frac_frames_25_49": 0.1661111111111111,
+    "body_jumps": {
+      "gt2": 1977,
+      "gt5": 288,
+      "path_deg": 16452.788076668978
+    }
+  },
+  "V2 hold>=60ticks 15Hz": {
+    "hold_ticks": 0,
+    "closed_s": 16.266666666666666,
+    "longest_s": 5.666666666666667,
+    "eps": 20,
+    "frac_frames_25_49": 0.24,
+    "body_jumps": {
+      "gt2": 955,
+      "gt5": 159,
+      "path_deg": 8375.851323992014
+    }
+  }
+}

@@ -1,0 +1,183 @@
+
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial\bounded_run.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial_candidate\bounded_run.py', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\bounded_run.py" "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\bounded_run.py"
+index 933e0f3..bb13860 100644
+--- "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\bounded_run.py"
++++ "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\bounded_run.py"
+@@ -255,6 +255,9 @@ def main():
+     p.add_argument('--gpu-memory-fraction', type=float, default=0)
+     p.add_argument('--fixed-wrist', action='store_true', help='Keep wrist_roll passive; six-dimensional observation remains real')
+     p.add_argument('--output', type=Path, default=HERE/'results'/datetime.now().strftime('%Y%m%d_%H%M%S_%f'))
++    p.add_argument('--min-chunk-ticks', type=int, default=0, help='Keep each action chunk active for at least this many control ticks before replacing it (0 = current behavior).')
++    p.add_argument('--action-hz', type=float, default=HZ, help='Action-chunk index rate; HZ = plan timeline, lower = slower playback.')
++    p.add_argument('--max-result-age-s', type=float, default=MAX_RESULT_AGE, help='Max age of a model result when accepted as the active plan.')
+     args = p.parse_args()
+     requested_mode=args.mode
+     grasp=requested_mode in ('grasp','grasp_dryrun','grasp_simulate')
+@@ -284,6 +287,8 @@ def main():
+                            'max_drift_ticks':11 if args.fixed_wrist else None,
+                            'model_state':'measured position; never substituted',
+                            'goal_write_ids':[1,2,3,4,6] if args.fixed_wrist else [1,2,3,4,5,6]}
++    report['consumption_policy']={'min_chunk_ticks':args.min_chunk_ticks,'action_hz':args.action_hz,
++                                  'max_result_age_s':args.max_result_age_s}
+     if grasp:
+         report['bounds'].update(max_excursion_deg=None,workspace='saved training calibration',gripper_fixed=False,
+                                 setpoint_speed_upper_deg_s=8*360/4095*30,max_raw_ticks_per_update=8,
+@@ -297,6 +302,8 @@ def main():
+     signal.signal(signal.SIGTERM, lambda *_:stop.set())
+     rows = []
+     active_chunk = None
++    pending_chunk = None
++    active_ticks = 0
+     last_chunk_id = -1
+     last_observation_time = -1.0
+     rejected_chunks = []
+@@ -356,7 +363,7 @@ def main():
+         preflight_end = time.perf_counter()+180
+         sequence = 0
+         def receive_chunks():
+-            nonlocal ready, active_chunk, last_chunk_id, last_observation_time
++            nonlocal ready, pending_chunk, last_chunk_id, last_observation_time
+             # Bounded draining: no unbounded queue loop on the controller thread.
+             for _ in range(4):
+                 try:
+@@ -375,9 +382,9 @@ def main():
+                     raise ValueError('Nonmonotonic model result')
+                 last_chunk_id = message['id']
+                 last_observation_time = message['observation_time']
+-                action_at(message, now)  # includes shape, finite and timestamp validation
+-                if now-message['observation_time'] <= MAX_RESULT_AGE:
+-                    active_chunk = message
++                action_at(message, now, args.action_hz)  # includes shape, finite and timestamp validation
++                if now-message['observation_time'] <= args.max_result_age_s:
++                    pending_chunk = message
+                 else:
+                     rejected_chunks.append({'id':message['id'], 'age_s':now-message['observation_time']})
+         while not stop.is_set():
+@@ -392,7 +399,11 @@ def main():
+             sequence += 1
+             shared.put(last_row,sequence)
+             receive_chunks()
+-            if ready and active_chunk is not None:
++            if ready and (active_chunk is not None or pending_chunk is not None):
++                if active_chunk is None and pending_chunk is not None:
++                    active_chunk = pending_chunk
++                    pending_chunk = None
++                    active_ticks = 0
+                 break
+             if not worker.is_alive():
+                 raise RuntimeError('Inference process exited during preflight; see inference.log')
+@@ -405,7 +416,7 @@ def main():
+             raise Finished()
+         save_panel(args.output,last_row,'camera_before.jpg')
+         # Save/encoding may be slow; require another fresh result after all setup.
+-        if time.perf_counter()-active_chunk['observation_time'] > MAX_RESULT_AGE:
++        if time.perf_counter()-active_chunk['observation_time'] > args.max_result_age_s:
+             raise TimeoutError('Initial plan aged during setup; no torque enabled')
+         initial = arm.raw_read()
+         limiter = limiter_type(calibration,initial,freeze_wrist=True) if args.fixed_wrist else limiter_type(calibration,initial)
+@@ -462,7 +473,23 @@ def main():
+             shared.put(last_row,sequence)
+             receive_chunks()
+             now = time.perf_counter()
+-            desired, index = action_at(active_chunk,now)
++            # Consumption policy: promote a pending chunk only after the active one
++            # has served >= --min-chunk-ticks (0 = replace every tick, old behavior).
++            if pending_chunk is not None:
++                if active_chunk is None:
++                    active_chunk = pending_chunk
++                    pending_chunk = None
++                    active_ticks = 0
++                elif active_ticks >= args.min_chunk_ticks:
++                    active_chunk = pending_chunk
++                    pending_chunk = None
++                    active_ticks = 0
++            desired, index = action_at(active_chunk, now, args.action_hz)
++            if desired is None and pending_chunk is not None:
++                active_chunk = pending_chunk
++                pending_chunk = None
++                active_ticks = 0
++                desired, index = action_at(active_chunk, now, args.action_hz)
+             if desired is None:
+                 if no_plan_since is None:
+                     no_plan_since = now
+@@ -471,6 +498,7 @@ def main():
+                 command, clipped = list(limiter.last), [False]*6
+             else:
+                 no_plan_since = None
++                active_ticks += 1
+                 command, clipped = limiter.command(desired,dt)
+             # Do not issue a new trajectory step if reads/copies stalled this iteration.
+             if time.perf_counter()-tick_start > MAX_LOOP_GAP:
+@@ -484,8 +512,9 @@ def main():
+             rows.append({'time':tick_start, 'elapsed_s':tick_start-start, 'interval_ms':dt*1000,
+                          'work_ms':(end-tick_start)*1000, 'raw_present':raw, 'raw_command':command,
+                          'state':limiter.state(raw), 'desired':None if desired is None else desired.tolist(),
+-                         'clipped':clipped, 'chunk_id':active_chunk['id'], 'chunk_index':index,
+-                         'observation_age_ms':(now-active_chunk['observation_time'])*1000,
++                         'clipped':clipped, 'chunk_id':active_chunk['id'] if active_chunk is not None else -1,
++                         'chunk_index':index,
++                         'observation_age_ms':(now-active_chunk['observation_time'])*1000 if active_chunk is not None else -1,
+                          'camera_age_ms':{k:(now-v)*1000 for k,v in last_row['image_timestamps'].items()},
+                          'state_age_ms':(now-stamp)*1000, 'plan_expired_hold':desired is None})
+             # Schedule from actual tick start; never catch up with a burst of writes.
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial\control_core.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial_candidate\control_core.py', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\control_core.py" "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\control_core.py"
+index 6bbbfcf..2d5f60d 100644
+--- "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\control_core.py"
++++ "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\control_core.py"
+@@ -332,7 +332,7 @@ class GraspLimiter(Limiter):
+         self.last_measured=list(raw)
+ 
+ 
+-def action_at(chunk, now):
++def action_at(chunk, now, hz=HZ):
+     import numpy as np
+     actions = np.asarray(chunk['actions'])
+     if actions.shape != (50, 6) or not np.isfinite(actions).all():
+@@ -340,7 +340,7 @@ def action_at(chunk, now):
+     age = now - float(chunk['observation_time'])
+     if age < 0:
+         raise ValueError('Future observation timestamp')
+-    index = int(age * HZ)
++    index = int(age * hz)
+     if index >= 50:
+         return None, index
+     return actions[index], index
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial\Run-Policy.ps1', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'D:\桌面\机械臂\policy_demo8x_trial_candidate\Run-Policy.ps1', LF will be replaced by CRLF the next time Git touches it
+diff --git "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\Run-Policy.ps1" "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\Run-Policy.ps1"
+index 6b38edd..c160c80 100644
+--- "a/D:\\桌面\\机械臂\\policy_demo8x_trial\\Run-Policy.ps1"
++++ "b/D:\\桌面\\机械臂\\policy_demo8x_trial_candidate\\Run-Policy.ps1"
+@@ -3,7 +3,10 @@ param(
+     [ValidateSet('Predict','Execute','GraspPredict','Grasp','Release','SelfTest')][string]$Mode='Predict',
+     [ValidateRange(1,120)][int]$Seconds=10,
+     [string]$LeRobotRoot='G:\LeRobot',
+-    [switch]$FixedWrist
++    [switch]$FixedWrist,
++    [int]$MinChunkTicks=0,
++    [double]$ActionHz=30.0,
++    [double]$MaxResultAgeS=1.4
+ )
+ $ErrorActionPreference='Stop'
+ $taskPython=Join-Path $LeRobotRoot '.venv\Scripts\python.exe'
+@@ -32,6 +35,7 @@ if ($Mode -in @('Execute','Grasp')) {
+     if ($Mode -eq 'Grasp') {
+         Write-Host 'FULL GRASP ATTEMPT: saved calibration workspace, <=120s. Gripper WILL open/close.'
+         Write-Host 'Target rate: 8 raw ticks per 30 Hz update (~21.1 deg/s) for pan/lift/elbow/wrist-flex; gripper <=40 points/s.'
++        Write-Host ('Consumption policy: min_chunk_ticks={0}, action_hz={1}, max_result_age_s={2}' -f $MinChunkTicks, $ActionHz, $MaxResultAgeS)
+         Write-Host 'Body tracking <=4deg; gripper tracking <=5 points. Actual motion speed is not independently limited.'
+     } else { Write-Host 'MODEL-DRIVEN MOTION: <=10s, +/-8deg, fixed gripper, 4deg tracking guard. P16 unchanged.' }
+     Write-Host 'The initial current-position write may activate torque. Close all other controllers.'
+@@ -40,7 +44,7 @@ if ($Mode -in @('Execute','Grasp')) {
+ } elseif ($Mode -eq 'Release') {
+     Write-Host 'TORQUE OFF: physically support the arm first.'
+ } else { Write-Host 'FULL MODEL PREDICTION, no motor writes. Both cameras must be uncovered.' }
+-$taskArgs=@('-B','-u',(Join-Path $PSScriptRoot 'bounded_run.py'),'--mode',$taskMode,'--precision','bf16','--seconds',"$Seconds",'--lerobot-root',$LeRobotRoot,'--output',$taskOutput)
++$taskArgs=@('-B','-u',(Join-Path $PSScriptRoot 'bounded_run.py'),'--mode',$taskMode,'--precision','bf16','--seconds',"$Seconds",'--lerobot-root',$LeRobotRoot,'--output',$taskOutput,'--min-chunk-ticks',"$MinChunkTicks",'--action-hz',"$ActionHz",'--max-result-age-s',"$MaxResultAgeS")
+ if ($FixedWrist) {
+     Write-Host 'wrist_roll: passive; actual position still sent to model.'
+     Write-Host 'Fixed-wrist camera config: DSHOW wrist index 0, external index 2 (recheck after USB changes).'

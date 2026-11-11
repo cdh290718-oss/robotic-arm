@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-11",
+  "automated_tests": {"count": 42, "result": "passed", "hardware_access": false},
+  "live_readonly": {
+    "run": "20261111_131419_850_GraspPredict_bf16",
+    "duration_seconds": 10.0023,
+    "control_cycles": 296,
+    "prediction_chunks": 40,
+    "prediction_shape": [40, 50, 6],
+    "all_prediction_values_finite": true,
+    "motor_write_attempts": 0,
+    "motor_write_packets": 0,
+    "torque_before": [0, 0, 0, 0, 0, 0],
+    "torque_after": [0, 0, 0, 0, 0, 0],
+    "wrist_roll_raw_min": 1994,
+    "wrist_roll_raw_max": 1994,
+    "wrist_roll_model_state_degrees": -4.615384615384616,
+    "wrist_roll_training_zscore": -23.484941482543945,
+    "camera_3_external": {"backend": "DSHOW", "index": 2, "width": 640, "height": 480, "fps": 30, "fourcc": "MJPG"},
+    "camera_1_wrist": {"backend": "DSHOW", "index": 0, "width": 640, "height": 480, "fps": 30, "fourcc": "MJPG"},
+    "return_zip_crc_ok": true
+  },
+  "limitations": ["fixed-wrist motion mode not tested on physical robot", "servo ID 5 implicit activation under subset writes unverified", "out-of-distribution wrist state blocks real motion", "grasp success unverified"]
+}

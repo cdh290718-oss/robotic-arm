@@ -1,0 +1,576 @@
+..............EEEEEEEEEE...E.................
+======================================================================
+ERROR: test_dryrun_never_writes (test_integration.TestMain.test_dryrun_never_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpxtujl3nc\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpxtujl3nc'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 104, in test_dryrun_never_writes
+    code,r,bus=self.run_case('dryrun')
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpxtujl3nc'
+
+======================================================================
+ERROR: test_execute_completion_holds (test_integration.TestMain.test_execute_completion_holds)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7s2x8_u2\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7s2x8_u2'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 90, in test_execute_completion_holds
+    code,r,bus=self.run_case('execute')
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7s2x8_u2'
+
+======================================================================
+ERROR: test_fault_holds_before_teardown (test_integration.TestMain.test_fault_holds_before_teardown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp_aobhipu\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp_aobhipu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 97, in test_fault_holds_before_teardown
+    code,r,bus=self.run_case('execute',True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp_aobhipu'
+
+======================================================================
+ERROR: test_first_goal_fault_restores_off_before_teardown (test_integration.TestMain.test_first_goal_fault_restores_off_before_teardown)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp5qfxzgub\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp5qfxzgub'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 122, in test_first_goal_fault_restores_off_before_teardown
+    code,r,bus=self.run_case('execute')
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp5qfxzgub'
+
+======================================================================
+ERROR: test_fixed_wrist_execution_requires_known_in_distribution_input (test_integration.TestMain.test_fixed_wrist_execution_requires_known_in_distribution_input)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpa4hvxte1\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpa4hvxte1'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 169, in test_fixed_wrist_execution_requires_known_in_distribution_input
+    code,r,bus=self.run_case('grasp',fixed=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpa4hvxte1'
+
+======================================================================
+ERROR: test_fixed_wrist_readonly_accepts_real_outside_position (test_integration.TestMain.test_fixed_wrist_readonly_accepts_real_outside_position)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpi5k5b8dr\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpi5k5b8dr'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 161, in test_fixed_wrist_readonly_accepts_real_outside_position
+    code,r,bus=self.run_case('grasp_dryrun',fixed=True)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpi5k5b8dr'
+
+======================================================================
+ERROR: test_grasp_dryrun_no_writes (test_integration.TestMain.test_grasp_dryrun_no_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7liscjd_\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7liscjd_'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 139, in test_grasp_dryrun_no_writes
+    code,r,bus=self.run_case('grasp_dryrun')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp7liscjd_'
+
+======================================================================
+ERROR: test_grasp_uses_full_calibration_and_reports_unverified_success (test_integration.TestMain.test_grasp_uses_full_calibration_and_reports_unverified_success)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp3l543jwu\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp3l543jwu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 132, in test_grasp_uses_full_calibration_and_reports_unverified_success
+    code,r,bus=self.run_case('grasp')
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmp3l543jwu'
+
+======================================================================
+ERROR: test_release_skips_model_and_cameras (test_integration.TestMain.test_release_skips_model_and_cameras)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpump8k3ri\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpump8k3ri'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 109, in test_release_skips_model_and_cameras
+    code,r,bus=self.run_case('release')
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpump8k3ri'
+
+======================================================================
+ERROR: test_start_pose_failure_keeps_joint_details_and_no_writes (test_integration.TestMain.test_start_pose_failure_keeps_joint_details_and_no_writes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 68, in run_case
+    config.write_text(json.dumps({'follower_port':'fake','cameras':[]}))
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1047, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpkn9q32dn\\config.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpkn9q32dn'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 149, in test_start_pose_failure_keeps_joint_details_and_no_writes
+    code,r,bus=self.run_case('grasp_dryrun')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_integration.py", line 66, in run_case
+    with tempfile.TemporaryDirectory() as tmp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\tmpkn9q32dn'
+
+======================================================================
+ERROR: test_snapshot_handles_unicode_directory (test_policy_startup.Startup.test_snapshot_handles_unicode_directory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_policy_startup.py", line 13, in test_snapshot_handles_unicode_directory
+    save_panel(path,{'images':{'1':np.zeros((8,8,3),dtype=np.uint8),'3':np.zeros((8,8,3),dtype=np.uint8)}},'camera.jpg')
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\bounded_run.py", line 232, in save_panel
+    (output/name).write_bytes(encoded.tobytes())
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1036, in write_bytes
+    with self.open(mode='wb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\截图_zeu6dfsu\\camera.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen os>", line 366, in walk
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\截图_zeu6dfsu'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\桌面\机械臂\policy_demo8x_trial_candidate\test_policy_startup.py", line 11, in test_snapshot_handles_unicode_directory
+    with tempfile.TemporaryDirectory(prefix='截图_') as directory:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 781, in rmtree
+    return _rmtree_unsafe(path, onexc)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 623, in _rmtree_unsafe
+    for dirpath, dirnames, filenames in results:
+                                        ^^^^^^^
+  File "<frozen os>", line 369, in walk
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\shutil.py", line 621, in onerror
+    onexc(os.scandir, err.filename, err)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 906, in onexc
+    _resetperms(path)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 286, in _resetperms
+    _dont_follow_symlinks(_os.chmod, path, 0o700)
+  File "G:\LeRobot\python\cpython-3.12-windows-x86_64-none\Lib\tempfile.py", line 277, in _dont_follow_symlinks
+    func(path, *args)
+PermissionError: [WinError 5] 拒绝访问。: 'C:\\Users\\LEGION\\AppData\\Local\\Temp\\dsh-QINFhb\\截图_zeu6dfsu'
+
+----------------------------------------------------------------------
+Ran 45 tests in 2.471s
+
+FAILED (errors=11)
