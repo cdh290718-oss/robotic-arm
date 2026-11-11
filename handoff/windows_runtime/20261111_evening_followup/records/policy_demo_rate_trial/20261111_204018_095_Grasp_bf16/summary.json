@@ -1,0 +1,411 @@
+{
+  "status": "failed",
+  "mode": "execute",
+  "created_utc": "2026-11-11T12:40:18.311790+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "execute",
+    "seconds": "120.0",
+    "precision": "bf16",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "D:\\桌面\\萌芽杯\\policy_demo_rate_trial\\robot_config_fixed_wrist.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "",
+    "gpu_memory_fraction": "0",
+    "fixed_wrist": "True",
+    "output": "D:\\桌面\\萌芽杯\\policy_demo_rate_trial\\results\\20261111_204018_095_Grasp_bf16"
+  },
+  "code_sha256": {
+    "bounded_run.py": "2ad0c0d758ab0f5109fd8a7662b94fe616d2440e074814c8c0423ca556adf99e",
+    "control_core.py": "1714076ecec145475a7eab239f74faeb2d2ba91b383fc1d0952df0fba9e0d92f",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "probe_cameras_readonly.py": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_control.py": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+    "test_fixed_wrist.py": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc",
+    "test_grasp_limits.py": "f5035fec106079cf79cc9fd1a335475f8dbe4944d70d02539d1345c2e61d1dc7",
+    "test_integration.py": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41",
+    "test_policy_startup.py": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686"
+  },
+  "bounds": {
+    "max_seconds": 120.0,
+    "max_excursion_deg": null,
+    "setpoint_speed_upper_deg_s": [
+      44,
+      129,
+      100,
+      58,
+      0
+    ],
+    "max_raw_ticks_per_update": null,
+    "gripper_fixed": false,
+    "max_loop_gap_ms": 150,
+    "max_input_age_ms": 250,
+    "max_new_result_age_ms": 1400,
+    "no_plan_stop_s": 2,
+    "workspace": "saved training calibration",
+    "speed_reference": "moving-only P95 of 33 held-out action windows; rounded down",
+    "gripper_speed_percent_s": 58,
+    "gripper_tracking_percent": 5,
+    "goal_tracking_preclamp": "within 4deg body and 5 percentage points gripper of latest measured position"
+  },
+  "limits": "Software bounded trial, not hard real-time or a collision-safe planner. Camera timestamps are decode times.",
+  "requested_mode": "grasp",
+  "grasp_success_verified": false,
+  "fixed_wrist": {
+    "enabled": true,
+    "passive_motor_id": 5,
+    "max_drift_ticks": 11,
+    "model_state": "measured position; never substituted",
+    "goal_write_ids": [
+      1,
+      2,
+      3,
+      4,
+      6
+    ]
+  },
+  "robot_config_sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321",
+  "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+  "port": "COM5",
+  "camera_config": {
+    "1": {
+      "id": "camera_1789706520471",
+      "name": "1",
+      "type": "opencv",
+      "camera_index": 0,
+      "device_id": null,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG",
+      "backend": 700
+    },
+    "3": {
+      "id": "camera_1789706526304",
+      "name": "3",
+      "type": "opencv",
+      "camera_index": 2,
+      "device_id": null,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG",
+      "backend": 700
+    }
+  },
+  "opened_cameras": {
+    "3": {
+      "index": 2,
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003,
+      "fourcc": "MJPG"
+    },
+    "1": {
+      "index": 0,
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003,
+      "fourcc": "MJPG"
+    }
+  },
+  "initial_raw": [
+    1941,
+    772,
+    3274,
+    2739,
+    2049,
+    2071
+  ],
+  "initial_range_check": {
+    "shoulder_pan": {
+      "raw": 1941,
+      "min": 701,
+      "max": 3307,
+      "inside": true,
+      "passive_fixed_wrist": false
+    },
+    "shoulder_lift": {
+      "raw": 772,
+      "min": 772,
+      "max": 3109,
+      "inside": true,
+      "passive_fixed_wrist": false
+    },
+    "elbow_flex": {
+      "raw": 3274,
+      "min": 1064,
+      "max": 3286,
+      "inside": true,
+      "passive_fixed_wrist": false
+    },
+    "wrist_flex": {
+      "raw": 2739,
+      "min": 892,
+      "max": 3243,
+      "inside": true,
+      "passive_fixed_wrist": false
+    },
+    "wrist_roll": {
+      "raw": 2049,
+      "min": 2042,
+      "max": 2051,
+      "inside": true,
+      "passive_fixed_wrist": true
+    },
+    "gripper": {
+      "raw": 2071,
+      "min": 2028,
+      "max": 3474,
+      "inside": true,
+      "passive_fixed_wrist": false
+    }
+  },
+  "initial_state": [
+    -5.538461538461539,
+    -102.72527472527473,
+    96.61538461538463,
+    59.032967032967036,
+    0.2197802197802198,
+    2.9737206085753805
+  ],
+  "raw_envelope": {
+    "min": [
+      701,
+      772,
+      1064,
+      892,
+      2049,
+      2028
+    ],
+    "max": [
+      3307,
+      3109,
+      3286,
+      3243,
+      2049,
+      3474
+    ]
+  },
+  "execution_initial_raw": [
+    1941,
+    772,
+    3274,
+    2739,
+    2049,
+    2071
+  ],
+  "execution_envelope": {
+    "min": [
+      701,
+      772,
+      1064,
+      892,
+      2049,
+      2028
+    ],
+    "max": [
+      3307,
+      3109,
+      3286,
+      3243,
+      2049,
+      3474
+    ]
+  },
+  "failed_measurement": {
+    "time": 42459.3261697,
+    "raw_present": [
+      1955,
+      823,
+      3189,
+      2796,
+      2049,
+      2188
+    ],
+    "previous_raw_command": [
+      1960,
+      871,
+      3152,
+      2787,
+      2049,
+      2200
+    ],
+    "error_degrees": [
+      -0.43956043956043955,
+      -4.21978021978022,
+      3.2527472527472527,
+      0.7912087912087912,
+      0.0
+    ]
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\桌面\\萌芽杯\\policy_demo_rate_trial\\bounded_run.py\", line 452, in main\n    limiter.check_measured(raw, enforce_tracking=args.mode!='dryrun')\n  File \"D:\\桌面\\萌芽杯\\policy_demo_rate_trial\\control_core.py\", line 329, in check_measured\n    raise RuntimeError('Measured tracking error exceeds 4 degrees')\nRuntimeError: Measured tracking error exceeds 4 degrees\n",
+  "stop_reason": "exception",
+  "motion_cleanup": {
+    "action": "hold",
+    "confirmed": true,
+    "goal_readback_confirmed": true,
+    "raw_goal": [
+      1955,
+      823,
+      3189,
+      2796,
+      2049,
+      2188
+    ],
+    "torque": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 0,
+      "gripper": 1
+    },
+    "all_torque_enabled": false,
+    "all_expected_torque_states": true,
+    "fixed_wrist_torque_off": true,
+    "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+  },
+  "stop_hold": {
+    "action": "hold",
+    "confirmed": true,
+    "goal_readback_confirmed": true,
+    "raw_goal": [
+      1955,
+      823,
+      3189,
+      2796,
+      2049,
+      2188
+    ],
+    "torque": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 0,
+      "gripper": 1
+    },
+    "all_torque_enabled": false,
+    "all_expected_torque_states": true,
+    "fixed_wrist_torque_off": true,
+    "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+  },
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 0,
+      "gripper": 1
+    },
+    "write_attempts": 17,
+    "write_packets": 17,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 37,
+      "0x82": 592,
+      "0x83": 17
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "goal_triggered_activation_verified",
+        "time": 42458.7692359,
+        "raw": [
+          1941,
+          772,
+          3274,
+          2739,
+          2049,
+          2071
+        ]
+      },
+      {
+        "event": "stop_hold",
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          1955,
+          823,
+          3189,
+          2796,
+          2049,
+          2188
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "all_torque_enabled": false,
+        "all_expected_torque_states": true,
+        "fixed_wrist_torque_off": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      }
+    ],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  },
+  "worker_exitcode": 0,
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/11/11 20:40:28.067, P4, 2 %, 4051 MiB, 3760 MiB, 23.37 W, [N/A], 52, 1987 MHz, 9001 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "control_ticks": 15,
+  "timing": {
+    "interval_ms": {
+      "count": 15,
+      "p50": 33.87510000175098,
+      "p95": 37.35257999796885,
+      "max": 42.42659999727039,
+      "mean": 34.56385333362656
+    },
+    "work_ms": {
+      "count": 15,
+      "p50": 3.989799995906651,
+      "p95": 5.235309999261517,
+      "max": 5.4829000000609085,
+      "mean": 4.202853332875141
+    },
+    "observation_age_ms": {
+      "count": 15,
+      "p50": 414.55580000183545,
+      "p95": 519.7541300047305,
+      "max": 538.5912000056123,
+      "mean": 417.6144133370447
+    }
+  },
+  "rejected_chunks": [],
+  "clipped_ticks_per_joint": [
+    0,
+    5,
+    15,
+    2,
+    15,
+    4
+  ],
+  "expired_plan_hold_ticks": 0
+}

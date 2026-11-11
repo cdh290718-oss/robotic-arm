@@ -1,0 +1,33 @@
+{
+  "name": "lerobot",
+  "leader_port": "COM6",
+  "follower_port": "COM5",
+  "leader_config": "lerobot.json",
+  "follower_config": "lerobot.json",
+  "cameras": [
+    {
+      "id": "camera_1789706520471",
+      "name": "1",
+      "type": "opencv",
+      "camera_index": 0,
+      "device_id": null,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG",
+      "backend": 700
+    },
+    {
+      "id": "camera_1789706526304",
+      "name": "3",
+      "type": "opencv",
+      "camera_index": 2,
+      "device_id": null,
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG",
+      "backend": 700
+    }
+  ]
+}

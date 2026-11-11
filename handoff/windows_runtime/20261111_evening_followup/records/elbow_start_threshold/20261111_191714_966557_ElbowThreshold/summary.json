@@ -1,0 +1,67 @@
+{
+  "status": "failed",
+  "trials": [],
+  "limits": {
+    "step_ticks": 1,
+    "period_ms": 100,
+    "movement_ticks": 3,
+    "error_ticks": 40,
+    "tracking_degrees": 4
+  },
+  "note": "Raw load/current values are not physical torque. Position goal may enable torque.",
+  "initial_raw": [
+    2016,
+    1145,
+    2688,
+    2906,
+    2049,
+    2029
+  ],
+  "preflight_second_raw": [
+    2016,
+    1145,
+    2688,
+    2906,
+    2049,
+    2029
+  ],
+  "preflight_delta_ticks": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0,
+    "gripper": 0
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\桌面\\萌芽杯\\elbow_start_threshold\\threshold.py\", line 71, in run\n    goal = arm.enable_aligned(initial, stopped).copy()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\桌面\\萌芽杯\\elbow_start_threshold\\control_core.py\", line 147, in enable_aligned\n    self.verify('Lock', [1] * 6)\n  File \"D:\\桌面\\萌芽杯\\elbow_start_threshold\\control_core.py\", line 137, in verify\n    raise RuntimeError(f'{name} readback mismatch: {actual}')\nRuntimeError: Lock readback mismatch: {'shoulder_pan': 0, 'shoulder_lift': 0, 'elbow_flex': 0, 'wrist_flex': 0, 'wrist_roll': 0, 'gripper': 0}\n",
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 0,
+    "write_packets": 0,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 11
+    },
+    "blocked_packets": 0,
+    "events": [],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  },
+  "write_frames_hex": []
+}

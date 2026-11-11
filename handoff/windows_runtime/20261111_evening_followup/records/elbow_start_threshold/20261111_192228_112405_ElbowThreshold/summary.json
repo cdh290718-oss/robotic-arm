@@ -1,0 +1,2401 @@
+{
+  "status": "failed",
+  "trials": [
+    {
+      "direction": 1,
+      "start_raw": [
+        2017,
+        1307,
+        2791,
+        2815,
+        2047,
+        2029
+      ],
+      "samples": [
+        {
+          "time": 37762.9611826,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1307,
+            2791,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1307,
+            2791,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": 0,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1307,
+            "elbow_flex": 2791,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1307,
+            2792,
+            2815,
+            2047,
+            2029
+          ]
+        },
+        {
+          "time": 37763.0601608,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1307,
+            2792,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1307,
+            2791,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": 1,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1307,
+            "elbow_flex": 2792,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1307,
+            2793,
+            2815,
+            2047,
+            2029
+          ]
+        },
+        {
+          "time": 37763.1616007,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1307,
+            2793,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1307,
+            2792,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": 1,
+          "elbow_displacement_ticks": 1,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1307,
+            "elbow_flex": 2793,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1307,
+            2794,
+            2815,
+            2047,
+            2029
+          ]
+        },
+        {
+          "time": 37763.2603427,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1307,
+            2794,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1307,
+            2793,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": 1,
+          "elbow_displacement_ticks": 2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1307,
+            "elbow_flex": 2794,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1307,
+            2795,
+            2815,
+            2047,
+            2029
+          ]
+        },
+        {
+          "time": 37763.3643492,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1307,
+            2795,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2794,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": 1,
+          "elbow_displacement_ticks": 3,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1307,
+            "elbow_flex": 2795,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          }
+        },
+        {
+          "time": 37763.5769409,
+          "phase": "hold_check",
+          "target": [
+            2017,
+            1306,
+            2794,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -1,
+          "elbow_displacement_ticks": 4,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2794,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          }
+        }
+      ],
+      "status": "started",
+      "start_error_ticks": 1,
+      "start_error_degrees": 0.08791208791208792,
+      "hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          2017,
+          1306,
+          2794,
+          2815,
+          2046,
+          2029
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "all_torque_enabled": false,
+        "all_expected_torque_states": true,
+        "fixed_wrist_torque_off": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      }
+    },
+    {
+      "direction": -1,
+      "start_raw": [
+        2017,
+        1306,
+        2795,
+        2815,
+        2046,
+        2029
+      ],
+      "samples": [
+        {
+          "time": 37763.5868404,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2794,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -1,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2794,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37763.686562,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -2,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2793,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 20,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2792,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37763.7867153,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2792,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -3,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2792,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 24,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2791,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37763.8870246,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2791,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -4,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2791,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 28,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 1,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2790,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37763.9874727,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2790,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -5,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2790,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 32,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 1,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2789,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.0875653,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2789,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -6,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2789,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 36,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2788,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.1879193,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2788,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -7,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2788,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 40,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 1,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2787,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.2880677,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2787,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -8,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2787,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 44,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 1,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2786,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.3883979,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2786,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -9,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2786,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 48,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 1,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2785,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.4885366,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2785,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -10,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2785,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 52,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2784,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.5889212,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2784,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -11,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2784,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 56,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2783,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.6893952,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2783,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -12,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2783,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 60,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 126,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 125
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2782,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.7897904,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2782,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2795,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -13,
+          "elbow_displacement_ticks": 0,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2782,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 64,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 125
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2781,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.8901135,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2781,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -12,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2781,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 56,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2780,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37764.9905319,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2780,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -13,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2780,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 64,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2779,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.0944911,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2779,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -14,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2779,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 68,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2778,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.1913245,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2778,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -15,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2778,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 72,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 3,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2777,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.2914657,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2777,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -16,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2777,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 76,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 3,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2776,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.3918923,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2776,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -17,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2776,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 80,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 3,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2775,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.4921752,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2775,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2793,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -18,
+          "elbow_displacement_ticks": -2,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2775,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 84,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 3,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 124,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "sent_target": [
+            2017,
+            1306,
+            2774,
+            2815,
+            2046,
+            2029
+          ]
+        },
+        {
+          "time": 37765.5925312,
+          "phase": "before_step",
+          "target": [
+            2017,
+            1306,
+            2774,
+            2815,
+            2046,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2791,
+            2815,
+            2047,
+            2029
+          ],
+          "elbow_error_ticks": -17,
+          "elbow_displacement_ticks": -4,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2774,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 76,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 2,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          }
+        },
+        {
+          "time": 37765.804466,
+          "phase": "hold_check",
+          "target": [
+            2017,
+            1306,
+            2791,
+            2815,
+            2047,
+            2029
+          ],
+          "position": [
+            2017,
+            1306,
+            2794,
+            2815,
+            2046,
+            2029
+          ],
+          "elbow_error_ticks": -3,
+          "elbow_displacement_ticks": -1,
+          "Torque_Enable": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 0,
+            "gripper": 1
+          },
+          "Goal_Position": {
+            "shoulder_pan": 2017,
+            "shoulder_lift": 1306,
+            "elbow_flex": 2791,
+            "wrist_flex": 2815,
+            "wrist_roll": 0,
+            "gripper": 2029
+          },
+          "Present_Load": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 24,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Current": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          },
+          "Present_Voltage": {
+            "shoulder_pan": 125,
+            "shoulder_lift": 125,
+            "elbow_flex": 125,
+            "wrist_flex": 125,
+            "wrist_roll": 126,
+            "gripper": 126
+          },
+          "Status": {
+            "shoulder_pan": 0,
+            "shoulder_lift": 0,
+            "elbow_flex": 0,
+            "wrist_flex": 0,
+            "wrist_roll": 0,
+            "gripper": 0
+          }
+        }
+      ],
+      "status": "started",
+      "start_error_ticks": -17,
+      "start_error_degrees": -1.4945054945054945,
+      "hold": {
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          2017,
+          1306,
+          2791,
+          2815,
+          2047,
+          2029
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "all_torque_enabled": false,
+        "all_expected_torque_states": true,
+        "fixed_wrist_torque_off": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      }
+    }
+  ],
+  "limits": {
+    "step_ticks": 1,
+    "period_ms": 100,
+    "movement_ticks": 3,
+    "error_ticks": 40,
+    "tracking_degrees": 4
+  },
+  "note": "Raw load/current values are not physical torque. Position goal may enable torque.",
+  "initial_raw": [
+    2017,
+    1307,
+    2791,
+    2815,
+    2047,
+    2029
+  ],
+  "preflight_second_raw": [
+    2017,
+    1307,
+    2791,
+    2815,
+    2047,
+    2029
+  ],
+  "preflight_delta_ticks": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0,
+    "gripper": 0
+  },
+  "aligned_raw": [
+    2017,
+    1307,
+    2791,
+    2815,
+    2047,
+    2029
+  ],
+  "error": "Traceback (most recent call last):\n  File \"D:\\桌面\\萌芽杯\\elbow_start_threshold\\threshold.py\", line 131, in run\n    raise RuntimeError('Position not settled after hold; no next direction')\nRuntimeError: Position not settled after hold; no next direction\n",
+  "release_confirmed": true,
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 28,
+    "write_packets": 28,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 37,
+      "0x82": 278,
+      "0x83": 28
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "goal_triggered_activation_verified",
+        "time": 37762.9564745,
+        "raw": [
+          2017,
+          1307,
+          2791,
+          2815,
+          2047,
+          2029
+        ]
+      },
+      {
+        "event": "stop_hold",
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          2017,
+          1306,
+          2794,
+          2815,
+          2046,
+          2029
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "all_torque_enabled": false,
+        "all_expected_torque_states": true,
+        "fixed_wrist_torque_off": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      {
+        "event": "stop_hold",
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          2017,
+          1306,
+          2791,
+          2815,
+          2047,
+          2029
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "all_torque_enabled": false,
+        "all_expected_torque_states": true,
+        "fixed_wrist_torque_off": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      },
+      {
+        "event": "torque_released"
+      }
+    ],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  },
+  "write_frames_hex": [
+    "fffffe13832a0201e107021b0503e70a04ff0a06ed0739",
+    "fffffe13832a0201e107021b0503e80a04ff0a06ed0738",
+    "fffffe13832a0201e107021b0503e90a04ff0a06ed0737",
+    "fffffe13832a0201e107021b0503ea0a04ff0a06ed0736",
+    "fffffe13832a0201e107021b0503eb0a04ff0a06ed0735",
+    "fffffe13832a0201e107021a0503ea0a04ff0a06ed0737",
+    "fffffe13832a0201e107021a0503e90a04ff0a06ed0738",
+    "fffffe13832a0201e107021a0503e80a04ff0a06ed0739",
+    "fffffe13832a0201e107021a0503e70a04ff0a06ed073a",
+    "fffffe13832a0201e107021a0503e60a04ff0a06ed073b",
+    "fffffe13832a0201e107021a0503e50a04ff0a06ed073c",
+    "fffffe13832a0201e107021a0503e40a04ff0a06ed073d",
+    "fffffe13832a0201e107021a0503e30a04ff0a06ed073e",
+    "fffffe13832a0201e107021a0503e20a04ff0a06ed073f",
+    "fffffe13832a0201e107021a0503e10a04ff0a06ed0740",
+    "fffffe13832a0201e107021a0503e00a04ff0a06ed0741",
+    "fffffe13832a0201e107021a0503df0a04ff0a06ed0742",
+    "fffffe13832a0201e107021a0503de0a04ff0a06ed0743",
+    "fffffe13832a0201e107021a0503dd0a04ff0a06ed0744",
+    "fffffe13832a0201e107021a0503dc0a04ff0a06ed0745",
+    "fffffe13832a0201e107021a0503db0a04ff0a06ed0746",
+    "fffffe13832a0201e107021a0503da0a04ff0a06ed0747",
+    "fffffe13832a0201e107021a0503d90a04ff0a06ed0748",
+    "fffffe13832a0201e107021a0503d80a04ff0a06ed0749",
+    "fffffe13832a0201e107021a0503d70a04ff0a06ed074a",
+    "fffffe13832a0201e107021a0503d60a04ff0a06ed074b",
+    "fffffe13832a0201e107021a0503e70a04ff0a06ed073a",
+    "fffffe1083280101000200030004000500060030"
+  ]
+}
