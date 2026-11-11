@@ -1,0 +1,120 @@
+{
+  "status": "failed",
+  "mode": "dryrun",
+  "created_utc": "2026-11-10T05:42:33.153155+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "dryrun",
+    "seconds": "10.0",
+    "precision": "bf16",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "",
+    "gpu_memory_fraction": "0",
+    "output": "G:\\LeRobot\\policy_trial_kit\\results\\20261110_134232_967_GraspPredict_bf16"
+  },
+  "code_sha256": {
+    "bounded_run.py": "10e080dd3622f5872714e04310750a9ee7739196474f3e295d4fa0367538e0e8",
+    "control_core.py": "3e1cdb12bdc6226777d7fac911eae7a9c18cdd5360d3c5e8d5e4794b800a3a2f",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_control.py": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+    "test_grasp_limits.py": "52524232fffc350f1b9cd6ca1115d37f090683601a9c2ad7cb1026af8e80e4ce",
+    "test_integration.py": "528b4ee58bcf976084ac529a0df7f17d8f6e922c80c04763d7bc427da8cbbc0b",
+    "test_policy_startup.py": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686"
+  },
+  "bounds": {
+    "max_seconds": 10.0,
+    "max_excursion_deg": null,
+    "setpoint_speed_upper_deg_s": 5,
+    "max_raw_ticks_per_update": 1,
+    "gripper_fixed": false,
+    "max_loop_gap_ms": 150,
+    "max_input_age_ms": 250,
+    "max_new_result_age_ms": 1400,
+    "no_plan_stop_s": 2,
+    "workspace": "saved training calibration",
+    "gripper_speed_percent_s": 5,
+    "gripper_tracking_percent": 5
+  },
+  "limits": "Software bounded trial, not hard real-time or a collision-safe planner. Camera timestamps are decode times.",
+  "requested_mode": "grasp_dryrun",
+  "grasp_success_verified": false,
+  "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+  "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+  "port": "COM5",
+  "camera_config": {
+    "1": {
+      "id": "camera_1789706520471",
+      "name": "1",
+      "type": "opencv",
+      "camera_index": 2,
+      "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    },
+    "3": {
+      "id": "camera_1789706526304",
+      "name": "3",
+      "type": "opencv",
+      "camera_index": 1,
+      "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    }
+  },
+  "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\policy_trial_kit\\bounded_run.py\", line 308, in main\n    limiter = limiter_type(calibration, initial)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\policy_trial_kit\\control_core.py\", line 246, in __init__\n    raise ValueError('Initial position outside saved calibration range')\nValueError: Initial position outside saved calibration range\n",
+  "stop_reason": "exception",
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 0,
+    "write_packets": 0,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 3
+    },
+    "blocked_packets": 0,
+    "events": [],
+    "normal_robot_connect_called": false
+  },
+  "control_ticks": 0,
+  "timing": {
+    "interval_ms": null,
+    "work_ms": null,
+    "observation_age_ms": null
+  },
+  "rejected_chunks": [],
+  "clipped_ticks_per_joint": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "expired_plan_hold_ticks": 0
+}

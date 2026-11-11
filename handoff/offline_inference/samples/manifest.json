@@ -1,0 +1,295 @@
+{
+  "dataset_repo_id": "ChomCUI/yellow_cube_0918_v1",
+  "source_root": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/data/ChomCUI/yellow_cube_0918_v1",
+  "fps": 30,
+  "held_out_episodes": [
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66
+  ],
+  "sample_count": 33,
+  "sampling": "10%, 50%, 85% of each held-out episode; not full validation",
+  "state_action_names": [
+    "shoulder_pan.pos",
+    "shoulder_lift.pos",
+    "elbow_flex.pos",
+    "wrist_flex.pos",
+    "wrist_roll.pos",
+    "gripper.pos"
+  ],
+  "image_format": "RGB CHW uint8, decoded with training PyAV backend",
+  "samples": [
+    {
+      "file": "ep056_frame00048.npz",
+      "episode_index": 56,
+      "frame_index": 48,
+      "global_index": 30353,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "30bdc4457ed7836bc99d650bcac2228db7e05787a0a5de9f7a252492157f56f4"
+    },
+    {
+      "file": "ep056_frame00242.npz",
+      "episode_index": 56,
+      "frame_index": 242,
+      "global_index": 30547,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "656ede002f156a7c8848c27077d3b46e5fb21a3d9ffbf5c4273fe6646cca7e2c"
+    },
+    {
+      "file": "ep056_frame00411.npz",
+      "episode_index": 56,
+      "frame_index": 411,
+      "global_index": 30716,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "9a66dac423d4af853361f3f785d12b6fd1ea02c1445d3dc360e001aacaf7687e"
+    },
+    {
+      "file": "ep057_frame00050.npz",
+      "episode_index": 57,
+      "frame_index": 50,
+      "global_index": 30840,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "c7d834b251ebd073140b633cafe67ae70980614b78fd194870979f61c7d1b36c"
+    },
+    {
+      "file": "ep057_frame00250.npz",
+      "episode_index": 57,
+      "frame_index": 250,
+      "global_index": 31040,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "5d7071cdd477dd8b7dc0067d53fec07a49f100a768af65eae153551f69a7e91c"
+    },
+    {
+      "file": "ep057_frame00425.npz",
+      "episode_index": 57,
+      "frame_index": 425,
+      "global_index": 31215,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "9cae70e4a633f429bc49406ebce905f8982b75d972047f4fff8e2a9f92e61b26"
+    },
+    {
+      "file": "ep058_frame00045.npz",
+      "episode_index": 58,
+      "frame_index": 45,
+      "global_index": 31336,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "789f2ebf56a65a9869f4096976e502976710a03cbd42ca1c773258dd6c2dd662"
+    },
+    {
+      "file": "ep058_frame00228.npz",
+      "episode_index": 58,
+      "frame_index": 228,
+      "global_index": 31519,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "f0ccab938004d552182dd01364faa40e1e41ebcbd7430c47ddc2753d1acec357"
+    },
+    {
+      "file": "ep058_frame00388.npz",
+      "episode_index": 58,
+      "frame_index": 388,
+      "global_index": 31679,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "314ce0abdbc277449778dd377c6e33d4f1e151892113915d2dc8d5351ba32af9"
+    },
+    {
+      "file": "ep059_frame00055.npz",
+      "episode_index": 59,
+      "frame_index": 55,
+      "global_index": 31804,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "6eac880a76e9a0817a2a9719a6695d40981b86f2045be0d7a1306fbdd5e4fee8"
+    },
+    {
+      "file": "ep059_frame00278.npz",
+      "episode_index": 59,
+      "frame_index": 278,
+      "global_index": 32027,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "2858c7e6da3b28ade68206d2d5665097af8dfd80f1d0de7e396cfa8e15cd03b2"
+    },
+    {
+      "file": "ep059_frame00472.npz",
+      "episode_index": 59,
+      "frame_index": 472,
+      "global_index": 32221,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "33b61246a79773afc28c488d71e4c9caa6ec7aeb9dd72bf09f029ca28d90f6b0"
+    },
+    {
+      "file": "ep060_frame00050.npz",
+      "episode_index": 60,
+      "frame_index": 50,
+      "global_index": 32356,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "c6ad8257c12eefe655c27273f005d214c90a5561995ec8391e2851cb1dccc724"
+    },
+    {
+      "file": "ep060_frame00252.npz",
+      "episode_index": 60,
+      "frame_index": 252,
+      "global_index": 32558,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "488edba934d04235379de9053deb9afc31a937ac9ad04818bbf6b354ef28d764"
+    },
+    {
+      "file": "ep060_frame00428.npz",
+      "episode_index": 60,
+      "frame_index": 428,
+      "global_index": 32734,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "098fe36a74c8281f5c3573ba7040f6dea62452d664836825433b3539cc73a47f"
+    },
+    {
+      "file": "ep061_frame00038.npz",
+      "episode_index": 61,
+      "frame_index": 38,
+      "global_index": 32849,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "bf1a0ff7789ccaf1e63ef305b1ac012e3c7a8f97e00deefa740485dcd6801ba1"
+    },
+    {
+      "file": "ep061_frame00193.npz",
+      "episode_index": 61,
+      "frame_index": 193,
+      "global_index": 33004,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "07c8145f4242ccf499f7ba11a735c23ca44d13f0ee9dbc8db4e95793bfb8c9b9"
+    },
+    {
+      "file": "ep061_frame00328.npz",
+      "episode_index": 61,
+      "frame_index": 328,
+      "global_index": 33139,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "777f4f4ace2c6972968b0c01eb5a52e7ada7ad9391148b868c2142079a7e93db"
+    },
+    {
+      "file": "ep062_frame00042.npz",
+      "episode_index": 62,
+      "frame_index": 42,
+      "global_index": 33241,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "e775de96cdd3931aa9e91dc5ca73052ec90fa3d381edbb48a60499bd74c244f1"
+    },
+    {
+      "file": "ep062_frame00212.npz",
+      "episode_index": 62,
+      "frame_index": 212,
+      "global_index": 33411,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "e5974a5a166946e9b6cb077195ed7c1d6efda41dd65914b176bb0ccdef8a1cf1"
+    },
+    {
+      "file": "ep062_frame00360.npz",
+      "episode_index": 62,
+      "frame_index": 360,
+      "global_index": 33559,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "e07dd550bdb3513990c82eed0254634e3a1d9e259b60ac437296c6f139467cef"
+    },
+    {
+      "file": "ep063_frame00040.npz",
+      "episode_index": 63,
+      "frame_index": 40,
+      "global_index": 33664,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "35ac6cedae4dea77f3fc003c96c2ab776f4d4c03bacde9e97cd4386a23187d0c"
+    },
+    {
+      "file": "ep063_frame00204.npz",
+      "episode_index": 63,
+      "frame_index": 204,
+      "global_index": 33828,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "1496101ff92567991d6ec64ea841449a7759f6200c929d189697f7088a4910ff"
+    },
+    {
+      "file": "ep063_frame00346.npz",
+      "episode_index": 63,
+      "frame_index": 346,
+      "global_index": 33970,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "6c3254cb4d3f18f28529c3bd15e2495f925781cdd0c7b14998ce7af2ee29c4ef"
+    },
+    {
+      "file": "ep064_frame00049.npz",
+      "episode_index": 64,
+      "frame_index": 49,
+      "global_index": 34082,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "7add046e27e8d02a2333943e4957f7be4ae38f83d1e97d169b01d0c599a108bc"
+    },
+    {
+      "file": "ep064_frame00246.npz",
+      "episode_index": 64,
+      "frame_index": 246,
+      "global_index": 34279,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "2809ff5a4c29430c8ce77dd462e16e9ad18a7160d54bc46abcf56b6ff960a94c"
+    },
+    {
+      "file": "ep064_frame00418.npz",
+      "episode_index": 64,
+      "frame_index": 418,
+      "global_index": 34451,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "8504c254d4d6ad97cd9575afd5c6a27720a92caa4b26ee50b757ec019c2354f4"
+    },
+    {
+      "file": "ep065_frame00060.npz",
+      "episode_index": 65,
+      "frame_index": 60,
+      "global_index": 34586,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "d4710d6c4cd8fe5e4fe73c7801a531e0d636b6bdb8cbae794b2c6fc1e584e610"
+    },
+    {
+      "file": "ep065_frame00301.npz",
+      "episode_index": 65,
+      "frame_index": 301,
+      "global_index": 34827,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "f0cf5a26a6013011d857d403dd3a71f0b3187e895e136d3517c7670000726f63"
+    },
+    {
+      "file": "ep065_frame00512.npz",
+      "episode_index": 65,
+      "frame_index": 512,
+      "global_index": 35038,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "09c52f1894e71f9b944b3b2228cbc4a755eb81131cdfd83a1075732e68978c55"
+    },
+    {
+      "file": "ep066_frame00052.npz",
+      "episode_index": 66,
+      "frame_index": 52,
+      "global_index": 35182,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "c357fa0c4fe1deb328fbf0b6b2d5013a74658b1a2a70edb8da292b63e316330f"
+    },
+    {
+      "file": "ep066_frame00260.npz",
+      "episode_index": 66,
+      "frame_index": 260,
+      "global_index": 35390,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "32121598a26837c5f9678e5729a98351fdee195f2643c207976131008b5e2ed3"
+    },
+    {
+      "file": "ep066_frame00442.npz",
+      "episode_index": 66,
+      "frame_index": 442,
+      "global_index": 35572,
+      "task": "Pick up the yellow cube and place it into the mesh container.",
+      "sha256": "4b0ccc5cf1045cbc272a122f8d7d8ab63869caeaa7a8689e1ad4301766957740"
+    }
+  ]
+}

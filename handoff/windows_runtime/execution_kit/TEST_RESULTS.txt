@@ -1,0 +1,23 @@
+test_alignment_order_and_hold (test_control.TestArm.test_alignment_order_and_hold) ... ok
+test_bad_alignment_never_enables (test_control.TestArm.test_bad_alignment_never_enables) ... ok
+test_readonly_has_no_writes (test_control.TestArm.test_readonly_has_no_writes) ... ok
+test_release_only_torque (test_control.TestArm.test_release_only_torque) ... ok
+test_stop_before_enable (test_control.TestArm.test_stop_before_enable) ... ok
+test_wrong_mode_and_existing_torque_never_enable (test_control.TestArm.test_wrong_mode_and_existing_torque_never_enable) ... ok
+test_exact_single_use_and_readonly (test_control.TestGate.test_exact_single_use_and_readonly) ... ok
+test_real_sdk_packets (test_control.TestGate.test_real_sdk_packets) ... ok
+test_unauthorized_all_opcodes (test_control.TestGate.test_unauthorized_all_opcodes) ... ok
+test_age_skips_old_actions_and_expires (test_control.TestLimits.test_age_skips_old_actions_and_expires) ... ok
+test_bad_actions_stall_tracking_and_calibration (test_control.TestLimits.test_bad_actions_stall_tracking_and_calibration) ... ok
+test_limits_quantization_and_fixed_gripper (test_control.TestLimits.test_limits_quantization_and_fixed_gripper) ... ok
+test_shared_memory_latest_and_nonblocking (test_control.TestLimits.test_shared_memory_latest_and_nonblocking) ... ok
+test_units_match_lerobot (test_control.TestLimits.test_units_match_lerobot) ... ok
+test_dryrun_never_writes (test_integration.TestMain.test_dryrun_never_writes) ... ok
+test_execute_completion_holds (test_integration.TestMain.test_execute_completion_holds) ... ok
+test_fault_holds_before_teardown (test_integration.TestMain.test_fault_holds_before_teardown) ... ok
+test_release_skips_model_and_cameras (test_integration.TestMain.test_release_skips_model_and_cameras) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 4.802s
+
+OK

@@ -1,0 +1,134 @@
+{
+  "created_utc": "2026-09-19T04:07:52.894458+00:00",
+  "unit_tests": {
+    "count": 8,
+    "status": "passed",
+    "coverage": [
+      "all 256 motor opcodes",
+      "real Feetech SDK 1.0.0 read/write packet interception",
+      "calibration mismatch",
+      "disconnect without torque changes",
+      "stale camera/state rejection",
+      "headless HTTP preview and camera role/color order"
+    ]
+  },
+  "windows_hardware_test": "not performed; user will test actual cameras/COM port",
+  "powershell_execution_on_windows": "not performed on developer Linux machine",
+  "python_syntax_check": "passed",
+  "replay_tests": {
+    "bf16": {
+      "status": "passed",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "observations": 3,
+      "warmup": 5,
+      "strict_load": true,
+      "unnormalizer_probe": true,
+      "timing_summary": {
+        "chunk_ms": {
+          "count": 3,
+          "p50": 267.89679378271103,
+          "p95": 1190.509606152773,
+          "max": 1293.0221408605576,
+          "mean": 602.3838197191557
+        },
+        "pipeline_ms": {
+          "count": 3,
+          "p50": 315.8230185508728,
+          "p95": 1203.1920369714499,
+          "max": 1301.7885945737362,
+          "mean": 631.4866878092289
+        },
+        "loop_work_ms": {
+          "count": 3,
+          "p50": 321.91699743270874,
+          "p95": 1307.2312030941248,
+          "max": 1416.7105592787266,
+          "mean": 674.3657514452934
+        },
+        "state_age_ms": {
+          "count": 3,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        "pair_timestamp_skew_ms": {
+          "count": 3,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        "input_age_at_result_ms": {
+          "count": 3,
+          "p50": 316.2124827504158,
+          "p95": 1203.6034516990185,
+          "max": 1302.2024482488632,
+          "mean": 631.8582991758982
+        }
+      },
+      "return_zip_crc": "passed",
+      "gpu_telemetry": "recorded"
+    },
+    "fp16": {
+      "status": "passed",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "observations": 3,
+      "warmup": 5,
+      "strict_load": true,
+      "unnormalizer_probe": true,
+      "timing_summary": {
+        "chunk_ms": {
+          "count": 3,
+          "p50": 473.7715981900692,
+          "p95": 1047.8230107575655,
+          "max": 1111.6065010428429,
+          "mean": 656.6545243064562
+        },
+        "pipeline_ms": {
+          "count": 3,
+          "p50": 481.2791980803013,
+          "p95": 1099.8931866139174,
+          "max": 1168.6280742287636,
+          "mean": 680.945078531901
+        },
+        "loop_work_ms": {
+          "count": 3,
+          "p50": 486.90204322338104,
+          "p95": 1106.4255990087986,
+          "max": 1175.2615496516228,
+          "mean": 700.42551557223
+        },
+        "state_age_ms": {
+          "count": 3,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        "pair_timestamp_skew_ms": {
+          "count": 3,
+          "p50": 0.0,
+          "p95": 0.0,
+          "max": 0.0,
+          "mean": 0.0
+        },
+        "input_age_at_result_ms": {
+          "count": 3,
+          "p50": 481.67886584997177,
+          "p95": 1100.293169543147,
+          "max": 1169.0280921757221,
+          "mean": 681.3427433371544
+        }
+      },
+      "return_zip_crc": "passed",
+      "gpu_telemetry": "recorded"
+    }
+  },
+  "code_sha256": {
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "test_readonly.py": "a3abeab0124125e2fe5e98f5780db48f7a122602e92c4cf32fc4cb1d6a0b7ff7",
+    "Run-LiveReadOnly.ps1": "705a240eb8cd4e3bffd3ed7503eaec383f9284d97e430a4e70d4cca56b7409e6",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  }
+}

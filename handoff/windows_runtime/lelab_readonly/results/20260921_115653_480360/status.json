@@ -1,0 +1,148 @@
+{
+  "status": "failed",
+  "mode": "live",
+  "checkpoint": "010000",
+  "precision": "bf16",
+  "observations": 0,
+  "predictions": 0,
+  "motor_action_execution": false,
+  "created_at": 1789963014.8046584,
+  "source_sha256": {
+    "G:\\LeRobot\\source\\lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80\\lelab\\readonly_worker.py": "d438d67e9b04d9d63ae9bc81f266c79d4f14eb337ee6cb247ea0d31c47f26d81",
+    "G:\\LeRobot\\live_readonly_kit\\live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "G:\\LeRobot\\live_readonly_kit\\readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  },
+  "configuration": {
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+    "cameras": {
+      "1": {
+        "id": "camera_1789706520471",
+        "name": "1",
+        "type": "opencv",
+        "camera_index": 2,
+        "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      },
+      "3": {
+        "id": "camera_1789706526304",
+        "name": "3",
+        "type": "opencv",
+        "camera_index": 1,
+        "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      }
+    },
+    "port": "COM5",
+    "rename_map": {
+      "observation.images.3": "observation.images.camera1",
+      "observation.images.1": "observation.images.camera2"
+    },
+    "software_timestamp_note": "Camera timestamp after decode, not hardware exposure time; no hardware synchronization claim."
+  },
+  "opened_cameras": {
+    "3": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    },
+    "1": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    }
+  },
+  "latest": {
+    "state": [
+      0.35164836049079895,
+      -102.19779968261719,
+      96.70330047607422,
+      64.21977996826172,
+      0.21978022158145905,
+      1.244813323020935
+    ],
+    "camera_age_ms": {
+      "3": 11.920200020540506,
+      "1": 10.339500033296645
+    },
+    "state_age_ms": 10.42555004823953,
+    "image_quality": {
+      "3": {
+        "mean": 145.8882293701172,
+        "p99": 253.6666717529297,
+        "std": 57.213871002197266,
+        "near_black": false
+      },
+      "1": {
+        "mean": 137.21072387695312,
+        "p99": 233.0,
+        "std": 68.62007141113281,
+        "near_black": false
+      }
+    },
+    "updated_at": 1789963041.4652462
+  },
+  "message": "正在核对完整 10k 权重并加载 BF16 模型。",
+  "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\source\\lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80\\lelab\\readonly_worker.py\", line 94, in run\n    engine = Engine(args, report)\n             ^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\live_readonly_kit\\live_probe.py\", line 262, in __init__\n    from lerobot.policies.smolvla.modeling_smolvla import SmolVLAPolicy\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\policies\\__init__.py\", line 21, in <module>\n    from .factory import get_policy_class, make_policy, make_policy_config, make_pre_post_processors\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\policies\\factory.py\", line 53, in <module>\n    from .groot.configuration_groot import GrootConfig\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\policies\\groot\\__init__.py\", line 19, in <module>\n    from .processor_groot import make_groot_pre_post_processors\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\policies\\groot\\processor_groot.py\", line 49, in <module>\n    from lerobot.datasets.lerobot_dataset import LeRobotDataset\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\datasets\\__init__.py\", line 23, in <module>\n    from .aggregate import aggregate_datasets\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\datasets\\aggregate.py\", line 23, in <module>\n    import datasets\n  File \"G:\\LeRobot\\source\\lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80\\lelab\\datasets.py\", line 23, in <module>\n    from .utils.hf_auth import cached_whoami, shared_hf_api\nImportError: attempted relative import with no known parent package\n",
+  "read_only_bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 723
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  },
+  "camera_capture": {
+    "3": {
+      "frames": 1187,
+      "software_delivery_fps": 29.852374320419855
+    },
+    "1": {
+      "frames": 1059,
+      "software_delivery_fps": 29.77868542909332
+    }
+  },
+  "state_reads": {
+    "count": 721,
+    "read_latency_ms": {
+      "count": 721,
+      "p50": 1.2639999622479081,
+      "p95": 1.6411999822594225,
+      "max": 5.140200024470687,
+      "mean": 1.3336126204003966
+    }
+  },
+  "zero_writes_confirmed": true,
+  "torque_off_confirmed": true,
+  "finished_at": 1789963076.2129638
+}

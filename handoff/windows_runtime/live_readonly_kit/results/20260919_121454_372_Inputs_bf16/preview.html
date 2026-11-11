@@ -1,0 +1,5 @@
+<!doctype html><meta charset="utf-8"><title>SO101 read-only preview</title>
+<style>body{font:18px sans-serif;margin:24px;background:#161b22;color:#eee}img{max-width:100%}pre{white-space:pre-wrap}</style>
+<h2>Read-only input preview — no motor commands</h2><p>Left: EXTERNAL camera 3 → camera1. Right: WRIST camera 1 → camera2.</p>
+<img id="view"><pre id="state">Waiting for inputs...</pre><p>Stop in PowerShell with Ctrl+C. Closing this page does not stop the probe.</p>
+<script>setInterval(async()=>{document.getElementById('view').src='latest_preview.jpg?t='+Date.now();try{let r=await fetch('preview_status.json?t='+Date.now());document.getElementById('state').textContent=JSON.stringify(await r.json(),null,2)}catch(e){}},1000)</script>

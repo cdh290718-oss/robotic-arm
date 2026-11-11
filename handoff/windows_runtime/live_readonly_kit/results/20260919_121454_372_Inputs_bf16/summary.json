@@ -1,0 +1,213 @@
+{
+  "status": "passed",
+  "mode": "inputs",
+  "created_utc": "2026-09-19T04:14:54.651611+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "inputs",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "None",
+    "precision": "bf16",
+    "seconds": "20.0",
+    "max_chunks": "0",
+    "no_browser": "False",
+    "gpu_memory_fraction": "0",
+    "output": "G:\\LeRobot\\live_readonly_kit\\results\\20260919_121454_372_Inputs_bf16"
+  },
+  "source_sha256": {
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_readonly.py": "a3abeab0124125e2fe5e98f5780db48f7a122602e92c4cf32fc4cb1d6a0b7ff7"
+  },
+  "motor_action_execution": false,
+  "power_start": {
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 100,
+    "SystemStatusFlag": 0,
+    "BatteryLifeTime": 4294967295,
+    "BatteryFullLifeTime": 4294967295
+  },
+  "power_scheme": {
+    "returncode": 0,
+    "stdout": "��Դ���� GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (ƽ��)",
+    "stderr": ""
+  },
+  "limits": "Read-only predictions, no action execution. Camera timestamps are software arrival times, not exposure times. Replay input ages are artificial.",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "lerobot": "0.6.0",
+    "opencv-python-headless": "4.13.0.92",
+    "feetech-servo-sdk": "1.0.0",
+    "pyserial": "3.5"
+  },
+  "configuration": {
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+    "cameras": {
+      "1": {
+        "id": "camera_1789706520471",
+        "name": "1",
+        "type": "opencv",
+        "camera_index": 2,
+        "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      },
+      "3": {
+        "id": "camera_1789706526304",
+        "name": "3",
+        "type": "opencv",
+        "camera_index": 1,
+        "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      }
+    },
+    "port": "COM5",
+    "rename_map": {
+      "observation.images.3": "observation.images.camera1",
+      "observation.images.1": "observation.images.camera2"
+    },
+    "software_timestamp_note": "Camera timestamp after decode, not hardware exposure time; no hardware synchronization claim."
+  },
+  "opened_cameras": {
+    "3": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    },
+    "1": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    }
+  },
+  "elapsed_capture_seconds": 20.01855079998495,
+  "read_only_bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 497
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  },
+  "camera_capture": {
+    "3": {
+      "frames": 733,
+      "software_delivery_fps": 30.056729243196553
+    },
+    "1": {
+      "frames": 644,
+      "software_delivery_fps": 30.00888468336688
+    }
+  },
+  "state_reads": {
+    "count": 495,
+    "read_latency_ms": {
+      "count": 495,
+      "p50": 1.3114000030327588,
+      "p95": 1.7152700078440821,
+      "max": 3.2614999799989164,
+      "mean": 1.3462577777740667
+    }
+  },
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/19 12:14:54.749, P8, 0 %, 2162 MiB, 5649 MiB, 7.66 W, [N/A], 47, 720 MHz, 405 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "power_end": {
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 100,
+    "SystemStatusFlag": 0,
+    "BatteryLifeTime": 4294967295,
+    "BatteryFullLifeTime": 4294967295
+  },
+  "observations": 199,
+  "timing_summary": {
+    "chunk_ms": null,
+    "pipeline_ms": null,
+    "loop_work_ms": {
+      "count": 199,
+      "p50": 9.029700013343245,
+      "p95": 16.30664999829605,
+      "max": 29.22169998055324,
+      "mean": 10.011914070056816
+    },
+    "state_age_ms": {
+      "count": 199,
+      "p50": 21.170550025999546,
+      "p95": 44.25695500103757,
+      "max": 49.203200003830716,
+      "mean": 22.054124623829566
+    },
+    "pair_timestamp_skew_ms": {
+      "count": 199,
+      "p50": 7.649200008017942,
+      "p95": 27.59444001421798,
+      "max": 30.08259998750873,
+      "mean": 11.927052764730977
+    },
+    "input_age_at_result_ms": null
+  },
+  "camera_age_ms": {
+    "1": {
+      "count": 199,
+      "p50": 16.337300010491163,
+      "p95": 31.29201001720503,
+      "max": 47.81409999122843,
+      "mean": 16.581513568227784
+    },
+    "3": {
+      "count": 199,
+      "p50": 16.981499997200444,
+      "p95": 32.28388001734856,
+      "max": 50.99410002003424,
+      "mean": 17.391642714276134
+    }
+  },
+  "nvidia_smi_after": {
+    "returncode": 0,
+    "stdout": "memory.used [MiB], memory.free [MiB]\n2137 MiB, 5674 MiB\n",
+    "stderr": ""
+  }
+}

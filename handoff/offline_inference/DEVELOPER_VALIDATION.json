@@ -1,0 +1,647 @@
+{
+  "created_utc": "2026-09-19T02:53:15.794751+00:00",
+  "developer_platform": {
+    "python": "3.12.13 (main, Apr 14 2026, 14:29:00) [Clang 22.1.3 ]",
+    "executable": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/venv/bin/python",
+    "platform": "Linux-5.4.250-2-velinux1u1-amd64-x86_64-with-glibc2.31",
+    "hf_home": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/cache/huggingface",
+    "packages": {
+      "torch": "2.7.1+cu118",
+      "torchvision": "0.22.1+cu118",
+      "torchcodec": "0.4.0",
+      "lerobot": "0.6.0",
+      "transformers": "5.5.4",
+      "numpy": "2.2.6",
+      "safetensors": "0.8.0",
+      "huggingface_hub": "1.32.0",
+      "av": "15.1.0",
+      "accelerate": "1.15.0"
+    },
+    "pip_check": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/venv/bin/python: No module named pip\n"
+    },
+    "nvidia_smi": {
+      "returncode": 0,
+      "stdout": "name, driver_version, memory.total [MiB], memory.used [MiB], memory.free [MiB]\nNVIDIA A100-SXM4-80GB, 535.129.03, 81920 MiB, 27230 MiB, 53819 MiB\n",
+      "stderr": ""
+    },
+    "lerobot_source": [
+      "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/venv/lib/python3.12/site-packages/lerobot"
+    ],
+    "cuda_available": true,
+    "cuda_runtime": "11.8",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "capability": [
+      8,
+      0
+    ],
+    "bf16_supported": true,
+    "cuda_kernel_ok": true
+  },
+  "validation": "Both checkpoints x FP16/BF16; all 33 held-out inputs; strict model load; saved processor probes; finite outputs; report/NPZ/ZIP generation.",
+  "sample_hashes_verified": true,
+  "checkpoint_hashes_verified": {
+    "006000": true,
+    "010000": true
+  },
+  "missing_checkpoint_diagnostic_test": "passed",
+  "python_syntax_check": "passed",
+  "windows_powershell_execution": "not performed on developer Linux machine",
+  "windows_rtx5060_performance": "not measured",
+  "training_or_robot_operations": "none",
+  "runs": [
+    {
+      "status": "passed",
+      "checkpoint": "006000",
+      "amp": "fp16",
+      "torch": "2.7.1+cu118",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "load_seconds": 20.722237803041935,
+      "load_memory": {
+        "peak_allocated_mib": 884.05810546875,
+        "peak_reserved_mib": 906.0,
+        "current_allocated_mib": 883.32666015625,
+        "device_free_mib": 52492.1875,
+        "device_total_mib": 81050.625
+      },
+      "cold_first_chunk_ms": {
+        "pre_ms": 43.622519820928574,
+        "chunk_ms": 1639.5248621702194,
+        "post_ms": 2.537611871957779,
+        "pipeline_ms": 1685.6849938631058
+      },
+      "load_and_cold_memory": {
+        "peak_allocated_mib": 934.8154296875,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52300.1875,
+        "device_total_mib": 81050.625
+      },
+      "steady_memory": {
+        "peak_allocated_mib": 935.5234375,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52300.1875,
+        "device_total_mib": 81050.625
+      },
+      "warmup": 1,
+      "iterations": 33,
+      "seed": 20260919,
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 11.375397443771362,
+          "p95": 95.34554183483124,
+          "mean": 34.82404689897191
+        },
+        "chunk_ms": {
+          "p50": 705.8048136532307,
+          "p95": 1190.8500380814075,
+          "mean": 757.5096835692724
+        },
+        "post_ms": {
+          "p50": 0.2051927149295807,
+          "p95": 2.5132104754447937,
+          "mean": 0.5088525288032762
+        },
+        "pipeline_ms": {
+          "p50": 741.6596040129662,
+          "p95": 1238.4719267487524,
+          "mean": 792.8425829970475
+        }
+      },
+      "saved_unnormalizer_probe_passed": true,
+      "sample_count": 33,
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "valid_reference_steps": 1650,
+      "held_out_normalized_action_mse": 0.30931150913238525,
+      "held_out_mae_per_joint": {
+        "shoulder_pan.pos": 2.901594400405884,
+        "shoulder_lift.pos": 10.469524383544922,
+        "elbow_flex.pos": 11.034065246582031,
+        "wrist_flex.pos": 5.17626953125,
+        "wrist_roll.pos": 3.8906571865081787,
+        "gripper.pos": 1.9237298965454102
+      },
+      "prediction_min_per_joint": [
+        -16.02772331237793,
+        -115.066162109375,
+        -49.77667236328125,
+        46.59356689453125,
+        -7.893347263336182,
+        -0.06836175918579102
+      ],
+      "prediction_max_per_joint": [
+        19.018070220947266,
+        42.24599838256836,
+        101.08628845214844,
+        100.42545318603516,
+        20.63031578063965,
+        26.84324073791504
+      ],
+      "all_actions_finite": true,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n28750 MiB, 52300 MiB\n",
+        "stderr": ""
+      },
+      "limits": "Offline 33-frame subset, not full validation loss or grasp success; timing excludes camera/serial/video I/O. Same seed per sample, each measured call generates a fresh full chunk.",
+      "returncode": 0,
+      "folder": "006000_fp16"
+    },
+    {
+      "status": "passed",
+      "checkpoint": "006000",
+      "amp": "bf16",
+      "torch": "2.7.1+cu118",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "load_seconds": 22.867953058332205,
+      "load_memory": {
+        "peak_allocated_mib": 884.05810546875,
+        "peak_reserved_mib": 906.0,
+        "current_allocated_mib": 883.32666015625,
+        "device_free_mib": 52492.1875,
+        "device_total_mib": 81050.625
+      },
+      "cold_first_chunk_ms": {
+        "pre_ms": 33.668916672468185,
+        "chunk_ms": 2387.927945703268,
+        "post_ms": 0.21193549036979675,
+        "pipeline_ms": 2421.808797866106
+      },
+      "load_and_cold_memory": {
+        "peak_allocated_mib": 926.1982421875,
+        "peak_reserved_mib": 956.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52346.1875,
+        "device_total_mib": 81050.625
+      },
+      "steady_memory": {
+        "peak_allocated_mib": 927.265625,
+        "peak_reserved_mib": 976.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52326.1875,
+        "device_total_mib": 81050.625
+      },
+      "warmup": 1,
+      "iterations": 33,
+      "seed": 20260919,
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 11.508826166391373,
+          "p95": 89.18211162090302,
+          "mean": 33.77771637204921
+        },
+        "chunk_ms": {
+          "p50": 613.7023270130157,
+          "p95": 1107.6885521411896,
+          "mean": 655.6118008765308
+        },
+        "post_ms": {
+          "p50": 0.2285093069076538,
+          "p95": 2.6427850127220154,
+          "mean": 0.6711398336020383
+        },
+        "pipeline_ms": {
+          "p50": 693.8142068684101,
+          "p95": 1181.2668308615685,
+          "mean": 690.0606570821819
+        }
+      },
+      "saved_unnormalizer_probe_passed": true,
+      "sample_count": 33,
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "valid_reference_steps": 1650,
+      "held_out_normalized_action_mse": 0.3095639944076538,
+      "held_out_mae_per_joint": {
+        "shoulder_pan.pos": 2.900972604751587,
+        "shoulder_lift.pos": 10.501081466674805,
+        "elbow_flex.pos": 11.06436538696289,
+        "wrist_flex.pos": 5.183103084564209,
+        "wrist_roll.pos": 3.89198637008667,
+        "gripper.pos": 1.9298851490020752
+      },
+      "prediction_min_per_joint": [
+        -16.032001495361328,
+        -115.10205841064453,
+        -49.931785583496094,
+        46.63177490234375,
+        -7.890234470367432,
+        -0.0469660758972168
+      ],
+      "prediction_max_per_joint": [
+        18.895978927612305,
+        42.24599838256836,
+        101.09146118164062,
+        100.34054565429688,
+        20.65574073791504,
+        26.88172721862793
+      ],
+      "all_actions_finite": true,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n28724 MiB, 52326 MiB\n",
+        "stderr": ""
+      },
+      "limits": "Offline 33-frame subset, not full validation loss or grasp success; timing excludes camera/serial/video I/O. Same seed per sample, each measured call generates a fresh full chunk.",
+      "returncode": 0,
+      "folder": "006000_bf16"
+    },
+    {
+      "status": "passed",
+      "checkpoint": "010000",
+      "amp": "fp16",
+      "torch": "2.7.1+cu118",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "load_seconds": 27.70594273880124,
+      "load_memory": {
+        "peak_allocated_mib": 884.05810546875,
+        "peak_reserved_mib": 906.0,
+        "current_allocated_mib": 883.32666015625,
+        "device_free_mib": 52492.1875,
+        "device_total_mib": 81050.625
+      },
+      "cold_first_chunk_ms": {
+        "pre_ms": 98.49634394049644,
+        "chunk_ms": 2890.9221179783344,
+        "post_ms": 0.2735555171966553,
+        "pipeline_ms": 2989.6920174360275
+      },
+      "load_and_cold_memory": {
+        "peak_allocated_mib": 934.8154296875,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52300.1875,
+        "device_total_mib": 81050.625
+      },
+      "steady_memory": {
+        "peak_allocated_mib": 935.5234375,
+        "peak_reserved_mib": 1002.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52300.1875,
+        "device_total_mib": 81050.625
+      },
+      "warmup": 1,
+      "iterations": 33,
+      "seed": 20260919,
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 12.301947921514511,
+          "p95": 136.49854734539974,
+          "mean": 44.03093829751015
+        },
+        "chunk_ms": {
+          "p50": 788.5815277695656,
+          "p95": 1192.7864387631416,
+          "mean": 763.3990996489019
+        },
+        "post_ms": {
+          "p50": 0.20975247025489807,
+          "p95": 2.5772958993911743,
+          "mean": 0.5994958407951124
+        },
+        "pipeline_ms": {
+          "p50": 801.0309748351574,
+          "p95": 1296.3514730334282,
+          "mean": 808.0295337872071
+        }
+      },
+      "saved_unnormalizer_probe_passed": true,
+      "sample_count": 33,
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "valid_reference_steps": 1650,
+      "held_out_normalized_action_mse": 0.2450251281261444,
+      "held_out_mae_per_joint": {
+        "shoulder_pan.pos": 2.460146188735962,
+        "shoulder_lift.pos": 9.015486717224121,
+        "elbow_flex.pos": 8.828950881958008,
+        "wrist_flex.pos": 4.16284704208374,
+        "wrist_roll.pos": 3.6743662357330322,
+        "gripper.pos": 1.6762340068817139
+      },
+      "prediction_min_per_joint": [
+        -15.879047393798828,
+        -113.32530212402344,
+        -55.705780029296875,
+        48.114830017089844,
+        -6.850174427032471,
+        0.15812015533447266
+      ],
+      "prediction_max_per_joint": [
+        17.870189666748047,
+        44.12801742553711,
+        96.50987243652344,
+        102.83683776855469,
+        19.652767181396484,
+        27.695819854736328
+      ],
+      "all_actions_finite": true,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n28750 MiB, 52300 MiB\n",
+        "stderr": ""
+      },
+      "limits": "Offline 33-frame subset, not full validation loss or grasp success; timing excludes camera/serial/video I/O. Same seed per sample, each measured call generates a fresh full chunk.",
+      "returncode": 0,
+      "folder": "010000_fp16"
+    },
+    {
+      "status": "passed",
+      "checkpoint": "010000",
+      "amp": "bf16",
+      "torch": "2.7.1+cu118",
+      "gpu": "NVIDIA A100-SXM4-80GB",
+      "load_seconds": 12.243391390889883,
+      "load_memory": {
+        "peak_allocated_mib": 884.05810546875,
+        "peak_reserved_mib": 906.0,
+        "current_allocated_mib": 883.32666015625,
+        "device_free_mib": 52492.1875,
+        "device_total_mib": 81050.625
+      },
+      "cold_first_chunk_ms": {
+        "pre_ms": 86.69645711779594,
+        "chunk_ms": 1913.1578467786312,
+        "post_ms": 0.20558759570121765,
+        "pipeline_ms": 2000.0598914921284
+      },
+      "load_and_cold_memory": {
+        "peak_allocated_mib": 926.1982421875,
+        "peak_reserved_mib": 956.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52346.1875,
+        "device_total_mib": 81050.625
+      },
+      "steady_memory": {
+        "peak_allocated_mib": 927.265625,
+        "peak_reserved_mib": 976.0,
+        "current_allocated_mib": 898.57275390625,
+        "device_free_mib": 52326.1875,
+        "device_total_mib": 81050.625
+      },
+      "warmup": 1,
+      "iterations": 33,
+      "seed": 20260919,
+      "latency_ms": {
+        "pre_ms": {
+          "p50": 10.881472378969193,
+          "p95": 89.65727835893631,
+          "mean": 28.105246975566402
+        },
+        "chunk_ms": {
+          "p50": 695.4915411770344,
+          "p95": 941.7497754096984,
+          "mean": 673.8216857792753
+        },
+        "post_ms": {
+          "p50": 0.1915469765663147,
+          "p95": 1.99386030435562,
+          "mean": 0.44655054807662964
+        },
+        "pipeline_ms": {
+          "p50": 715.0796838104725,
+          "p95": 991.0013429820538,
+          "mean": 702.3734833029183
+        }
+      },
+      "saved_unnormalizer_probe_passed": true,
+      "sample_count": 33,
+      "sample_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "valid_reference_steps": 1650,
+      "held_out_normalized_action_mse": 0.24539804458618164,
+      "held_out_mae_per_joint": {
+        "shoulder_pan.pos": 2.4696238040924072,
+        "shoulder_lift.pos": 9.040593147277832,
+        "elbow_flex.pos": 8.866355895996094,
+        "wrist_flex.pos": 4.173893928527832,
+        "wrist_roll.pos": 3.6692092418670654,
+        "gripper.pos": 1.6795949935913086
+      },
+      "prediction_min_per_joint": [
+        -15.912205696105957,
+        -113.13984680175781,
+        -55.47374725341797,
+        48.17144012451172,
+        -6.862463474273682,
+        0.14507436752319336
+      ],
+      "prediction_max_per_joint": [
+        17.867782592773438,
+        44.05922317504883,
+        96.36759948730469,
+        102.74061584472656,
+        19.591848373413086,
+        27.75374412536621
+      ],
+      "all_actions_finite": true,
+      "chunk_shape": [
+        1,
+        50,
+        6
+      ],
+      "nvidia_smi_after": {
+        "returncode": 0,
+        "stdout": "memory.used [MiB], memory.free [MiB]\n28724 MiB, 52326 MiB\n",
+        "stderr": ""
+      },
+      "limits": "Offline 33-frame subset, not full validation loss or grasp success; timing excludes camera/serial/video I/O. Same seed per sample, each measured call generates a fresh full chunk.",
+      "returncode": 0,
+      "folder": "010000_bf16"
+    }
+  ],
+  "fp16_vs_bf16": {
+    "006000": {
+      "mean_abs_per_joint": [
+        0.03766326978802681,
+        0.11749041825532913,
+        0.0965535119175911,
+        0.03977139666676521,
+        0.026136040687561035,
+        0.018436290323734283
+      ],
+      "max_abs_per_joint": [
+        0.3166046142578125,
+        0.6879692077636719,
+        0.492095947265625,
+        0.25189208984375,
+        0.10212993621826172,
+        0.27886295318603516
+      ]
+    },
+    "010000": {
+      "mean_abs_per_joint": [
+        0.0329723097383976,
+        0.1249803677201271,
+        0.09594443440437317,
+        0.04754326120018959,
+        0.0257736649364233,
+        0.01928812451660633
+      ],
+      "max_abs_per_joint": [
+        0.28408175706863403,
+        0.850982666015625,
+        0.5480880737304688,
+        0.312744140625,
+        0.1864614486694336,
+        0.1940622329711914
+      ]
+    }
+  },
+  "code_sha256": {
+    "Run-Offline.ps1": "4eaf13a6b78ce8507ffe180f0f749b553b81df9d93acc5076166ee0e6259995f",
+    "export_samples.py": "9dc5bedf521630b017584e98f1db86fe4caaf1072b98695a3a9c1debf1f8c542",
+    "offline_eval.py": "a00b24c4c89083099036c8345dd549cef871302bd55bb2acd2fd8d582c680b46"
+  }
+}

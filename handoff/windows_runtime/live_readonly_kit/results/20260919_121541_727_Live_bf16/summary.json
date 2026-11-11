@@ -1,0 +1,247 @@
+{
+  "status": "passed",
+  "mode": "live",
+  "created_utc": "2026-09-19T04:15:41.957639+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "live",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "None",
+    "precision": "bf16",
+    "seconds": "60.0",
+    "max_chunks": "0",
+    "no_browser": "False",
+    "gpu_memory_fraction": "0",
+    "output": "G:\\LeRobot\\live_readonly_kit\\results\\20260919_121541_727_Live_bf16"
+  },
+  "source_sha256": {
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_readonly.py": "a3abeab0124125e2fe5e98f5780db48f7a122602e92c4cf32fc4cb1d6a0b7ff7"
+  },
+  "motor_action_execution": false,
+  "power_start": {
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 100,
+    "SystemStatusFlag": 0,
+    "BatteryLifeTime": 4294967295,
+    "BatteryFullLifeTime": 4294967295
+  },
+  "power_scheme": {
+    "returncode": 0,
+    "stdout": "��Դ���� GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (ƽ��)",
+    "stderr": ""
+  },
+  "limits": "Read-only predictions, no action execution. Camera timestamps are software arrival times, not exposure times. Replay input ages are artificial.",
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "lerobot": "0.6.0",
+    "opencv-python-headless": "4.13.0.92",
+    "feetech-servo-sdk": "1.0.0",
+    "pyserial": "3.5"
+  },
+  "model": {
+    "checkpoint": "010000",
+    "precision": "bf16",
+    "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+    "load_seconds": 17.190150200010976,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.10.0+cu128",
+    "strict_load": true,
+    "unnormalizer_probe": true,
+    "warmup_calls": 5
+  },
+  "configuration": {
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+    "cameras": {
+      "1": {
+        "id": "camera_1789706520471",
+        "name": "1",
+        "type": "opencv",
+        "camera_index": 2,
+        "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      },
+      "3": {
+        "id": "camera_1789706526304",
+        "name": "3",
+        "type": "opencv",
+        "camera_index": 1,
+        "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      }
+    },
+    "port": "COM5",
+    "rename_map": {
+      "observation.images.3": "observation.images.camera1",
+      "observation.images.1": "observation.images.camera2"
+    },
+    "software_timestamp_note": "Camera timestamp after decode, not hardware exposure time; no hardware synchronization claim."
+  },
+  "opened_cameras": {
+    "3": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    },
+    "1": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    }
+  },
+  "elapsed_capture_seconds": 60.71871899999678,
+  "read_only_bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 1369
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  },
+  "camera_capture": {
+    "3": {
+      "frames": 1955,
+      "software_delivery_fps": 30.034981761707854
+    },
+    "1": {
+      "frames": 1865,
+      "software_delivery_fps": 30.002929213017914
+    }
+  },
+  "state_reads": {
+    "count": 1367,
+    "read_latency_ms": {
+      "count": 1367,
+      "p50": 1.2510000087786466,
+      "p95": 1.6082799906143923,
+      "max": 5.615200003376231,
+      "mean": 1.2939738113497505
+    }
+  },
+  "gpu_memory": {
+    "peak_allocated_mib": 928.26513671875,
+    "peak_reserved_mib": 958.0
+  },
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/19 12:15:42.047, P8, 0 %, 2209 MiB, 5602 MiB, 7.76 W, [N/A], 47, 510 MHz, 405 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "power_end": {
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 100,
+    "SystemStatusFlag": 0,
+    "BatteryLifeTime": 4294967295,
+    "BatteryFullLifeTime": 4294967295
+  },
+  "observations": 76,
+  "timing_summary": {
+    "chunk_ms": {
+      "count": 76,
+      "p50": 890.2552499930607,
+      "p95": 986.079050009721,
+      "max": 1042.5736000179313,
+      "mean": 783.0483210525831
+    },
+    "pipeline_ms": {
+      "count": 76,
+      "p50": 898.2674500002759,
+      "p95": 992.2628499771236,
+      "max": 1048.4370000194758,
+      "mean": 788.9728631600615
+    },
+    "loop_work_ms": {
+      "count": 76,
+      "p50": 906.223649988533,
+      "p95": 1019.6800749981776,
+      "max": 1063.4509000228718,
+      "mean": 798.5071105270579
+    },
+    "state_age_ms": {
+      "count": 76,
+      "p50": 24.054199995589443,
+      "p95": 43.681812509021256,
+      "max": 46.58244998427108,
+      "mean": 24.142838815015764
+    },
+    "pair_timestamp_skew_ms": {
+      "count": 76,
+      "p50": 3.71515000006184,
+      "p95": 28.37802500289399,
+      "max": 29.832899977918714,
+      "mean": 9.1911631584241
+    },
+    "input_age_at_result_ms": {
+      "count": 76,
+      "p50": 929.4154749950394,
+      "p95": 1025.4023125089589,
+      "max": 1086.5115000051446,
+      "mean": 819.0503874996609
+    }
+  },
+  "camera_age_ms": {
+    "1": {
+      "count": 76,
+      "p50": 18.9202000037767,
+      "p95": 31.27097500691889,
+      "max": 35.88619999936782,
+      "mean": 17.763349998858757
+    },
+    "3": {
+      "count": 76,
+      "p50": 16.778749995864928,
+      "p95": 32.433524989755824,
+      "max": 41.00630001630634,
+      "mean": 16.82802105374561
+    }
+  },
+  "nvidia_smi_after": {
+    "returncode": 0,
+    "stdout": "memory.used [MiB], memory.free [MiB]\n3329 MiB, 4482 MiB\n",
+    "stderr": ""
+  }
+}

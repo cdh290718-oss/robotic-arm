@@ -1,0 +1,77 @@
+{
+  "checked_at": "2026-11-10T13:44:15.890144",
+  "motor_writes": 0,
+  "positions": {
+    "shoulder_pan": {
+      "raw": 2023,
+      "min": 701,
+      "max": 3307,
+      "inside": true,
+      "nearest_boundary_delta_ticks": 0
+    },
+    "shoulder_lift": {
+      "raw": 776,
+      "min": 772,
+      "max": 3109,
+      "inside": true,
+      "nearest_boundary_delta_ticks": 0
+    },
+    "elbow_flex": {
+      "raw": 3274,
+      "min": 1064,
+      "max": 3286,
+      "inside": true,
+      "nearest_boundary_delta_ticks": 0
+    },
+    "wrist_flex": {
+      "raw": 2750,
+      "min": 892,
+      "max": 3243,
+      "inside": true,
+      "nearest_boundary_delta_ticks": 0
+    },
+    "wrist_roll": {
+      "raw": 1966,
+      "min": 2042,
+      "max": 2051,
+      "inside": false,
+      "nearest_boundary_delta_ticks": 76
+    },
+    "gripper": {
+      "raw": 2045,
+      "min": 2028,
+      "max": 3474,
+      "inside": true,
+      "nearest_boundary_delta_ticks": 0
+    }
+  },
+  "status": "read_completed",
+  "bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 3
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  }
+}

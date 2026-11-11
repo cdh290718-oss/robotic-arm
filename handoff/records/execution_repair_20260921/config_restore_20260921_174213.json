@@ -1,0 +1,88 @@
+{
+  "mode": "restore",
+  "status": "failed",
+  "before_calibration": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": -820,
+      "range_min": 0,
+      "range_max": 4095
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": 1282,
+      "range_min": 0,
+      "range_max": 4095
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": -1146,
+      "range_min": 0,
+      "range_max": 4095
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": -668,
+      "range_min": 0,
+      "range_max": 4095
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": 469,
+      "range_min": 0,
+      "range_max": 4095
+    },
+    "gripper": {
+      "id": 6,
+      "drive_mode": 0,
+      "homing_offset": -1748,
+      "range_min": 0,
+      "range_max": 4095
+    }
+  },
+  "before_p": {
+    "shoulder_pan": 16,
+    "shoulder_lift": 16,
+    "elbow_flex": 16,
+    "wrist_flex": 16,
+    "wrist_roll": 16,
+    "gripper": 16
+  },
+  "before_lock": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0,
+    "gripper": 0
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_repair_20260921\\config_trial.py\", line 59, in main\n    write_config(arm,n,register,cal[n][key],cal)\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_repair_20260921\\config_trial.py\", line 33, in write_config\n    arm.bus.write(name,joint,value,normalize=False,num_retry=0)\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\utils\\decorators.py\", line 29, in wrapper\n    return func(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1093, in write\n    self._write(addr, length, id_, int_value, num_retry=num_retry, raise_on_error=True, err_msg=err_msg)\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1108, in _write\n    comm, error = self.packet_handler.writeTxRx(self.port_handler, motor_id, addr, length, data)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\protocol_packet_handler.py\", line 368, in writeTxRx\n    rxpacket, result, error = self.txRxPacket(port, txpacket)\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\protocol_packet_handler.py\", line 182, in txRxPacket\n    result = self.txPacket(port, txpacket)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\protocol_packet_handler.py\", line 96, in txPacket\n    written_packet_length = port.writePort(txpacket)\n                            ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_repair_20260921\\control_core.py\", line 68, in __call__\n    raise RuntimeError('Unapproved motor write blocked before transmission')\nRuntimeError: Unapproved motor write blocked before transmission\n",
+  "close_error": "Traceback (most recent call last):\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_repair_20260921\\config_trial.py\", line 75, in main\n    try:arm.close()\n        ^^^^^^^^^^^\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_repair_20260921\\readonly_bus.py\", line 72, in close\n    self.torque_after=self.bus.sync_read('Torque_Enable', normalize=False)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\utils\\decorators.py\", line 29, in wrapper\n    return func(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1157, in sync_read\n    raw_ids_values, _ = self._sync_read(\n                        ^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 1190, in _sync_read\n    raise ConnectionError(f\"{err_msg} {self.packet_handler.getTxRxResult(comm)}\")\nConnectionError: Failed to sync read 'Torque_Enable' on ids=[1, 2, 3, 4, 5, 6] after 1 tries. [TxRxResult] Port is in use!\n",
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": null,
+    "write_attempts": 1,
+    "write_packets": 1,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 37,
+      "0x82": 4,
+      "0x03": 1
+    },
+    "blocked_packets": 1,
+    "events": [],
+    "normal_robot_connect_called": false
+  }
+}

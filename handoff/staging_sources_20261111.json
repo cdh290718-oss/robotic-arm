@@ -1,0 +1,190 @@
+{
+  "directories": [
+    {
+      "source": "D:\\桌面\\萌芽杯\\diagnostic_review_20260921",
+      "destination": "handoff\\records\\diagnostic_review_20260921"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\execution_repair_20260921",
+      "destination": "handoff\\records\\execution_repair_20260921"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\execution_review_20260921",
+      "destination": "handoff\\records\\execution_review_20260921"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\policy_trial_validation",
+      "destination": "handoff\\records\\policy_trial_validation"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\status_check_20261110",
+      "destination": "handoff\\records\\status_check_20261110"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\training_audit",
+      "destination": "handoff\\records\\training_audit"
+    },
+    {
+      "source": "G:\\LeRobot\\motor_diagnostic_kit",
+      "destination": "handoff\\windows_runtime\\motor_diagnostic_kit"
+    },
+    {
+      "source": "G:\\LeRobot\\execution_kit",
+      "destination": "handoff\\windows_runtime\\execution_kit"
+    },
+    {
+      "source": "G:\\LeRobot\\live_readonly_kit",
+      "destination": "handoff\\windows_runtime\\live_readonly_kit"
+    },
+    {
+      "source": "G:\\LeRobot\\gain_compare_kit",
+      "destination": "handoff\\windows_runtime\\gain_compare_kit"
+    },
+    {
+      "source": "G:\\LeRobot\\policy_trial_kit",
+      "destination": "handoff\\windows_runtime\\policy_trial_kit"
+    },
+    {
+      "source": "G:\\LeRobot\\lelab_readonly",
+      "destination": "handoff\\windows_runtime\\lelab_readonly"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\samples",
+      "destination": "handoff\\offline_inference\\samples"
+    },
+    {
+      "source": "G:\\LeRobot\\data\\robots",
+      "destination": "handoff\\device_configuration\\robots"
+    },
+    {
+      "source": "G:\\LeRobot\\data\\calibration",
+      "destination": "handoff\\device_configuration\\calibration"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\models\\006000\\pretrained_model",
+      "destination": "artifacts\\checkpoints\\006000\\pretrained_model"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+      "destination": "artifacts\\checkpoints\\010000\\pretrained_model"
+    },
+    {
+      "source": "G:\\LeRobot\\data\\ChomCUI",
+      "destination": "datasets\\ChomCUI"
+    }
+  ],
+  "files": [
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\install.py",
+      "destination": "handoff\\lelab_readonly_integration\\install.py"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\installation.json",
+      "destination": "handoff\\lelab_readonly_integration\\installation.json"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\README_zh.md",
+      "destination": "handoff\\lelab_readonly_integration\\README_zh.md"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly-link.js",
+      "destination": "handoff\\lelab_readonly_integration\\readonly-link.js"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly-ui-final.png",
+      "destination": "handoff\\lelab_readonly_integration\\readonly-ui-final.png"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly-ui.png",
+      "destination": "handoff\\lelab_readonly_integration\\readonly-ui.png"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly.html",
+      "destination": "handoff\\lelab_readonly_integration\\readonly.html"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly_bridge.py",
+      "destination": "handoff\\lelab_readonly_integration\\readonly_bridge.py"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\readonly_worker.py",
+      "destination": "handoff\\lelab_readonly_integration\\readonly_worker.py"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\test_readonly_integration.py",
+      "destination": "handoff\\lelab_readonly_integration\\test_readonly_integration.py"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\lelab_readonly_integration\\VALIDATION.json",
+      "destination": "handoff\\lelab_readonly_integration\\VALIDATION.json"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\checkpoint_manifest.json",
+      "destination": "handoff\\offline_inference\\checkpoint_manifest.json"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\DEVELOPER_VALIDATION.json",
+      "destination": "handoff\\offline_inference\\DEVELOPER_VALIDATION.json"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\export_samples.py",
+      "destination": "handoff\\offline_inference\\export_samples.py"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\offline_eval.py",
+      "destination": "handoff\\offline_inference\\offline_eval.py"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\README_zh.md",
+      "destination": "handoff\\offline_inference\\README_zh.md"
+    },
+    {
+      "source": "G:\\LeRobot\\offline_kit\\Run-Offline.ps1",
+      "destination": "handoff\\offline_inference\\Run-Offline.ps1"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究 .pdf",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究 .pdf"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究1.pdf",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究1.pdf"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_修订版.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_修订版.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_修订版.pdf",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_修订版.pdf"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_删减版.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_删减版.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_格式核对版.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_格式核对版.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_润色版.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_润色版.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_润色版.pdf",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究_B类作品_润色版.pdf"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究项目介绍材料.docx",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究项目介绍材料.docx"
+    },
+    {
+      "source": "D:\\桌面\\萌芽杯\\基于VLA的小型机械臂验证及智能服务场景应用研究项目介绍材料.pdf",
+      "destination": "references\\project-materials\\20260920-competition\\基于VLA的小型机械臂验证及智能服务场景应用研究项目介绍材料.pdf"
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "status": "failed",
+  "mode": "execute",
+  "created_utc": "2026-09-19T05:06:41.184715+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "execute",
+    "seconds": "10.0",
+    "precision": "bf16",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "",
+    "gpu_memory_fraction": "0",
+    "output": "G:\\LeRobot\\execution_kit\\results\\20260919_130640_906_Execute_bf16"
+  },
+  "code_sha256": {
+    "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+    "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+    "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+  },
+  "bounds": {
+    "max_seconds": 10.0,
+    "max_excursion_deg": 8,
+    "setpoint_speed_upper_deg_s": 5,
+    "max_raw_ticks_per_update": 1,
+    "gripper_fixed": true,
+    "max_loop_gap_ms": 150,
+    "max_input_age_ms": 250,
+    "max_new_result_age_ms": 1400,
+    "no_plan_stop_s": 2
+  },
+  "limits": "Software bounded trial, not hard real-time or a collision-safe planner. Camera timestamps are decode times.",
+  "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+  "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+  "port": "COM5",
+  "camera_config": {
+    "1": {
+      "id": "camera_1789706520471",
+      "name": "1",
+      "type": "opencv",
+      "camera_index": 2,
+      "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    },
+    "3": {
+      "id": "camera_1789706526304",
+      "name": "3",
+      "type": "opencv",
+      "camera_index": 1,
+      "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    }
+  },
+  "initial_raw": [
+    1965,
+    779,
+    3275,
+    2704,
+    2045,
+    2046
+  ],
+  "initial_state": [
+    -3.428571428571429,
+    -102.10989010989012,
+    96.70329670329672,
+    55.95604395604396,
+    -0.13186813186813187,
+    1.2448132780082988
+  ],
+  "raw_envelope": {
+    "min": [
+      1874,
+      772,
+      3184,
+      2613,
+      2042,
+      2046
+    ],
+    "max": [
+      2056,
+      870,
+      3286,
+      2795,
+      2051,
+      2046
+    ]
+  },
+  "execution_initial_raw": [
+    1965,
+    779,
+    3275,
+    2704,
+    2045,
+    2046
+  ],
+  "execution_envelope": {
+    "min": [
+      1874,
+      772,
+      3184,
+      2613,
+      2042,
+      2046
+    ],
+    "max": [
+      2056,
+      870,
+      3286,
+      2795,
+      2051,
+      2046
+    ]
+  },
+  "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 398, in main\n    limiter.check_measured(raw, enforce_tracking=args.mode!='dryrun')\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 202, in check_measured\n    raise RuntimeError('Measured tracking error exceeds 4 degrees')\nRuntimeError: Measured tracking error exceeds 4 degrees\n",
+  "stop_reason": "exception",
+  "stop_hold": {
+    "goal_readback_confirmed": true,
+    "raw_goal": [
+      1952,
+      788,
+      3268,
+      2755,
+      2045,
+      2046
+    ],
+    "torque": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 1,
+      "gripper": 1
+    },
+    "all_torque_enabled": true,
+    "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+  },
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 1,
+      "gripper": 1
+    },
+    "write_attempts": 56,
+    "write_packets": 56,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 785,
+      "0x83": 56
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "aligned_then_enabled",
+        "time": 170294.570495,
+        "raw": [
+          1965,
+          779,
+          3275,
+          2704,
+          2045,
+          2046
+        ]
+      },
+      {
+        "event": "stop_hold",
+        "goal_readback_confirmed": true,
+        "raw_goal": [
+          1952,
+          788,
+          3268,
+          2755,
+          2045,
+          2046
+        ],
+        "torque": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 1,
+          "gripper": 1
+        },
+        "all_torque_enabled": true,
+        "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+      }
+    ],
+    "normal_robot_connect_called": false
+  },
+  "worker_exitcode": 0,
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/19 13:06:52.429, P0, 0 %, 2368 MiB, 5443 MiB, 14.09 W, [N/A], 48, 1597 MHz, 12201 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "control_ticks": 53,
+  "timing": {
+    "interval_ms": {
+      "count": 53,
+      "p50": 33.84389998973347,
+      "p95": 34.13037999998778,
+      "max": 34.18209997471422,
+      "mean": 33.828777358823295
+    },
+    "work_ms": {
+      "count": 53,
+      "p50": 2.0457000064197928,
+      "p95": 3.8602600048761815,
+      "max": 4.204099997878075,
+      "mean": 2.3769886773255355
+    },
+    "observation_age_ms": {
+      "count": 53,
+      "p50": 621.7543999955524,
+      "p95": 783.2233400025871,
+      "max": 826.7670999921393,
+      "mean": 616.3455037760355
+    }
+  },
+  "rejected_chunks": [],
+  "clipped_ticks_per_joint": [
+    51,
+    52,
+    53,
+    53,
+    53,
+    50
+  ],
+  "expired_plan_hold_ticks": 0
+}

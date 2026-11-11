@@ -1,0 +1,30 @@
+{
+  "backup": "G:\\LeRobot\\logs\\readonly_integration_backup_20260921_115437",
+  "root": "G:\\LeRobot\\source\\lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80",
+  "files": {
+    "lelab\\readonly_bridge.py": {
+      "before_sha256": null,
+      "after_sha256": "9319409e3aa1f6fd6a459d97b0aec3833955883ba31bc31cb6b7a47ccab7b3ff"
+    },
+    "lelab\\readonly_worker.py": {
+      "before_sha256": null,
+      "after_sha256": "d438d67e9b04d9d63ae9bc81f266c79d4f14eb337ee6cb247ea0d31c47f26d81"
+    },
+    "lelab\\readonly.html": {
+      "before_sha256": null,
+      "after_sha256": "f27459c48fecc0c3d9c7de9497fbd7f06aac57442145e21651d69070c1083042"
+    },
+    "lelab\\readonly-link.js": {
+      "before_sha256": null,
+      "after_sha256": "9b874a59784f1d61d523d57128757e9f4c6e8acc42329d09533cbe08c1b2a96a"
+    },
+    "lelab\\server.py": {
+      "before_sha256": "fdf3e102fed98bae128ba4cfa0423efaf6b848c3d32609c03a4b6c9d97d646f7",
+      "after_sha256": "c4b02a97c4ba388279303a41e2102e639cbec6b4084988f69812399b5b65c9cd"
+    },
+    "frontend\\dist\\index.html": {
+      "before_sha256": "4e365be9d66a9d8714e6ab3c534c876ee1cc27ecc315c511f771277d5eb8df0e",
+      "after_sha256": "41dfe87468c84914d046da72c50f06c90e92ba6381ef4e65752f0a34270877df"
+    }
+  }
+}

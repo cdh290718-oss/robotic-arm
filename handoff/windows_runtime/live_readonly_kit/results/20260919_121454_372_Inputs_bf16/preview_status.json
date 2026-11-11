@@ -1,0 +1,35 @@
+{
+  "index": 198,
+  "wall_time_ns": 1789791326184000100,
+  "monotonic_start": 167183.1045861,
+  "elapsed_s": 19.910874699999113,
+  "state": [
+    -3.5164835453033447,
+    -102.19779968261719,
+    96.61538696289062,
+    73.89010620117188,
+    -0.3956044018268585,
+    1.244813323020935
+  ],
+  "camera_age_ms": {
+    "3": 32.21200002008118,
+    "1": 4.621300002327189
+  },
+  "state_age_ms": 17.27035001385957,
+  "pair_timestamp_skew_ms": 27.59070001775399,
+  "sample_file": null,
+  "image_timestamps": {
+    "3": 167183.0727347,
+    "1": 167183.1003254
+  },
+  "state_timestamp": 167183.08767635,
+  "loop_work_ms": 8.139199984725565,
+  "power": {
+    "ACLineStatus": 1,
+    "BatteryFlag": 1,
+    "BatteryLifePercent": 100,
+    "SystemStatusFlag": 0,
+    "BatteryLifeTime": 4294967295,
+    "BatteryFullLifeTime": 4294967295
+  }
+}

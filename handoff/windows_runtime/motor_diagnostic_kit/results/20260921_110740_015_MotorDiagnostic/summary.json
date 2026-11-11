@@ -1,0 +1,249 @@
+{
+  "status": "completed",
+  "created_utc": "2026-09-21T03:07:40.661840+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "source_sha256": {
+    "motor_diagnostic.py": "fa53a0ba92568619c4f25745ffab5819f67ed69e3cd418755454e071cf47033d",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_diagnostic.py": "83f1bc9d7799a289be89bfe2c8f435e4bdf5c4d44100fa546b64428f12a97a7e"
+  },
+  "note": "All register values are SDK raw values (sign decoding may apply). No inferred voltage/current units. No position, torque, calibration or PID writes.",
+  "port": "COM5",
+  "calibration": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": -819,
+      "range_min": 701,
+      "range_max": 3307
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": -1544,
+      "range_min": 772,
+      "range_max": 3109
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": 1722,
+      "range_min": 1064,
+      "range_max": 3286
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": -1451,
+      "range_min": 892,
+      "range_max": 3243
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": 467,
+      "range_min": 2042,
+      "range_max": 2051
+    },
+    "gripper": {
+      "id": 6,
+      "drive_mode": 0,
+      "homing_offset": -1747,
+      "range_min": 2028,
+      "range_max": 3474
+    }
+  },
+  "packages": {
+    "lerobot": "0.6.0",
+    "feetech-servo-sdk": "1.0.0",
+    "pyserial": "3.5"
+  },
+  "static_registers": {
+    "Operating_Mode": {
+      "values": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "read_ms": 0.9419999551028013
+    },
+    "P_Coefficient": {
+      "values": {
+        "shoulder_pan": 16,
+        "shoulder_lift": 16,
+        "elbow_flex": 16,
+        "wrist_flex": 16,
+        "wrist_roll": 16,
+        "gripper": 16
+      },
+      "read_ms": 0.9507000213488936
+    },
+    "I_Coefficient": {
+      "values": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "read_ms": 0.9358999668620527
+    },
+    "D_Coefficient": {
+      "values": {
+        "shoulder_pan": 32,
+        "shoulder_lift": 32,
+        "elbow_flex": 32,
+        "wrist_flex": 32,
+        "wrist_roll": 32,
+        "gripper": 32
+      },
+      "read_ms": 1.1126999743282795
+    },
+    "Max_Torque_Limit": {
+      "values": {
+        "shoulder_pan": 1000,
+        "shoulder_lift": 1000,
+        "elbow_flex": 1000,
+        "wrist_flex": 1000,
+        "wrist_roll": 1000,
+        "gripper": 500
+      },
+      "read_ms": 1.0002999915741384
+    },
+    "Torque_Limit": {
+      "values": {
+        "shoulder_pan": 1000,
+        "shoulder_lift": 1000,
+        "elbow_flex": 1000,
+        "wrist_flex": 1000,
+        "wrist_roll": 1000,
+        "gripper": 500
+      },
+      "read_ms": 0.9806000161916018
+    },
+    "Acceleration": {
+      "values": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "read_ms": 0.9349000174552202
+    },
+    "Goal_Time": {
+      "values": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "read_ms": 1.0028000106103718
+    },
+    "Goal_Velocity": {
+      "values": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "read_ms": 1.0229999898001552
+    },
+    "Protection_Current": {
+      "values": {
+        "shoulder_pan": 310,
+        "shoulder_lift": 310,
+        "elbow_flex": 310,
+        "wrist_flex": 310,
+        "wrist_roll": 310,
+        "gripper": 250
+      },
+      "read_ms": 0.9760999819263816
+    },
+    "Protection_Time": {
+      "values": {
+        "shoulder_pan": 200,
+        "shoulder_lift": 200,
+        "elbow_flex": 200,
+        "wrist_flex": 200,
+        "wrist_roll": 200,
+        "gripper": 200
+      },
+      "read_ms": 0.9427000186406076
+    },
+    "Over_Current_Protection_Time": {
+      "values": {
+        "shoulder_pan": 200,
+        "shoulder_lift": 200,
+        "elbow_flex": 200,
+        "wrist_flex": 200,
+        "wrist_roll": 200,
+        "gripper": 200
+      },
+      "read_ms": 0.985099992249161
+    },
+    "Min_Position_Limit": {
+      "values": {
+        "shoulder_pan": 701,
+        "shoulder_lift": 772,
+        "elbow_flex": 1064,
+        "wrist_flex": 892,
+        "wrist_roll": 2042,
+        "gripper": 2028
+      },
+      "read_ms": 1.0192999616265297
+    },
+    "Max_Position_Limit": {
+      "values": {
+        "shoulder_pan": 3307,
+        "shoulder_lift": 3109,
+        "elbow_flex": 3286,
+        "wrist_flex": 3243,
+        "wrist_roll": 2051,
+        "gripper": 3474
+      },
+      "read_ms": 1.03570002829656
+    }
+  },
+  "read_only_bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 691
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  },
+  "samples": 75,
+  "static_read_errors": 0,
+  "dynamic_read_errors": 0
+}

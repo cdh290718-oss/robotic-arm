@@ -1,0 +1,14 @@
+test_calibration_mismatch_stops (__main__.ArmTests.test_calibration_mismatch_stops) ... ok
+test_connection_and_close_preserve_torque (__main__.ArmTests.test_connection_and_close_preserve_torque) ... ok
+test_all_instruction_opcodes (__main__.GuardTests.test_all_instruction_opcodes) ... ok
+test_invalid_header_length_checksum (__main__.GuardTests.test_invalid_header_length_checksum) ... ok
+test_real_sdk_read_and_write (__main__.GuardTests.test_real_sdk_read_and_write) ... ok
+test_stale_camera_rejected (__main__.InputTests.test_stale_camera_rejected) ... ok
+test_stale_state_rejected (__main__.InputTests.test_stale_state_rejected) ... ok
+test_headless_http_preview_and_role_order (__main__.PreviewTests.test_headless_http_preview_and_role_order) ... PREVIEW: http://127.0.0.1:45599/preview.html
+ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 2.419s
+
+OK

@@ -1,0 +1,14 @@
+[
+  {
+    "file": "G:\\LeRobot\\execution_kit\\control_core.py",
+    "before": "11A064FD1F35B9311C291A5F569C0C599C0C842DECE49772946AA0E235BECD44",
+    "after": "EFB7C2B8DD9D6C7AC44FB443568B8FC1D51DF7E30584E63FD7228E9E3DC4A47A",
+    "backup": "G:\\LeRobot\\logs\\startup_cleanup_backup_20260921_1719\\control_core.py"
+  },
+  {
+    "file": "G:\\LeRobot\\execution_kit\\bounded_run.py",
+    "before": "AAE62A004EE0B7A5B903F78806CCC6AFFF4BCD69D41E9A2BC2D4353739EEC338",
+    "after": "E6F11D039E8A0A607130B3CFD21E4E4A537FC04F759465C80036830070B6B42B",
+    "backup": "G:\\LeRobot\\logs\\startup_cleanup_backup_20260921_1719\\bounded_run.py"
+  }
+]

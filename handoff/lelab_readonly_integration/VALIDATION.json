@@ -1,0 +1,265 @@
+{
+  "offline_tests_passed": 7,
+  "installed_files": {
+    "readonly_bridge.py": {
+      "matches_stage": true,
+      "sha256": "9319409e3aa1f6fd6a459d97b0aec3833955883ba31bc31cb6b7a47ccab7b3ff"
+    },
+    "readonly_worker.py": {
+      "matches_stage": true,
+      "sha256": "700f36e0b7b8d6fcfa6af90f551d6c9b84006450de4acb93fbea02c07ada55e6"
+    },
+    "readonly.html": {
+      "matches_stage": true,
+      "sha256": "5d5d55e550c4e41e34b253a152545f0f7b615cca2b646630faeed7714615e2c3"
+    },
+    "readonly-link.js": {
+      "matches_stage": true,
+      "sha256": "9b874a59784f1d61d523d57128757e9f4c6e8acc42329d09533cbe08c1b2a96a"
+    }
+  },
+  "runs": [
+    {
+      "status": "completed",
+      "mode": "inputs",
+      "observations": 96,
+      "predictions": 0,
+      "zero_writes_confirmed": true,
+      "torque_off_confirmed": true,
+      "model": null,
+      "read_only_bus": {
+        "allowed_packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 216
+        },
+        "blocked_packets": 0,
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_unchanged": true,
+        "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+        "normal_robot_connect_called": false,
+        "motor_register_write_commands_sent": 0
+      },
+      "zip": "G:\\LeRobot\\lelab_readonly\\results\\20260921_115556_479837_return.zip",
+      "crc_passed": true,
+      "sha256": "db98a526595ef920ba75ea8b60741cda318de3b9b1c4280536648090b97d46ec"
+    },
+    {
+      "status": "failed",
+      "mode": "live",
+      "observations": 0,
+      "predictions": 0,
+      "zero_writes_confirmed": true,
+      "torque_off_confirmed": true,
+      "model": null,
+      "read_only_bus": {
+        "allowed_packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 723
+        },
+        "blocked_packets": 0,
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_unchanged": true,
+        "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+        "normal_robot_connect_called": false,
+        "motor_register_write_commands_sent": 0
+      },
+      "zip": "G:\\LeRobot\\lelab_readonly\\results\\20260921_115653_480360_return.zip",
+      "crc_passed": true,
+      "sha256": "9aec4cb3f4c9bae3bae15f1d921232e43d2b33cb9724edd186d6ad6de6c574d9"
+    },
+    {
+      "status": "completed",
+      "mode": "live",
+      "observations": 22,
+      "predictions": 22,
+      "zero_writes_confirmed": true,
+      "torque_off_confirmed": true,
+      "model": {
+        "checkpoint": "010000",
+        "precision": "bf16",
+        "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+        "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+        "load_seconds": 14.131176700000651,
+        "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "torch": "2.10.0+cu128",
+        "strict_load": true,
+        "unnormalizer_probe": true
+      },
+      "read_only_bus": {
+        "allowed_packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 1542
+        },
+        "blocked_packets": 0,
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_unchanged": true,
+        "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+        "normal_robot_connect_called": false,
+        "motor_register_write_commands_sent": 0
+      },
+      "zip": "G:\\LeRobot\\lelab_readonly\\results\\20260921_170024_999604_return.zip",
+      "crc_passed": true,
+      "sha256": "f2e4729177ae916e7d808b9d181408c2372db0dc6ac38c394f54b0e2577a2b3f",
+      "shape": [
+        22,
+        50,
+        6
+      ],
+      "finite": true,
+      "pipeline_ms_p50_p95": [
+        424.2828999995254,
+        456.23155501962174
+      ]
+    },
+    {
+      "status": "stopped",
+      "mode": "inputs",
+      "observations": 148,
+      "predictions": 0,
+      "zero_writes_confirmed": true,
+      "torque_off_confirmed": true,
+      "model": null,
+      "read_only_bus": {
+        "allowed_packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 454
+        },
+        "blocked_packets": 0,
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_unchanged": true,
+        "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+        "normal_robot_connect_called": false,
+        "motor_register_write_commands_sent": 0
+      },
+      "zip": "G:\\LeRobot\\lelab_readonly\\results\\20260921_170221_308328_return.zip",
+      "crc_passed": true,
+      "sha256": "0f109a3f858d8967c9729440ee831120e45a2b65c193c3bac06409d2ba4a2557"
+    },
+    {
+      "status": "completed",
+      "mode": "live",
+      "observations": 23,
+      "predictions": 23,
+      "zero_writes_confirmed": true,
+      "torque_off_confirmed": true,
+      "model": {
+        "checkpoint": "010000",
+        "precision": "bf16",
+        "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+        "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+        "load_seconds": 13.7378083000076,
+        "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "torch": "2.10.0+cu128",
+        "strict_load": true,
+        "unnormalizer_probe": true
+      },
+      "read_only_bus": {
+        "allowed_packet_counts": {
+          "0x01": 6,
+          "0x02": 36,
+          "0x82": 993
+        },
+        "blocked_packets": 0,
+        "torque_before": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_after": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "torque_unchanged": true,
+        "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+        "normal_robot_connect_called": false,
+        "motor_register_write_commands_sent": 0
+      },
+      "zip": "G:\\LeRobot\\lelab_readonly\\results\\20260921_170316_673079_return.zip",
+      "crc_passed": true,
+      "sha256": "d0ae6f9d4a49f5c2b56889d0b001db7ea011304de8e673de0311376aa85b006d",
+      "shape": [
+        23,
+        50,
+        6
+      ],
+      "finite": true,
+      "pipeline_ms_p50_p95": [
+        416.21620004298165,
+        424.43390000844374
+      ]
+    }
+  ],
+  "final_active": false,
+  "native_inference_response": 409
+}

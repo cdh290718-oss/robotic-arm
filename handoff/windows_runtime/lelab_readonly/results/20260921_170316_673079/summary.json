@@ -1,0 +1,193 @@
+{
+  "status": "completed",
+  "mode": "live",
+  "checkpoint": "010000",
+  "precision": "bf16",
+  "observations": 23,
+  "predictions": 23,
+  "motor_action_execution": false,
+  "created_at": 1789981397.0151417,
+  "source_sha256": {
+    "G:\\LeRobot\\source\\lelab-9a182993a2a9a3b04312c13ff8365f68d379fe80\\lelab\\readonly_worker.py": "700f36e0b7b8d6fcfa6af90f551d6c9b84006450de4acb93fbea02c07ada55e6",
+    "G:\\LeRobot\\live_readonly_kit\\live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "G:\\LeRobot\\live_readonly_kit\\readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  },
+  "configuration": {
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+    "cameras": {
+      "1": {
+        "id": "camera_1789706520471",
+        "name": "1",
+        "type": "opencv",
+        "camera_index": 2,
+        "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      },
+      "3": {
+        "id": "camera_1789706526304",
+        "name": "3",
+        "type": "opencv",
+        "camera_index": 1,
+        "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+        "width": 640,
+        "height": 480,
+        "fps": 30,
+        "fourcc": "MJPG"
+      }
+    },
+    "port": "COM5",
+    "rename_map": {
+      "observation.images.3": "observation.images.camera1",
+      "observation.images.1": "observation.images.camera2"
+    },
+    "software_timestamp_note": "Camera timestamp after decode, not hardware exposure time; no hardware synchronization claim."
+  },
+  "opened_cameras": {
+    "3": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    },
+    "1": {
+      "backend": "DSHOW",
+      "width": 640.0,
+      "height": 480.0,
+      "fps_reported": 30.00003000003
+    }
+  },
+  "latest": {
+    "state": [
+      3.692307710647583,
+      -102.63735961914062,
+      96.79120635986328,
+      67.03296661376953,
+      0.21978022158145905,
+      1.175657033920288
+    ],
+    "camera_age_ms": {
+      "3": 6.635800004005432,
+      "1": 29.518600029405206
+    },
+    "state_age_ms": 5.039450014010072,
+    "image_quality": {
+      "3": {
+        "mean": 92.12186431884766,
+        "p99": 185.0,
+        "std": 51.45051193237305,
+        "near_black": false
+      },
+      "1": {
+        "mean": 129.9833526611328,
+        "p99": 249.6666717529297,
+        "std": 70.7723388671875,
+        "near_black": false
+      }
+    },
+    "updated_at": 1789981443.0667038,
+    "pre_ms": 3.962000017054379,
+    "chunk_ms": 416.949599981308,
+    "post_ms": 0.18960004672408104,
+    "pipeline_ms": 421.10120004508644,
+    "input_age_at_result_ms": 473.5492000472732,
+    "state_zscore": [
+      0.4602772295475006,
+      -1.032740831375122,
+      1.0572108030319214,
+      -0.4740937650203705,
+      0.9587467908859253,
+      -0.8277028799057007
+    ],
+    "first_predicted_action": [
+      3.5774941444396973,
+      -106.0341796875,
+      89.10540771484375,
+      69.12764739990234,
+      0.601865291595459,
+      0.5200257301330566
+    ],
+    "first_action_minus_state": [
+      -0.11481356620788574,
+      -3.396820068359375,
+      -7.685798645019531,
+      2.0946807861328125,
+      0.38208508491516113,
+      -0.6556313037872314
+    ],
+    "elapsed_s": 10.205997199984267
+  },
+  "message": "只读采集，不发送动作。",
+  "model": {
+    "checkpoint": "010000",
+    "precision": "bf16",
+    "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+    "load_seconds": 13.7378083000076,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.10.0+cu128",
+    "strict_load": true,
+    "unnormalizer_probe": true
+  },
+  "warmup_completed": 4,
+  "read_only_bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 993
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  },
+  "camera_capture": {
+    "3": {
+      "frames": 1167,
+      "software_delivery_fps": 29.638057374358727
+    },
+    "1": {
+      "frames": 1073,
+      "software_delivery_fps": 29.62343728318898
+    }
+  },
+  "state_reads": {
+    "count": 991,
+    "read_latency_ms": {
+      "count": 991,
+      "p50": 1.124100002925843,
+      "p95": 1.6584499971941113,
+      "max": 168.98710001260042,
+      "mean": 1.616391625728056
+    }
+  },
+  "gpu_memory": {
+    "peak_allocated_mib": 928.26513671875,
+    "peak_reserved_mib": 958.0
+  },
+  "zero_writes_confirmed": true,
+  "torque_off_confirmed": true,
+  "finished_at": 1789981444.1998916
+}

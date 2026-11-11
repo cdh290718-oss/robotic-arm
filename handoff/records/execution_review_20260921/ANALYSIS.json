@@ -1,0 +1,416 @@
+[
+  {
+    "mode": "dryrun",
+    "status": "completed",
+    "control_ticks": 295,
+    "stop_hold": null,
+    "bus": {
+      "torque_before": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "torque_after": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "write_attempts": 0,
+      "write_packets": 0,
+      "packet_counts": {
+        "0x01": 6,
+        "0x02": 36,
+        "0x82": 1665
+      },
+      "blocked_packets": 0,
+      "events": [],
+      "normal_robot_connect_called": false
+    },
+    "error": null,
+    "timing": {
+      "interval_ms": {
+        "count": 295,
+        "p50": 33.808000036515296,
+        "p95": 34.10442998865619,
+        "max": 34.33450002921745,
+        "mean": 33.81912983062093
+      },
+      "work_ms": {
+        "count": 295,
+        "p50": 1.6330999787896872,
+        "p95": 2.5762999954167767,
+        "max": 3.8261000299826264,
+        "mean": 1.7526213567056772
+      },
+      "observation_age_ms": {
+        "count": 295,
+        "p50": 662.0231000124477,
+        "p95": 841.7912400036585,
+        "max": 870.9557999973185,
+        "mean": 660.1191369528582
+      }
+    },
+    "code_sha256": {
+      "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+      "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+      "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+      "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+    },
+    "file": "20260921_111627_314_DryRun_bf16_return.zip",
+    "crc": null,
+    "sha256": "1069f9bafc53e5b49976e1c130eafff5c927160da3f60b400fed47a19270cc94",
+    "local_code_hash_match": {
+      "bounded_run.py": true,
+      "control_core.py": true,
+      "live_probe.py": true,
+      "readonly_bus.py": true,
+      "test_control.py": true,
+      "test_integration.py": true
+    },
+    "last_time": 9.976643300033174,
+    "last_present": [
+      2019,
+      781,
+      3274,
+      2767,
+      2045,
+      2046
+    ],
+    "last_command": [
+      2012,
+      872,
+      3183,
+      2858,
+      2049,
+      2046
+    ],
+    "last_measured_displacement_deg": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "last_command_displacement_deg": [
+      -0.6153846153846154,
+      8.0,
+      -8.0,
+      8.0,
+      0.3516483516483517,
+      0.0
+    ],
+    "max_prewrite_error_deg": [
+      2.0219780219780223,
+      8.0,
+      8.0,
+      8.0,
+      0.5274725274725275,
+      0.0
+    ],
+    "max_step": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "predictions": {
+      "actions": {
+        "shape": [
+          26,
+          50,
+          6
+        ],
+        "finite": true
+      },
+      "states": {
+        "shape": [
+          26,
+          6
+        ],
+        "finite": true
+      }
+    }
+  },
+  {
+    "mode": "execute",
+    "status": "failed",
+    "control_ticks": 64,
+    "stop_hold": {
+      "goal_readback_confirmed": true,
+      "raw_goal": [
+        2008,
+        836,
+        3256,
+        2828,
+        2049,
+        2046
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 1,
+        "gripper": 1
+      },
+      "all_torque_enabled": true,
+      "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+    },
+    "bus": {
+      "torque_before": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "torque_after": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 1,
+        "gripper": 1
+      },
+      "write_attempts": 67,
+      "write_packets": 67,
+      "packet_counts": {
+        "0x01": 6,
+        "0x02": 36,
+        "0x82": 859,
+        "0x83": 67
+      },
+      "blocked_packets": 0,
+      "events": [
+        {
+          "event": "aligned_then_enabled",
+          "time": 336619.6373553,
+          "raw": [
+            2019,
+            781,
+            3274,
+            2767,
+            2045,
+            2046
+          ]
+        },
+        {
+          "event": "stop_hold",
+          "goal_readback_confirmed": true,
+          "raw_goal": [
+            2008,
+            836,
+            3256,
+            2828,
+            2049,
+            2046
+          ],
+          "torque": {
+            "shoulder_pan": 1,
+            "shoulder_lift": 1,
+            "elbow_flex": 1,
+            "wrist_flex": 1,
+            "wrist_roll": 1,
+            "gripper": 1
+          },
+          "all_torque_enabled": true,
+          "note": "Position hold commanded; not a hardware emergency stop or physical stability proof."
+        }
+      ],
+      "normal_robot_connect_called": false
+    },
+    "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\execution_kit\\bounded_run.py\", line 398, in main\n    limiter.check_measured(raw, enforce_tracking=args.mode!='dryrun')\n  File \"G:\\LeRobot\\execution_kit\\control_core.py\", line 202, in check_measured\n    raise RuntimeError('Measured tracking error exceeds 4 degrees')\nRuntimeError: Measured tracking error exceeds 4 degrees\n",
+    "timing": {
+      "interval_ms": {
+        "count": 64,
+        "p50": 33.87230000225827,
+        "p95": 34.055240015732124,
+        "max": 34.35730002820492,
+        "mean": 33.846571875074005
+      },
+      "work_ms": {
+        "count": 64,
+        "p50": 1.9431000109761953,
+        "p95": 3.579860023455693,
+        "max": 3.8099000230431557,
+        "mean": 2.1492000041689607
+      },
+      "observation_age_ms": {
+        "count": 64,
+        "p50": 636.7761500005145,
+        "p95": 832.4230399884982,
+        "max": 852.3854000377469,
+        "mean": 646.1167515672059
+      }
+    },
+    "code_sha256": {
+      "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+      "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+      "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+      "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+    },
+    "file": "20260921_111842_169_Execute_bf16_return.zip",
+    "crc": null,
+    "sha256": "8c6374dca473fd0178ef27a34f1b90fc62fdaf751a003ca6665c61e264994d3a",
+    "local_code_hash_match": {
+      "bounded_run.py": true,
+      "control_core.py": true,
+      "live_probe.py": true,
+      "readonly_bus.py": true,
+      "test_control.py": true,
+      "test_integration.py": true
+    },
+    "last_time": 2.1661806000047363,
+    "last_present": [
+      2011,
+      836,
+      3256,
+      2828,
+      2049,
+      2046
+    ],
+    "last_command": [
+      2007,
+      835,
+      3210,
+      2831,
+      2051,
+      2046
+    ],
+    "last_measured_displacement_deg": [
+      -0.7032967032967034,
+      4.835164835164836,
+      -1.5824175824175826,
+      5.362637362637363,
+      0.3516483516483517,
+      0.0
+    ],
+    "last_command_displacement_deg": [
+      -1.054945054945055,
+      4.747252747252747,
+      -5.626373626373627,
+      5.626373626373627,
+      0.5274725274725275,
+      0.0
+    ],
+    "max_prewrite_error_deg": [
+      0.5274725274725275,
+      0.7032967032967034,
+      3.956043956043956,
+      0.4395604395604396,
+      0.4395604395604396,
+      0.0
+    ],
+    "max_step": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "hold_minus_last_command_deg": [
+      0.08791208791208792,
+      0.08791208791208792,
+      4.043956043956045,
+      -0.26373626373626374,
+      -0.17582417582417584,
+      0.0
+    ],
+    "predictions": {
+      "actions": {
+        "shape": [
+          7,
+          50,
+          6
+        ],
+        "finite": true
+      },
+      "states": {
+        "shape": [
+          7,
+          6
+        ],
+        "finite": true
+      }
+    }
+  },
+  {
+    "mode": "release",
+    "status": "released",
+    "control_ticks": 0,
+    "stop_hold": null,
+    "bus": {
+      "torque_before": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 1,
+        "gripper": 1
+      },
+      "torque_after": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      },
+      "write_attempts": 1,
+      "write_packets": 1,
+      "packet_counts": {
+        "0x01": 6,
+        "0x02": 36,
+        "0x82": 3,
+        "0x83": 1
+      },
+      "blocked_packets": 0,
+      "events": [
+        {
+          "event": "torque_released"
+        }
+      ],
+      "normal_robot_connect_called": false
+    },
+    "error": null,
+    "timing": {
+      "interval_ms": null,
+      "work_ms": null,
+      "observation_age_ms": null
+    },
+    "code_sha256": {
+      "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+      "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+      "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+      "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+      "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+      "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+    },
+    "file": "20260921_111943_410_Release_bf16_return.zip",
+    "crc": null,
+    "sha256": "abbccc5424e6866381ec7256728496ccc824bd6b8cdf2e9d8507bc814d4eee09",
+    "local_code_hash_match": {
+      "bounded_run.py": true,
+      "control_core.py": true,
+      "live_probe.py": true,
+      "readonly_bus.py": true,
+      "test_control.py": true,
+      "test_integration.py": true
+    }
+  }
+]

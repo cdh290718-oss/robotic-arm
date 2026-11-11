@@ -1,0 +1,201 @@
+{
+  "status": "completed",
+  "mode": "dryrun",
+  "created_utc": "2026-09-21T03:16:27.632835+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "dryrun",
+    "seconds": "10.0",
+    "precision": "bf16",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "",
+    "gpu_memory_fraction": "0",
+    "output": "G:\\LeRobot\\execution_kit\\results\\20260921_111627_314_DryRun_bf16"
+  },
+  "code_sha256": {
+    "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+    "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+    "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+  },
+  "bounds": {
+    "max_seconds": 10.0,
+    "max_excursion_deg": 8,
+    "setpoint_speed_upper_deg_s": 5,
+    "max_raw_ticks_per_update": 1,
+    "gripper_fixed": true,
+    "max_loop_gap_ms": 150,
+    "max_input_age_ms": 250,
+    "max_new_result_age_ms": 1400,
+    "no_plan_stop_s": 2
+  },
+  "limits": "Software bounded trial, not hard real-time or a collision-safe planner. Camera timestamps are decode times.",
+  "robot_config_sha256": "6317fe7f494845483cfffc88d7d73e081e131edd3567745077021a76359a89f9",
+  "calibration_sha256": "b7abd62d921e84223c3bd39bdee08eaab4d84b9f2fb40b9be09a4b81e25740c0",
+  "port": "COM5",
+  "camera_config": {
+    "1": {
+      "id": "camera_1789706520471",
+      "name": "1",
+      "type": "opencv",
+      "camera_index": 2,
+      "device_id": "467d6826935bfd74e806e9754629895e13d5a2a9f13a315b39e73c8064294f5b",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    },
+    "3": {
+      "id": "camera_1789706526304",
+      "name": "3",
+      "type": "opencv",
+      "camera_index": 1,
+      "device_id": "8dd34c0f8a47f887a870cc9cdb0903edcb2182bec09bd46dd627b0f8d4338882",
+      "width": 640,
+      "height": 480,
+      "fps": 30,
+      "fourcc": "MJPG"
+    }
+  },
+  "initial_raw": [
+    2019,
+    781,
+    3274,
+    2767,
+    2045,
+    2046
+  ],
+  "initial_state": [
+    1.3186813186813189,
+    -101.93406593406594,
+    96.61538461538463,
+    61.494505494505496,
+    -0.13186813186813187,
+    1.2448132780082988
+  ],
+  "raw_envelope": {
+    "min": [
+      1928,
+      772,
+      3183,
+      2676,
+      2042,
+      2046
+    ],
+    "max": [
+      2110,
+      872,
+      3286,
+      2858,
+      2051,
+      2046
+    ]
+  },
+  "execution_initial_raw": [
+    2019,
+    781,
+    3274,
+    2767,
+    2045,
+    2046
+  ],
+  "execution_envelope": {
+    "min": [
+      1928,
+      772,
+      3183,
+      2676,
+      2042,
+      2046
+    ],
+    "max": [
+      2110,
+      872,
+      3286,
+      2858,
+      2051,
+      2046
+    ]
+  },
+  "stop_reason": "duration_complete",
+  "active_seconds": 10.000305599998683,
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 0,
+    "write_packets": 0,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 1665
+    },
+    "blocked_packets": 0,
+    "events": [],
+    "normal_robot_connect_called": false
+  },
+  "worker_exitcode": 0,
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/21 11:16:39.702, P0, 6 %, 2030 MiB, 5781 MiB, 18.38 W, [N/A], 51, 2025 MHz, 12201 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "control_ticks": 295,
+  "timing": {
+    "interval_ms": {
+      "count": 295,
+      "p50": 33.808000036515296,
+      "p95": 34.10442998865619,
+      "max": 34.33450002921745,
+      "mean": 33.81912983062093
+    },
+    "work_ms": {
+      "count": 295,
+      "p50": 1.6330999787896872,
+      "p95": 2.5762999954167767,
+      "max": 3.8261000299826264,
+      "mean": 1.7526213567056772
+    },
+    "observation_age_ms": {
+      "count": 295,
+      "p50": 662.0231000124477,
+      "p95": 841.7912400036585,
+      "max": 870.9557999973185,
+      "mean": 660.1191369528582
+    }
+  },
+  "rejected_chunks": [],
+  "clipped_ticks_per_joint": [
+    270,
+    294,
+    295,
+    292,
+    266,
+    294
+  ],
+  "expired_plan_hold_ticks": 0
+}

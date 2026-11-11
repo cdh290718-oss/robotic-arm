@@ -1,0 +1,5 @@
+Status: passed
+Mode: live
+Observations: 76
+Motor actions executed: no
+See summary.json and iterations.jsonl.

@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-09-19T04:50:41.248910+00:00",
+  "unit_and_integration_tests": {
+    "count": 18,
+    "status": "passed",
+    "covers": [
+      "all unauthorized opcodes blocked",
+      "actual Feetech SDK 1.0.0 exact packet authorization",
+      "one-shot write permit",
+      "startup alignment readback before torque",
+      "alignment failure and requested stop do not enable torque",
+      "wrong mode/existing torque rejection",
+      "readonly main sends no writes",
+      "normal completion holds before teardown",
+      "injected serial fault holds before teardown",
+      "release does not load model or cameras",
+      "integer slew/excursion/calibration limits and fixed gripper",
+      "stale action skipping/expiry",
+      "normalization matches installed LeRobot implementation",
+      "shared memory latest observation"
+    ]
+  },
+  "sdk_note": "Developer SDK unpacked in /tmp; normalization test injects that actual SDK module past distribution-metadata checks. Production runtime has no such bypass.",
+  "real_model_simulation": {
+    "status": "completed",
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "precision": "bf16",
+    "model_checkpoint": "010000",
+    "strict_load": true,
+    "warmup_chunks": 5,
+    "chunks": 39,
+    "active_seconds": 10.00142265111208,
+    "control_ticks": 298,
+    "timing": {
+      "interval_ms": {
+        "count": 298,
+        "p50": 33.393360674381256,
+        "p95": 33.40157773345709,
+        "max": 49.555834382772446,
+        "mean": 33.449753068837545
+      },
+      "work_ms": {
+        "count": 298,
+        "p50": 0.4036612808704376,
+        "p95": 0.6065718829631805,
+        "max": 49.54031482338905,
+        "mean": 0.8081772158409926
+      },
+      "observation_age_ms": {
+        "count": 298,
+        "p50": 409.8214041441679,
+        "p95": 568.0093098431826,
+        "max": 634.793471544981,
+        "mean": 418.8405926270573
+      }
+    },
+    "memory": {
+      "peak_allocated_mib": 927.26513671875,
+      "peak_reserved_mib": 976.0
+    },
+    "hardware_write_packets": 0,
+    "all_actions_finite": true,
+    "all_limiter_invariants_passed": true,
+    "return_zip_crc": "passed"
+  },
+  "windows_hardware_execution": "NOT performed on developer machine; requires user return",
+  "powershell_runtime_test": "NOT performed on Linux; no PowerShell interpreter available",
+  "simulation_limits": "Fixed prerecorded images, instantaneous fake position following; no dynamics/collision/grasp validation.",
+  "code_sha256": {
+    "test_integration.py": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "control_core.py": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44",
+    "test_control.py": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27",
+    "bounded_run.py": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338",
+    "Run-Bounded.ps1": "ff70a385ee7b4839831df7bf3c52f24253f7d4be32aaaa5f0400af228c798802",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  },
+  "previous_engine_and_readonly_adapter_unchanged": true
+}

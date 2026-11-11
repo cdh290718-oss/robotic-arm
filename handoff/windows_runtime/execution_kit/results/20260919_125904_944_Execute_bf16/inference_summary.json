@@ -1,0 +1,15 @@
+{
+  "status": "loading",
+  "has_hardware_access": false,
+  "model": {
+    "checkpoint": "010000",
+    "precision": "bf16",
+    "base_revision": "7b375e1b73b11138ff12fe22c8f2822d8fe03467",
+    "path": "G:\\LeRobot\\offline_kit\\models\\010000\\pretrained_model",
+    "load_seconds": 13.259521400002996,
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "torch": "2.10.0+cu128",
+    "strict_load": true,
+    "unnormalizer_probe": true
+  }
+}

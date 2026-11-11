@@ -1,0 +1,5 @@
+Loading  G:\LeRobot\cache\huggingface\hub\models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct\snapshots\7b375e1b73b11138ff12fe22c8f2822d8fe03467 weights ...
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights:   0%|          | 1/489 [00:00<02:27,  3.31it/s]Loading weights:  45%|████▌     | 221/489 [00:00<00:00, 704.29it/s]Loading weights:  71%|███████▏  | 349/489 [00:00<00:00, 638.67it/s]Loading weights:  94%|█████████▍| 461/489 [00:00<00:00, 734.15it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 648.17it/s]
+Reducing the number of VLM layers to 16 ...
+Loading weights from local directory

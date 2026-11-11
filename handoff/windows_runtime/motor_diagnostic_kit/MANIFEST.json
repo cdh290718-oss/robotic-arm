@@ -1,0 +1,16 @@
+{
+  "validation": {
+    "diagnostic_tests": 2,
+    "status": "passed",
+    "windows_hardware_test": "not yet performed",
+    "writes_allowed": false
+  },
+  "files": {
+    "reference_calibration.json": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3",
+    "test_diagnostic.py": "83f1bc9d7799a289be89bfe2c8f435e4bdf5c4d44100fa546b64428f12a97a7e",
+    "README_zh.md": "f31169c2a33489340a2a8464e63e6578adea371800e35aa816119b344321d64f",
+    "Run-MotorDiagnostic.ps1": "37b00a6e5f514625324fd7b9f7ea73d07aa7f80b1ba5f80eeec363e9a5cc8d45",
+    "motor_diagnostic.py": "fa53a0ba92568619c4f25745ffab5819f67ed69e3cd418755454e071cf47033d",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+  }
+}

@@ -1,0 +1,473 @@
+{
+  "datasets": [
+    {
+      "name": "14_20260918_120729",
+      "frames": 7058,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.3956044018268585
+    },
+    {
+      "name": "15_20260918_121827",
+      "frames": 860,
+      "wrist_roll_state_min_deg": -0.3076923191547394,
+      "wrist_roll_state_max_deg": 0.21978022158145905
+    },
+    {
+      "name": "16_20260918_121952",
+      "frames": 2692,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.21978022158145905
+    },
+    {
+      "name": "17_20260918_122237",
+      "frames": 6882,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.21978022158145905
+    },
+    {
+      "name": "18_20260918_124443",
+      "frames": 1542,
+      "wrist_roll_state_min_deg": -0.1318681389093399,
+      "wrist_roll_state_max_deg": 0.48351648449897766
+    },
+    {
+      "name": "20_20260918_130233",
+      "frames": 1814,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.3076923191547394
+    },
+    {
+      "name": "22_20260918_131137",
+      "frames": 2985,
+      "wrist_roll_state_min_deg": -0.3076923191547394,
+      "wrist_roll_state_max_deg": 0.3076923191547394
+    },
+    {
+      "name": "23_20260918_132654",
+      "frames": 2338,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.3076923191547394
+    },
+    {
+      "name": "24_20260918_133006",
+      "frames": 4619,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.3076923191547394
+    },
+    {
+      "name": "25_20260918_133615",
+      "frames": 4861,
+      "wrist_roll_state_min_deg": -0.3956044018268585,
+      "wrist_roll_state_max_deg": 0.3076923191547394
+    }
+  ],
+  "note": "Raw position reconstructed from saved degree normalization; this is not a torque measurement.",
+  "frames": 35651,
+  "wrist_flex": {
+    "state_degrees": {
+      "min": 38.19780349731445,
+      "max": 101.84615325927734,
+      "median": 74.94505310058594,
+      "std": 11.395687847848043,
+      "p01": 48.0439567565918,
+      "p99": 101.75823974609375
+    },
+    "action_degrees": {
+      "min": 36.17582321166992,
+      "max": 102.63735961914062,
+      "median": 75.29669952392578,
+      "std": 11.592944543854227,
+      "p01": 47.69230651855469,
+      "p99": 102.10989379882812
+    }
+  },
+  "wrist_roll": {
+    "state_degrees": {
+      "min": -0.3956044018268585,
+      "max": 0.48351648449897766,
+      "median": 0.04395604506134987,
+      "std": 0.1978083872358828,
+      "p01": -0.3956044018268585,
+      "p99": 0.3956044018268585
+    },
+    "action_degrees": {
+      "min": -16.263736724853516,
+      "max": 49.230770111083984,
+      "median": 1.0549451112747192,
+      "std": 6.943165947868127,
+      "p01": -11.604395866394043,
+      "p99": 20.83516502380371
+    },
+    "reconstructed_state_raw_ticks": {
+      "min": 2042.0,
+      "max": 2052.0,
+      "median": 2047.0,
+      "std": 2.250070358966394,
+      "p01": 2042.0,
+      "p99": 2051.0
+    },
+    "episode_state_span_degrees": {
+      "min": 0.35164836049079895,
+      "max": 0.791208803653717,
+      "median": 0.5274725407361984,
+      "std": 0.11591307465998896,
+      "p01": 0.35164836049079895,
+      "p99": 0.7331868290901187
+    }
+  },
+  "state_normalizer": {
+    "observation.state.mean": [
+      -0.31306809186935425,
+      -52.51246643066406,
+      52.01142883300781,
+      72.43572235107422,
+      0.03013213351368904,
+      8.20345687866211
+    ],
+    "observation.state.std": [
+      8.702094078063965,
+      48.53579330444336,
+      42.35652542114258,
+      11.395964622497559,
+      0.19780831038951874,
+      8.490727424621582
+    ]
+  },
+  "episodes": [
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.791208803653717
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 5,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 6,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 7,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 8,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 9,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 10,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "14_20260918_120729",
+      "episode": 11,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "15_20260918_121827",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "15_20260918_121827",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "16_20260918_121952",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "16_20260918_121952",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "16_20260918_121952",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "16_20260918_121952",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "16_20260918_121952",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 5,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 6,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 7,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 8,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 9,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 10,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 11,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "17_20260918_122237",
+      "episode": 12,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "18_20260918_124443",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.5274725295603275
+    },
+    {
+      "dataset": "18_20260918_124443",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.35164836421608925
+    },
+    {
+      "dataset": "18_20260918_124443",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "20_20260918_130233",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "20_20260918_130233",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "20_20260918_130233",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "22_20260918_131137",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "22_20260918_131137",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "22_20260918_131137",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.35164836421608925
+    },
+    {
+      "dataset": "22_20260918_131137",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "22_20260918_131137",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "23_20260918_132654",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "23_20260918_132654",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "23_20260918_132654",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "23_20260918_132654",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.35164836421608925
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.4395604580640793
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 5,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 6,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 7,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 8,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "24_20260918_133006",
+      "episode": 9,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 0,
+      "wrist_roll_span_degrees": 0.6153846234083176
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 1,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 2,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 3,
+      "wrist_roll_span_degrees": 0.7032967209815979
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 4,
+      "wrist_roll_span_degrees": 0.35164836049079895
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 5,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 6,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 7,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 8,
+      "wrist_roll_span_degrees": 0.4395604431629181
+    },
+    {
+      "dataset": "25_20260918_133615",
+      "episode": 9,
+      "wrist_roll_span_degrees": 0.5274725407361984
+    }
+  ]
+}

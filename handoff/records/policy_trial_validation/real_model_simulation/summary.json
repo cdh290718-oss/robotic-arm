@@ -1,0 +1,117 @@
+{
+  "status": "failed",
+  "mode": "simulate",
+  "created_utc": "2026-09-21T15:37:54.214675+00:00",
+  "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "G:\\LeRobot\\.venv\\Scripts\\python.exe",
+  "arguments": {
+    "mode": "simulate",
+    "seconds": "2.0",
+    "precision": "bf16",
+    "lerobot_root": "G:\\LeRobot",
+    "offline_kit": "G:\\LeRobot\\offline_kit",
+    "model_dir": "None",
+    "robot_config": "G:\\LeRobot\\data\\robots\\lerobot.json",
+    "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json",
+    "port": "",
+    "gpu_memory_fraction": "0",
+    "output": "D:\\桌面\\萌芽杯\\policy_trial_validation\\real_model_simulation"
+  },
+  "code_sha256": {
+    "bounded_run.py": "b4254e69a2de4affbf9c796b20d83d05afc37ecec627ebb416e37e89b1236af5",
+    "control_core.py": "3e1cdb12bdc6226777d7fac911eae7a9c18cdd5360d3c5e8d5e4794b800a3a2f",
+    "live_probe.py": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635",
+    "readonly_bus.py": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad",
+    "test_control.py": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41",
+    "test_grasp_limits.py": "52524232fffc350f1b9cd6ca1115d37f090683601a9c2ad7cb1026af8e80e4ce",
+    "test_integration.py": "528b4ee58bcf976084ac529a0df7f17d8f6e922c80c04763d7bc427da8cbbc0b",
+    "test_policy_startup.py": "c4ad9cfc3a792a444a3f2bc7982b756f15fefbc9ecbc8e5fbd813f0da7c84beb"
+  },
+  "bounds": {
+    "max_seconds": 2.0,
+    "max_excursion_deg": null,
+    "setpoint_speed_upper_deg_s": 5,
+    "max_raw_ticks_per_update": 1,
+    "gripper_fixed": false,
+    "max_loop_gap_ms": 150,
+    "max_input_age_ms": 250,
+    "max_new_result_age_ms": 1400,
+    "no_plan_stop_s": 2,
+    "workspace": "saved training calibration",
+    "gripper_speed_percent_s": 5,
+    "gripper_tracking_percent": 5
+  },
+  "limits": "Software bounded trial, not hard real-time or a collision-safe planner. Camera timestamps are decode times.",
+  "requested_mode": "grasp_simulate",
+  "grasp_success_verified": false,
+  "initial_raw": [
+    1964,
+    778,
+    3274,
+    2908,
+    2042,
+    2046
+  ],
+  "initial_state": [
+    -3.516483516483517,
+    -102.1978021978022,
+    96.61538461538463,
+    73.8901098901099,
+    -0.39560439560439564,
+    1.2448132780082988
+  ],
+  "raw_envelope": {
+    "min": [
+      701,
+      772,
+      1064,
+      892,
+      2042,
+      2028
+    ],
+    "max": [
+      3307,
+      3109,
+      3286,
+      3243,
+      2051,
+      3474
+    ]
+  },
+  "error": "Traceback (most recent call last):\n  File \"D:\\桌面\\萌芽杯\\policy_trial_kit\\bounded_run.py\", line 368, in main\n    save_panel(args.output,last_row,'camera_before.jpg')\n  File \"D:\\桌面\\萌芽杯\\policy_trial_kit\\bounded_run.py\", line 211, in save_panel\n    raise IOError('Failed to save camera panel')\nOSError: Failed to save camera panel\n",
+  "stop_reason": "exception",
+  "bus": {
+    "simulated": true,
+    "hardware_write_packets": 0,
+    "simulated_commands": 0
+  },
+  "worker_exitcode": 0,
+  "telemetry": {
+    "initial_query": {
+      "returncode": 0,
+      "stdout": "timestamp, pstate, utilization.gpu [%], memory.used [MiB], memory.free [MiB], power.draw [W], power.limit [W], temperature.gpu, clocks.current.graphics [MHz], clocks.current.memory [MHz]\n2026/09/21 23:37:55.928, P4, 6 %, 2074 MiB, 5737 MiB, 17.26 W, [N/A], 47, 1440 MHz, 9001 MHz\n",
+      "stderr": ""
+    },
+    "fields": "timestamp,pstate,utilization.gpu,memory.used,memory.free,power.draw,power.limit,temperature.gpu,clocks.current.graphics,clocks.current.memory",
+    "returncode": 1
+  },
+  "control_ticks": 0,
+  "timing": {
+    "interval_ms": null,
+    "work_ms": null,
+    "observation_age_ms": null
+  },
+  "rejected_chunks": [],
+  "clipped_ticks_per_joint": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "expired_plan_hold_ticks": 0,
+  "cleanup_errors": [
+    "Traceback (most recent call last):\n  File \"D:\\桌面\\萌芽杯\\policy_trial_kit\\bounded_run.py\", line 498, in main\n    save_panel(args.output,last_row,'camera_last_observation.jpg')\n  File \"D:\\桌面\\萌芽杯\\policy_trial_kit\\bounded_run.py\", line 211, in save_panel\n    raise IOError('Failed to save camera panel')\nOSError: Failed to save camera panel\n"
+  ]
+}

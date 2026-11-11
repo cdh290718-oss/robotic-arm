@@ -1,0 +1,1684 @@
+{
+  "serial": [
+    {
+      "t": 357948.4082466,
+      "direction": "TX",
+      "hex": "ffff010201fb"
+    },
+    {
+      "t": 357948.4085569,
+      "direction": "RX",
+      "hex": "ffff010200fc"
+    },
+    {
+      "t": 357948.4085789,
+      "direction": "TX",
+      "hex": "ffff0104020302f3"
+    },
+    {
+      "t": 357948.4089242,
+      "direction": "RX",
+      "hex": "ffff01040009"
+    },
+    {
+      "t": 357948.4089624,
+      "direction": "RX",
+      "hex": "03ee"
+    },
+    {
+      "t": 357948.4090004,
+      "direction": "TX",
+      "hex": "ffff020201fa"
+    },
+    {
+      "t": 357948.4092417,
+      "direction": "RX",
+      "hex": "ffff020200fb"
+    },
+    {
+      "t": 357948.4092543,
+      "direction": "TX",
+      "hex": "ffff0204020302f2"
+    },
+    {
+      "t": 357948.409564,
+      "direction": "RX",
+      "hex": "ffff02040009"
+    },
+    {
+      "t": 357948.4095787,
+      "direction": "RX",
+      "hex": "03ed"
+    },
+    {
+      "t": 357948.4096001,
+      "direction": "TX",
+      "hex": "ffff030201f9"
+    },
+    {
+      "t": 357948.4098692,
+      "direction": "RX",
+      "hex": "ffff030200fa"
+    },
+    {
+      "t": 357948.4098802,
+      "direction": "TX",
+      "hex": "ffff0304020302f1"
+    },
+    {
+      "t": 357948.4101672,
+      "direction": "RX",
+      "hex": "ffff03040009"
+    },
+    {
+      "t": 357948.4101788,
+      "direction": "RX",
+      "hex": "03ec"
+    },
+    {
+      "t": 357948.4101953,
+      "direction": "TX",
+      "hex": "ffff040201f8"
+    },
+    {
+      "t": 357948.4104436,
+      "direction": "RX",
+      "hex": "ffff040200f9"
+    },
+    {
+      "t": 357948.4104588,
+      "direction": "TX",
+      "hex": "ffff0404020302f0"
+    },
+    {
+      "t": 357948.4107473,
+      "direction": "RX",
+      "hex": "ffff04040009"
+    },
+    {
+      "t": 357948.4107631,
+      "direction": "RX",
+      "hex": "03eb"
+    },
+    {
+      "t": 357948.4107774,
+      "direction": "TX",
+      "hex": "ffff050201f7"
+    },
+    {
+      "t": 357948.4110513,
+      "direction": "RX",
+      "hex": "ffff050200f8"
+    },
+    {
+      "t": 357948.4110612,
+      "direction": "TX",
+      "hex": "ffff0504020302ef"
+    },
+    {
+      "t": 357948.4113511,
+      "direction": "RX",
+      "hex": "ffff05040009"
+    },
+    {
+      "t": 357948.4113642,
+      "direction": "RX",
+      "hex": "03ea"
+    },
+    {
+      "t": 357948.4113831,
+      "direction": "TX",
+      "hex": "ffff060201f6"
+    },
+    {
+      "t": 357948.4116925,
+      "direction": "RX",
+      "hex": "ffff060200f7"
+    },
+    {
+      "t": 357948.4117073,
+      "direction": "TX",
+      "hex": "ffff0604020302ee"
+    },
+    {
+      "t": 357948.4119883,
+      "direction": "RX",
+      "hex": "ffff06040009"
+    },
+    {
+      "t": 357948.4120002,
+      "direction": "RX",
+      "hex": "03e9"
+    },
+    {
+      "t": 357948.4120283,
+      "direction": "TX",
+      "hex": "ffff0104020001f7"
+    },
+    {
+      "t": 357948.412327,
+      "direction": "RX",
+      "hex": "ffff01030003"
+    },
+    {
+      "t": 357948.4123728,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4123967,
+      "direction": "TX",
+      "hex": "ffff0104020101f6"
+    },
+    {
+      "t": 357948.4126717,
+      "direction": "RX",
+      "hex": "ffff0103000a"
+    },
+    {
+      "t": 357948.4126839,
+      "direction": "RX",
+      "hex": "f1"
+    },
+    {
+      "t": 357948.4127046,
+      "direction": "TX",
+      "hex": "ffff0204020001f6"
+    },
+    {
+      "t": 357948.4130188,
+      "direction": "RX",
+      "hex": "ffff02030003"
+    },
+    {
+      "t": 357948.4130298,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4130433,
+      "direction": "TX",
+      "hex": "ffff0204020101f5"
+    },
+    {
+      "t": 357948.4133221,
+      "direction": "RX",
+      "hex": "ffff0203000a"
+    },
+    {
+      "t": 357948.4133347,
+      "direction": "RX",
+      "hex": "f0"
+    },
+    {
+      "t": 357948.4133548,
+      "direction": "TX",
+      "hex": "ffff0304020001f5"
+    },
+    {
+      "t": 357948.4137106,
+      "direction": "RX",
+      "hex": "ffff03030003"
+    },
+    {
+      "t": 357948.4137224,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4137362,
+      "direction": "TX",
+      "hex": "ffff0304020101f4"
+    },
+    {
+      "t": 357948.4140305,
+      "direction": "RX",
+      "hex": "ffff0303000a"
+    },
+    {
+      "t": 357948.414043,
+      "direction": "RX",
+      "hex": "ef"
+    },
+    {
+      "t": 357948.4140639,
+      "direction": "TX",
+      "hex": "ffff0404020001f4"
+    },
+    {
+      "t": 357948.4143588,
+      "direction": "RX",
+      "hex": "ffff04030003"
+    },
+    {
+      "t": 357948.4143731,
+      "direction": "RX",
+      "hex": "f5"
+    },
+    {
+      "t": 357948.4143868,
+      "direction": "TX",
+      "hex": "ffff0404020101f3"
+    },
+    {
+      "t": 357948.4146705,
+      "direction": "RX",
+      "hex": "ffff0403000a"
+    },
+    {
+      "t": 357948.4146805,
+      "direction": "RX",
+      "hex": "ee"
+    },
+    {
+      "t": 357948.4146929,
+      "direction": "TX",
+      "hex": "ffff0504020001f3"
+    },
+    {
+      "t": 357948.4149662,
+      "direction": "RX",
+      "hex": "ffff05030003"
+    },
+    {
+      "t": 357948.414976,
+      "direction": "RX",
+      "hex": "f4"
+    },
+    {
+      "t": 357948.414987,
+      "direction": "TX",
+      "hex": "ffff0504020101f2"
+    },
+    {
+      "t": 357948.4152647,
+      "direction": "RX",
+      "hex": "ffff0503000a"
+    },
+    {
+      "t": 357948.4152744,
+      "direction": "RX",
+      "hex": "ed"
+    },
+    {
+      "t": 357948.4152859,
+      "direction": "TX",
+      "hex": "ffff0604020001f2"
+    },
+    {
+      "t": 357948.4155665,
+      "direction": "RX",
+      "hex": "ffff06030003"
+    },
+    {
+      "t": 357948.4155761,
+      "direction": "RX",
+      "hex": "f3"
+    },
+    {
+      "t": 357948.415587,
+      "direction": "TX",
+      "hex": "ffff0604020101f1"
+    },
+    {
+      "t": 357948.4159413,
+      "direction": "RX",
+      "hex": "ffff0603000a"
+    },
+    {
+      "t": 357948.4159526,
+      "direction": "RX",
+      "hex": "ec"
+    },
+    {
+      "t": 357948.4160012,
+      "direction": "TX",
+      "hex": "ffff0104020902ed"
+    },
+    {
+      "t": 357948.4162983,
+      "direction": "RX",
+      "hex": "ffff010400bd"
+    },
+    {
+      "t": 357948.4163085,
+      "direction": "RX",
+      "hex": "023b"
+    },
+    {
+      "t": 357948.4163315,
+      "direction": "TX",
+      "hex": "ffff0104020b02eb"
+    },
+    {
+      "t": 357948.4166965,
+      "direction": "RX",
+      "hex": "ffff010400eb"
+    },
+    {
+      "t": 357948.4167061,
+      "direction": "RX",
+      "hex": "0c03"
+    },
+    {
+      "t": 357948.4167257,
+      "direction": "TX",
+      "hex": "ffff0104021f02d7"
+    },
+    {
+      "t": 357948.4170646,
+      "direction": "RX",
+      "hex": "ffff01040033"
+    },
+    {
+      "t": 357948.4170771,
+      "direction": "RX",
+      "hex": "0bbc"
+    },
+    {
+      "t": 357948.4171091,
+      "direction": "TX",
+      "hex": "ffff0204020902ec"
+    },
+    {
+      "t": 357948.4174021,
+      "direction": "RX",
+      "hex": "ffff02040004"
+    },
+    {
+      "t": 357948.4174173,
+      "direction": "RX",
+      "hex": "03f2"
+    },
+    {
+      "t": 357948.4174463,
+      "direction": "TX",
+      "hex": "ffff0204020b02ea"
+    },
+    {
+      "t": 357948.4177442,
+      "direction": "RX",
+      "hex": "ffff02040025"
+    },
+    {
+      "t": 357948.4177581,
+      "direction": "RX",
+      "hex": "0cc8"
+    },
+    {
+      "t": 357948.4177803,
+      "direction": "TX",
+      "hex": "ffff0204021f02d6"
+    },
+    {
+      "t": 357948.418066,
+      "direction": "RX",
+      "hex": "ffff02040008"
+    },
+    {
+      "t": 357948.4180766,
+      "direction": "RX",
+      "hex": "0ee3"
+    },
+    {
+      "t": 357948.4180962,
+      "direction": "TX",
+      "hex": "ffff0304020902eb"
+    },
+    {
+      "t": 357948.4183752,
+      "direction": "RX",
+      "hex": "ffff03040028"
+    },
+    {
+      "t": 357948.4183866,
+      "direction": "RX",
+      "hex": "04cc"
+    },
+    {
+      "t": 357948.4184111,
+      "direction": "TX",
+      "hex": "ffff0304020b02e9"
+    },
+    {
+      "t": 357948.4187324,
+      "direction": "RX",
+      "hex": "ffff030400d6"
+    },
+    {
+      "t": 357948.4187445,
+      "direction": "RX",
+      "hex": "0c16"
+    },
+    {
+      "t": 357948.4187604,
+      "direction": "TX",
+      "hex": "ffff0304021f02d5"
+    },
+    {
+      "t": 357948.4191214,
+      "direction": "RX",
+      "hex": "ffff030400ba"
+    },
+    {
+      "t": 357948.4191673,
+      "direction": "RX",
+      "hex": "0638"
+    },
+    {
+      "t": 357948.4191894,
+      "direction": "TX",
+      "hex": "ffff0404020902ea"
+    },
+    {
+      "t": 357948.4194693,
+      "direction": "RX",
+      "hex": "ffff0404007c"
+    },
+    {
+      "t": 357948.4194797,
+      "direction": "RX",
+      "hex": "0378"
+    },
+    {
+      "t": 357948.4194965,
+      "direction": "TX",
+      "hex": "ffff0404020b02e8"
+    },
+    {
+      "t": 357948.4197722,
+      "direction": "RX",
+      "hex": "ffff040400ab"
+    },
+    {
+      "t": 357948.4197824,
+      "direction": "RX",
+      "hex": "0c40"
+    },
+    {
+      "t": 357948.4197972,
+      "direction": "TX",
+      "hex": "ffff0404021f02d4"
+    },
+    {
+      "t": 357948.4201103,
+      "direction": "RX",
+      "hex": "ffff040400ab"
+    },
+    {
+      "t": 357948.4201203,
+      "direction": "RX",
+      "hex": "0d3f"
+    },
+    {
+      "t": 357948.4201369,
+      "direction": "TX",
+      "hex": "ffff0504020902e9"
+    },
+    {
+      "t": 357948.4204336,
+      "direction": "RX",
+      "hex": "ffff050400fa"
+    },
+    {
+      "t": 357948.4204431,
+      "direction": "RX",
+      "hex": "07f5"
+    },
+    {
+      "t": 357948.4204578,
+      "direction": "TX",
+      "hex": "ffff0504020b02e7"
+    },
+    {
+      "t": 357948.4207478,
+      "direction": "RX",
+      "hex": "ffff05040003"
+    },
+    {
+      "t": 357948.4207578,
+      "direction": "RX",
+      "hex": "08eb"
+    },
+    {
+      "t": 357948.420772,
+      "direction": "TX",
+      "hex": "ffff0504021f02d3"
+    },
+    {
+      "t": 357948.4211126,
+      "direction": "RX",
+      "hex": "ffff050400d3"
+    },
+    {
+      "t": 357948.4211258,
+      "direction": "RX",
+      "hex": "0122"
+    },
+    {
+      "t": 357948.421155,
+      "direction": "TX",
+      "hex": "ffff0604020902e8"
+    },
+    {
+      "t": 357948.4214545,
+      "direction": "RX",
+      "hex": "ffff060400ec"
+    },
+    {
+      "t": 357948.4214651,
+      "direction": "RX",
+      "hex": "0702"
+    },
+    {
+      "t": 357948.421483,
+      "direction": "TX",
+      "hex": "ffff0604020b02e6"
+    },
+    {
+      "t": 357948.4217803,
+      "direction": "RX",
+      "hex": "ffff06040092"
+    },
+    {
+      "t": 357948.4217926,
+      "direction": "RX",
+      "hex": "0d56"
+    },
+    {
+      "t": 357948.4218362,
+      "direction": "TX",
+      "hex": "ffff0604021f02d2"
+    },
+    {
+      "t": 357948.4221393,
+      "direction": "RX",
+      "hex": "ffff"
+    },
+    {
+      "t": 357948.4221833,
+      "direction": "RX",
+      "hex": "060400d3"
+    },
+    {
+      "t": 357948.4221937,
+      "direction": "RX",
+      "hex": "0e14"
+    },
+    {
+      "t": 357948.4225427,
+      "direction": "TX",
+      "hex": "fffffe0a82280101020304050637"
+    },
+    {
+      "t": 357948.4229142,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.4229503,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.4229883,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.4229978,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4230832,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.4230924,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4231835,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.4231936,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.423306,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.423315,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4233958,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.4234045,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4234493,
+      "direction": "TX",
+      "hex": "fffffe0a82280101020304050637"
+    },
+    {
+      "t": 357948.4238005,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.4238137,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.4238856,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.423895,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.423999,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.424008,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4240869,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.4240959,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4241806,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.4241897,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4243113,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.4243203,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.42437,
+      "direction": "TX",
+      "hex": "fffffe0a8221010102030405063e"
+    },
+    {
+      "t": 357948.4247202,
+      "direction": "RX",
+      "hex": "ffff"
+    },
+    {
+      "t": 357948.424732,
+      "direction": "RX",
+      "hex": "01030000"
+    },
+    {
+      "t": 357948.4247424,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.4248125,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.4248215,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4249311,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.4249407,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4250232,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.4250324,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4251091,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.4251182,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4252043,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.425213,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4252484,
+      "direction": "TX",
+      "hex": "fffffe0a82380201020304050626"
+    },
+    {
+      "t": 357948.4256725,
+      "direction": "RX",
+      "hex": "ffff0104"
+    },
+    {
+      "t": 357948.4256826,
+      "direction": "RX",
+      "hex": "00fe"
+    },
+    {
+      "t": 357948.4256918,
+      "direction": "RX",
+      "hex": "07f5"
+    },
+    {
+      "t": 357948.4257172,
+      "direction": "RX",
+      "hex": "ffff02040005"
+    },
+    {
+      "t": 357948.4257275,
+      "direction": "RX",
+      "hex": "03f1"
+    },
+    {
+      "t": 357948.4258368,
+      "direction": "RX",
+      "hex": "ffff030400cc"
+    },
+    {
+      "t": 357948.4258459,
+      "direction": "RX",
+      "hex": "0c20"
+    },
+    {
+      "t": 357948.4259356,
+      "direction": "RX",
+      "hex": "ffff0404000e"
+    },
+    {
+      "t": 357948.425945,
+      "direction": "RX",
+      "hex": "0bde"
+    },
+    {
+      "t": 357948.4260607,
+      "direction": "RX",
+      "hex": "ffff05040001"
+    },
+    {
+      "t": 357948.4260735,
+      "direction": "RX",
+      "hex": "08ed"
+    },
+    {
+      "t": 357948.4261456,
+      "direction": "RX",
+      "hex": "ffff"
+    },
+    {
+      "t": 357948.426155,
+      "direction": "RX",
+      "hex": "060400fd"
+    },
+    {
+      "t": 357948.4261636,
+      "direction": "RX",
+      "hex": "07f1"
+    },
+    {
+      "t": 357948.4765308,
+      "direction": "TX",
+      "hex": "fffffe0a82380201020304050626"
+    },
+    {
+      "t": 357948.4770258,
+      "direction": "RX",
+      "hex": "ffff010400fe"
+    },
+    {
+      "t": 357948.4770876,
+      "direction": "RX",
+      "hex": "07f5"
+    },
+    {
+      "t": 357948.477116,
+      "direction": "RX",
+      "hex": "ffff02040005"
+    },
+    {
+      "t": 357948.4771336,
+      "direction": "RX",
+      "hex": "03f1"
+    },
+    {
+      "t": 357948.477199,
+      "direction": "RX",
+      "hex": "ffff030400cc"
+    },
+    {
+      "t": 357948.4772157,
+      "direction": "RX",
+      "hex": "0c20"
+    },
+    {
+      "t": 357948.4773223,
+      "direction": "RX",
+      "hex": "ffff0404000e"
+    },
+    {
+      "t": 357948.4773392,
+      "direction": "RX",
+      "hex": "0bde"
+    },
+    {
+      "t": 357948.4774104,
+      "direction": "RX",
+      "hex": "ffff05040001"
+    },
+    {
+      "t": 357948.4774286,
+      "direction": "RX",
+      "hex": "08ed"
+    },
+    {
+      "t": 357948.4775588,
+      "direction": "RX",
+      "hex": "ffff060400fd"
+    },
+    {
+      "t": 357948.4775759,
+      "direction": "RX",
+      "hex": "07f1"
+    },
+    {
+      "t": 357948.4778096,
+      "direction": "TX",
+      "hex": "fffffe16832a0201fe0702050303cc0c040e0b05010806fd071c"
+    },
+    {
+      "t": 357948.4781638,
+      "direction": "TX",
+      "hex": "fffffe0a82280101020304050637"
+    },
+    {
+      "t": 357948.4786763,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.4787126,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.4787366,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.4787535,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4788512,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.4788699,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4788894,
+      "direction": "RX",
+      "hex": "ffff04030001"
+    },
+    {
+      "t": 357948.4789136,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4790657,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.479083,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4791079,
+      "direction": "RX",
+      "hex": "ffff06030001"
+    },
+    {
+      "t": 357948.4791247,
+      "direction": "RX",
+      "hex": "f5"
+    },
+    {
+      "t": 357948.4791955,
+      "direction": "TX",
+      "hex": "fffffe0a822a0201020304050634"
+    },
+    {
+      "t": 357948.4796811,
+      "direction": "RX",
+      "hex": "ffff010400fe"
+    },
+    {
+      "t": 357948.4797069,
+      "direction": "RX",
+      "hex": "07f5"
+    },
+    {
+      "t": 357948.4797547,
+      "direction": "RX",
+      "hex": "ffff02040005"
+    },
+    {
+      "t": 357948.4797747,
+      "direction": "RX",
+      "hex": "03f1"
+    },
+    {
+      "t": 357948.4799155,
+      "direction": "RX",
+      "hex": "ffff030400cc"
+    },
+    {
+      "t": 357948.4799458,
+      "direction": "RX",
+      "hex": "0c20"
+    },
+    {
+      "t": 357948.4799746,
+      "direction": "RX",
+      "hex": "ffff0404000e"
+    },
+    {
+      "t": 357948.4800158,
+      "direction": "RX",
+      "hex": "0bde"
+    },
+    {
+      "t": 357948.4800376,
+      "direction": "RX",
+      "hex": "ffff05040001"
+    },
+    {
+      "t": 357948.4800542,
+      "direction": "RX",
+      "hex": "08ed"
+    },
+    {
+      "t": 357948.4801327,
+      "direction": "RX",
+      "hex": "ffff060400fd"
+    },
+    {
+      "t": 357948.4801489,
+      "direction": "RX",
+      "hex": "07f1"
+    },
+    {
+      "t": 357948.480288,
+      "direction": "TX",
+      "hex": "fffffe0a82380201020304050626"
+    },
+    {
+      "t": 357948.4807829,
+      "direction": "RX",
+      "hex": "ffff010400fe"
+    },
+    {
+      "t": 357948.4808045,
+      "direction": "RX",
+      "hex": "07f5"
+    },
+    {
+      "t": 357948.4808283,
+      "direction": "RX",
+      "hex": "ffff02040005"
+    },
+    {
+      "t": 357948.4808448,
+      "direction": "RX",
+      "hex": "03f1"
+    },
+    {
+      "t": 357948.4809768,
+      "direction": "RX",
+      "hex": "ffff030400cc"
+    },
+    {
+      "t": 357948.4809922,
+      "direction": "RX",
+      "hex": "0c20"
+    },
+    {
+      "t": 357948.4810099,
+      "direction": "RX",
+      "hex": "ffff0404000e"
+    },
+    {
+      "t": 357948.4810254,
+      "direction": "RX",
+      "hex": "0bde"
+    },
+    {
+      "t": 357948.4812049,
+      "direction": "RX",
+      "hex": "ffff05040001"
+    },
+    {
+      "t": 357948.4812207,
+      "direction": "RX",
+      "hex": "08ed"
+    },
+    {
+      "t": 357948.4812379,
+      "direction": "RX",
+      "hex": "ffff060400fd"
+    },
+    {
+      "t": 357948.481253,
+      "direction": "RX",
+      "hex": "07f1"
+    },
+    {
+      "t": 357948.4813337,
+      "direction": "TX",
+      "hex": "fffffe0a82450201020304050619"
+    },
+    {
+      "t": 357948.4817789,
+      "direction": "RX",
+      "hex": "ffff01040000"
+    },
+    {
+      "t": 357948.4817963,
+      "direction": "RX",
+      "hex": "00fa"
+    },
+    {
+      "t": 357948.4819355,
+      "direction": "RX",
+      "hex": "ffff02040000"
+    },
+    {
+      "t": 357948.4819556,
+      "direction": "RX",
+      "hex": "00f9"
+    },
+    {
+      "t": 357948.4819733,
+      "direction": "RX",
+      "hex": "ffff03040000"
+    },
+    {
+      "t": 357948.4819878,
+      "direction": "RX",
+      "hex": "00f8"
+    },
+    {
+      "t": 357948.4821087,
+      "direction": "RX",
+      "hex": "ffff04040000"
+    },
+    {
+      "t": 357948.4821264,
+      "direction": "RX",
+      "hex": "00f7"
+    },
+    {
+      "t": 357948.4822523,
+      "direction": "RX",
+      "hex": "ffff05040000"
+    },
+    {
+      "t": 357948.4822698,
+      "direction": "RX",
+      "hex": "00f6"
+    },
+    {
+      "t": 357948.4822859,
+      "direction": "RX",
+      "hex": "ffff06040000"
+    },
+    {
+      "t": 357948.4823038,
+      "direction": "RX",
+      "hex": "00f5"
+    },
+    {
+      "t": 357948.4823566,
+      "direction": "TX",
+      "hex": "fffffe0a823c0201020304050622"
+    },
+    {
+      "t": 357948.4828139,
+      "direction": "RX",
+      "hex": "ffff01040000"
+    },
+    {
+      "t": 357948.4828305,
+      "direction": "RX",
+      "hex": "00fa"
+    },
+    {
+      "t": 357948.482848,
+      "direction": "RX",
+      "hex": "ffff02040000"
+    },
+    {
+      "t": 357948.4828626,
+      "direction": "RX",
+      "hex": "00f9"
+    },
+    {
+      "t": 357948.4829434,
+      "direction": "RX",
+      "hex": "ff"
+    },
+    {
+      "t": 357948.4830146,
+      "direction": "RX",
+      "hex": "ff03040000"
+    },
+    {
+      "t": 357948.4830295,
+      "direction": "RX",
+      "hex": "00f8"
+    },
+    {
+      "t": 357948.4830674,
+      "direction": "RX",
+      "hex": "ffff04040000"
+    },
+    {
+      "t": 357948.4830812,
+      "direction": "RX",
+      "hex": "00f7"
+    },
+    {
+      "t": 357948.4831597,
+      "direction": "RX",
+      "hex": "ffff05040000"
+    },
+    {
+      "t": 357948.4831741,
+      "direction": "RX",
+      "hex": "00f6"
+    },
+    {
+      "t": 357948.483275,
+      "direction": "RX",
+      "hex": "ffff06040000"
+    },
+    {
+      "t": 357948.4832896,
+      "direction": "RX",
+      "hex": "00f5"
+    },
+    {
+      "t": 357948.4833391,
+      "direction": "TX",
+      "hex": "fffffe0a8241010102030405061e"
+    },
+    {
+      "t": 357948.4837026,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.4837199,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.4838023,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.4838167,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4838891,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.4839043,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4841295,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.4841434,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4841588,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.4841721,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4841944,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.4842071,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4842723,
+      "direction": "TX",
+      "hex": "ffff0104022801cf"
+    },
+    {
+      "t": 357948.4845845,
+      "direction": "RX",
+      "hex": "ffff01030001"
+    },
+    {
+      "t": 357948.4846048,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4846573,
+      "direction": "TX",
+      "hex": "ffff0204022801ce"
+    },
+    {
+      "t": 357948.4849604,
+      "direction": "RX",
+      "hex": "ffff02030001"
+    },
+    {
+      "t": 357948.4849754,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4850027,
+      "direction": "TX",
+      "hex": "ffff0304022801cd"
+    },
+    {
+      "t": 357948.4853013,
+      "direction": "RX",
+      "hex": "ffff03030001"
+    },
+    {
+      "t": 357948.4853169,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.485342,
+      "direction": "TX",
+      "hex": "ffff0404022801cc"
+    },
+    {
+      "t": 357948.4856821,
+      "direction": "RX",
+      "hex": "ffff04030001"
+    },
+    {
+      "t": 357948.4856961,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4857188,
+      "direction": "TX",
+      "hex": "ffff0504022801cb"
+    },
+    {
+      "t": 357948.4860159,
+      "direction": "RX",
+      "hex": "ffff05030001"
+    },
+    {
+      "t": 357948.4860296,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4860488,
+      "direction": "TX",
+      "hex": "ffff0604022801ca"
+    },
+    {
+      "t": 357948.486322,
+      "direction": "RX",
+      "hex": "ffff06030001"
+    },
+    {
+      "t": 357948.4863358,
+      "direction": "RX",
+      "hex": "f5"
+    },
+    {
+      "t": 357948.4864487,
+      "direction": "TX",
+      "hex": "fffffe1083280101000200030004000500060030"
+    },
+    {
+      "t": 357948.4865781,
+      "direction": "TX",
+      "hex": "fffffe0a82280101020304050637"
+    },
+    {
+      "t": 357948.4870106,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.4870254,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.487104,
+      "direction": "RX",
+      "hex": "ffff"
+    },
+    {
+      "t": 357948.4871176,
+      "direction": "RX",
+      "hex": "02030000"
+    },
+    {
+      "t": 357948.4871302,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4872163,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.4872288,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4873108,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.487322,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4873973,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.4874092,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4874933,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.4875046,
+      "direction": "RX",
+      "hex": "f6"
+    },
+    {
+      "t": 357948.4875467,
+      "direction": "TX",
+      "hex": "fffffe0a82280101020304050637"
+    },
+    {
+      "t": 357948.4879711,
+      "direction": "RX",
+      "hex": "ffff01030000"
+    },
+    {
+      "t": 357948.487989,
+      "direction": "RX",
+      "hex": "fb"
+    },
+    {
+      "t": 357948.488077,
+      "direction": "RX",
+      "hex": "ffff02030000"
+    },
+    {
+      "t": 357948.4880905,
+      "direction": "RX",
+      "hex": "fa"
+    },
+    {
+      "t": 357948.4881607,
+      "direction": "RX",
+      "hex": "ffff03030000"
+    },
+    {
+      "t": 357948.488175,
+      "direction": "RX",
+      "hex": "f9"
+    },
+    {
+      "t": 357948.4882692,
+      "direction": "RX",
+      "hex": "ffff04030000"
+    },
+    {
+      "t": 357948.4882838,
+      "direction": "RX",
+      "hex": "f8"
+    },
+    {
+      "t": 357948.4883712,
+      "direction": "RX",
+      "hex": "ffff05030000"
+    },
+    {
+      "t": 357948.488384,
+      "direction": "RX",
+      "hex": "f7"
+    },
+    {
+      "t": 357948.4884582,
+      "direction": "RX",
+      "hex": "ffff06030000"
+    },
+    {
+      "t": 357948.4884702,
+      "direction": "RX",
+      "hex": "f6"
+    }
+  ],
+  "status": "observed",
+  "initial": [
+    2046,
+    773,
+    3276,
+    2830,
+    2049,
+    2045
+  ],
+  "goal_write_time": 357948.4776333,
+  "after_goal": {
+    "Torque_Enable": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 1,
+      "wrist_roll": 0,
+      "gripper": 1
+    },
+    "Goal_Position": {
+      "shoulder_pan": 2046,
+      "shoulder_lift": 773,
+      "elbow_flex": 3276,
+      "wrist_flex": 2830,
+      "wrist_roll": 2049,
+      "gripper": 2045
+    },
+    "Present_Position": {
+      "shoulder_pan": 2046,
+      "shoulder_lift": 773,
+      "elbow_flex": 3276,
+      "wrist_flex": 2830,
+      "wrist_roll": 2049,
+      "gripper": 2045
+    },
+    "Present_Current": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "Present_Load": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "Status": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    }
+  },
+  "individual_torque": {
+    "shoulder_pan": 1,
+    "shoulder_lift": 1,
+    "elbow_flex": 1,
+    "wrist_flex": 1,
+    "wrist_roll": 1,
+    "gripper": 1
+  },
+  "cleanup": {
+    "action": "release_failed_startup",
+    "confirmed": true
+  },
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 2,
+    "write_packets": 2,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 42,
+      "0x82": 13,
+      "0x83": 2
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "torque_released"
+      }
+    ],
+    "normal_robot_connect_called": false
+  }
+}

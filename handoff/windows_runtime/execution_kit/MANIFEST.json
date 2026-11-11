@@ -1,0 +1,52 @@
+{
+  "files": {
+    "DEVELOPER_VALIDATION.json": {
+      "size_bytes": 3192,
+      "sha256": "b7d84edfee86627db9ae0fa27880353b987701d2e63a9176d955a6438920b629"
+    },
+    "README_zh.md": {
+      "size_bytes": 6761,
+      "sha256": "77a38a94e6398562f7eb7648802d0d929aa62958a6153b9818528340600ffcb2"
+    },
+    "Run-Bounded.ps1": {
+      "size_bytes": 2133,
+      "sha256": "ff70a385ee7b4839831df7bf3c52f24253f7d4be32aaaa5f0400af228c798802"
+    },
+    "TEST_RESULTS.txt": {
+      "size_bytes": 1873,
+      "sha256": "6aace8afa78e4e371d53612a3b1aebf590a3d339126abf0f61b0bb3a3b53a1b3"
+    },
+    "bounded_run.py": {
+      "size_bytes": 24225,
+      "sha256": "aae62a004ee0b7a5b903f78806ccc6afff4bcd69d41e9a2bc2d4353739eec338"
+    },
+    "checkpoint_manifest.json": {
+      "size_bytes": 3182,
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe"
+    },
+    "control_core.py": {
+      "size_bytes": 9660,
+      "sha256": "11a064fd1f35b9311c291a5f569c0c599c0c842dece49772946aa0e235becd44"
+    },
+    "live_probe.py": {
+      "size_bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    "readonly_bus.py": {
+      "size_bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    "reference_calibration.json": {
+      "size_bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    "test_control.py": {
+      "size_bytes": 9230,
+      "sha256": "32b740dbef5b8019438ff9fbc4700c15bb38c692a66bfb16ab376a1655baab27"
+    },
+    "test_integration.py": {
+      "size_bytes": 4839,
+      "sha256": "21182af514fb195ede17d918a26b4edf5f7a64e40a2de1f7b6485bda43de58d3"
+    }
+  }
+}

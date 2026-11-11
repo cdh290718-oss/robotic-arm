@@ -1,0 +1,15 @@
+{
+  "time": "2026-09-21 17:44:35",
+  "samples": [],
+  "error": "Traceback (most recent call last):\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 531, in _connect\n    if not self.port_handler.openPort():\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\port_handler.py\", line 25, in openPort\n    return self.setBaudRate(self.baudrate)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\port_handler.py\", line 49, in setBaudRate\n    return self.setupPort(baud)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\scservo_sdk\\port_handler.py\", line 95, in setupPort\n    self.ser = serial.Serial(\n               ^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\serial\\serialwin32.py\", line 33, in __init__\n    super(Serial, self).__init__(*args, **kwargs)\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\serial\\serialutil.py\", line 244, in __init__\n    self.open()\n  File \"G:\\LeRobot\\.venv\\Lib\\site-packages\\serial\\serialwin32.py\", line 64, in open\n    raise SerialException(\"could not open port {!r}: {!r}\".format(self.portstr, ctypes.WinError()))\nserial.serialutil.SerialException: could not open port 'COM5': PermissionError(13, '\u62d2\u7edd\u8bbf\u95ee\u3002', None, 5)\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_review_20260921\\recheck_readonly.py\", line 18, in main\n    arm.connect()\n  File \"G:\\LeRobot\\execution_kit\\readonly_bus.py\", line 58, in connect\n    self.bus.connect(handshake=True)\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\utils\\decorators.py\", line 39, in wrapper\n    return func(self, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 525, in connect\n    self._connect(handshake)\n  File \"G:\\LeRobot\\source\\lerobot-0.6.0\\src\\lerobot\\motors\\motors_bus.py\", line 536, in _connect\n    raise ConnectionError(\nConnectionError: \nCould not connect on port 'COM5'. Make sure you are using the correct port.\nTry running `lerobot-find-port`\n\n",
+  "bus": {
+    "allowed_packet_counts": {},
+    "blocked_packets": 0,
+    "torque_before": null,
+    "torque_after": null,
+    "torque_unchanged": null,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  }
+}

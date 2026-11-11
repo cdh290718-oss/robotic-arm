@@ -1,0 +1,86 @@
+{
+  "repository": "https://github.com/cdh290718-oss/LeRobot",
+  "repository_commit": "da4bdcf422d97f8e5332bbae0875c5a6487ecd4d",
+  "checkpoints": {
+    "006000": {
+      "source": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/006000/pretrained_model",
+      "files": {
+        "config.json": {
+          "bytes": 2574,
+          "sha256": "119f0cc18ad817416356714b1085e3be73f78e7931b6135caaa7763e04a86d47"
+        },
+        "model.safetensors": {
+          "bytes": 906712520,
+          "sha256": "1ec39a01ec6057ed21585e3c6a07302047bc9b9e67c993c1e10c69d397e61bcd"
+        },
+        "policy_postprocessor.json": {
+          "bytes": 660,
+          "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b"
+        },
+        "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+          "bytes": 7472,
+          "sha256": "1b07dff64a0063f9984abd23015a9ece4774fbfa3548eac1f5ee9212febc885d"
+        },
+        "policy_preprocessor.json": {
+          "bytes": 2033,
+          "sha256": "516c721a73a83fcffcad1f60bacae8bb31a0e0f8f5c4495333b90d33f452659e"
+        },
+        "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+          "bytes": 7472,
+          "sha256": "1b07dff64a0063f9984abd23015a9ece4774fbfa3548eac1f5ee9212febc885d"
+        },
+        "train_config.json": {
+          "bytes": 7523,
+          "sha256": "9b24c354365e351f97afed2de5b71bc508938bed6cf3a14ab03b3178dab2beed"
+        }
+      }
+    },
+    "010000": {
+      "source": "/vepfs-mlp2/mlp-public/huyaoqing/so101_vla_20260918/outputs/train10k/checkpoints/010000/pretrained_model",
+      "files": {
+        "config.json": {
+          "bytes": 2574,
+          "sha256": "119f0cc18ad817416356714b1085e3be73f78e7931b6135caaa7763e04a86d47"
+        },
+        "model.safetensors": {
+          "bytes": 906712520,
+          "sha256": "75a85759462d0b67f657104d928562568486c7250ba077d8b7937de6db991ad8"
+        },
+        "policy_postprocessor.json": {
+          "bytes": 660,
+          "sha256": "2b78bb742065288df2ec63b0ee35f97a1f6950171cf2272f7e34b1fe3873b17b"
+        },
+        "policy_postprocessor_step_0_unnormalizer_processor.safetensors": {
+          "bytes": 7472,
+          "sha256": "1b07dff64a0063f9984abd23015a9ece4774fbfa3548eac1f5ee9212febc885d"
+        },
+        "policy_preprocessor.json": {
+          "bytes": 2033,
+          "sha256": "516c721a73a83fcffcad1f60bacae8bb31a0e0f8f5c4495333b90d33f452659e"
+        },
+        "policy_preprocessor_step_5_normalizer_processor.safetensors": {
+          "bytes": 7472,
+          "sha256": "1b07dff64a0063f9984abd23015a9ece4774fbfa3548eac1f5ee9212febc885d"
+        },
+        "train_config.json": {
+          "bytes": 7523,
+          "sha256": "9b24c354365e351f97afed2de5b71bc508938bed6cf3a14ab03b3178dab2beed"
+        }
+      }
+    }
+  },
+  "base_cache_files": [
+    "added_tokens.json",
+    "chat_template.json",
+    "config.json",
+    "generation_config.json",
+    "merges.txt",
+    "model.safetensors",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "special_tokens_map.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "vocab.json"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "steps_observed": 200,
+  "seconds_per_step": 0.4283710576221347,
+  "peak_allocated_gib": 2.0639238357543945,
+  "peak_reserved_gib": 2.11328125,
+  "sleep_per_step": 0.3
+}

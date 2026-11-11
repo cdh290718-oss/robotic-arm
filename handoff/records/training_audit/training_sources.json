@@ -1,0 +1,52 @@
+[
+  {
+    "repo_id": "ChomCUI/14_20260918_120729",
+    "episodes": 12,
+    "frames": 7058
+  },
+  {
+    "repo_id": "ChomCUI/15_20260918_121827",
+    "episodes": 2,
+    "frames": 860
+  },
+  {
+    "repo_id": "ChomCUI/16_20260918_121952",
+    "episodes": 5,
+    "frames": 2692
+  },
+  {
+    "repo_id": "ChomCUI/17_20260918_122237",
+    "episodes": 13,
+    "frames": 6882
+  },
+  {
+    "repo_id": "ChomCUI/18_20260918_124443",
+    "episodes": 3,
+    "frames": 1542
+  },
+  {
+    "repo_id": "ChomCUI/20_20260918_130233",
+    "episodes": 3,
+    "frames": 1814
+  },
+  {
+    "repo_id": "ChomCUI/22_20260918_131137",
+    "episodes": 5,
+    "frames": 2985
+  },
+  {
+    "repo_id": "ChomCUI/23_20260918_132654",
+    "episodes": 4,
+    "frames": 2338
+  },
+  {
+    "repo_id": "ChomCUI/24_20260918_133006",
+    "episodes": 10,
+    "frames": 4619
+  },
+  {
+    "repo_id": "ChomCUI/25_20260918_133615",
+    "episodes": 10,
+    "frames": 4861
+  }
+]

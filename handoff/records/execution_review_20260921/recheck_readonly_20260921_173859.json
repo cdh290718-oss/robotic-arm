@@ -1,0 +1,26 @@
+{
+  "time": "2026-09-21 17:38:59",
+  "samples": [],
+  "error": "Traceback (most recent call last):\n  File \"D:\\\u684c\u9762\\\u840c\u82bd\u676f\\execution_review_20260921\\recheck_readonly.py\", line 18, in main\n    arm.connect()\n  File \"G:\\LeRobot\\execution_kit\\readonly_bus.py\", line 61, in connect\n    raise ValueError('On-device calibration differs from the saved training calibration. Stopping without writes.')\nValueError: On-device calibration differs from the saved training calibration. Stopping without writes.\n",
+  "bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 1
+    },
+    "blocked_packets": 0,
+    "torque_before": null,
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": null,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  }
+}

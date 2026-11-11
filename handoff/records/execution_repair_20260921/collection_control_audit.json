@@ -1,0 +1,171 @@
+{
+  "datasets": [
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\14_20260918_120729",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 7058
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\15_20260918_121827",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 860
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\16_20260918_121952",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 2692
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\17_20260918_122237",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 6882
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\18_20260918_124443",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 1542
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\20_20260918_130233",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 1814
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\22_20260918_131137",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 2985
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\23_20260918_132654",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 2338
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\24_20260918_133006",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 4619
+    },
+    {
+      "path": "G:\\LeRobot\\data\\ChomCUI\\25_20260918_133615",
+      "features": [
+        "action",
+        "observation.state",
+        "observation.images.1",
+        "observation.images.3",
+        "timestamp",
+        "frame_index",
+        "episode_index",
+        "index",
+        "task_index"
+      ],
+      "frames_read": 4861
+    }
+  ],
+  "note": "Previous-frame action compared with next observation within episode; not simultaneous hardware servo-error telemetry.",
+  "previous_target_vs_next_state_elbow_deg": {
+    "count": 35584,
+    "p50": 2.5055007934570312,
+    "p95": 7.868133544921875,
+    "p99": 10.593406677246094,
+    "max": 16.923076629638672,
+    "fraction_above_4": 0.18008093525179855
+  },
+  "target_step_elbow_deg": {
+    "count": 35584,
+    "p50": 0.08791160583496094,
+    "p95": 2.637361526489258,
+    "p99": 3.7802200317382812,
+    "max": 7.912087917327881,
+    "fraction_above_4": 0.0073066546762589925
+  }
+}
