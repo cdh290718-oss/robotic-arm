@@ -1,0 +1,229 @@
+{
+  "status": "completed",
+  "samples": [
+    {
+      "monotonic": 32413.0028721,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    },
+    {
+      "monotonic": 32413.1057346,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    },
+    {
+      "monotonic": 32413.208876,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    },
+    {
+      "monotonic": 32413.3121612,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    },
+    {
+      "monotonic": 32413.41565,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    },
+    {
+      "monotonic": 32413.5188953,
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "torque": {
+        "shoulder_pan": 1,
+        "shoulder_lift": 1,
+        "elbow_flex": 1,
+        "wrist_flex": 1,
+        "wrist_roll": 0,
+        "gripper": 1
+      },
+      "status": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    }
+  ],
+  "goals": "current position only, motor IDs 1,2,3,4,6",
+  "planned_hold_s": 0.6,
+  "initial_raw": [
+    1985,
+    777,
+    3275,
+    2751,
+    2050,
+    2045
+  ],
+  "activation_completed": true,
+  "release_confirmed": true,
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 2,
+    "write_packets": 2,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 37,
+      "0x82": 38,
+      "0x83": 2
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "goal_triggered_activation_verified",
+        "time": 32413.000112,
+        "raw": [
+          1985,
+          777,
+          3275,
+          2751,
+          2050,
+          2045
+        ]
+      },
+      {
+        "event": "torque_released"
+      }
+    ],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  },
+  "write_frames_hex": [
+    "fffffe13832a0201c10702090303cb0c04bf0a06fd07b7",
+    "fffffe1083280101000200030004000500060030"
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "created_utc": "2026-11-11T01:10:28.887529+00:00",
   "description": "SHA256 for staged 20260921-20261111 project assets, data and checkpoints; original legacy archive manifests cover older snapshot.",
-  "file_count": 553,
-  "total_bytes": 3832855018,
+  "file_count": 580,
+  "total_bytes": 3833107290,
   "files": [
     {
       "path": "handoff/device_configuration/calibration/robots/so_follower/lerobot.json",
@@ -2768,7 +2768,143 @@
       "path": "handoff/windows_runtime/policy_fixed_wrist_kit/validation_simulated_summary.json",
       "bytes": 4831,
       "sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/activation_probe.py",
+      "bytes": 3812,
+      "sha256": "ceccc4c08a31670d664f32d6a7bf896868869ab7482d5e8694e202bef1414c77"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/bounded_run.py",
+      "bytes": 28582,
+      "sha256": "8c5bdda76807e82598b5f4f50e2329374155349399a54bb67638176416d05eba"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/control_core.py",
+      "bytes": 16247,
+      "sha256": "dffc75f8954870509d5c67173e5cf25258bcef96063b45636e5b6b78c7e79b8a"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/elbow_probe_fixed.py",
+      "bytes": 4886,
+      "sha256": "b5f7d4c29a2f86ac330264bf830f417396d0c35124da0af55124d7d80529d9f2"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/live_probe.py",
+      "bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/results/20261111_175317_467981_Activation/summary.json",
+      "bytes": 4564,
+      "sha256": "62667633fa13e74b9bdc75d56d3071c23824adb654fe5f02c12c3d9686339d02"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/results/20261111_175317_467981_Activation_return.zip",
+      "bytes": 780,
+      "sha256": "fc849e30d8895064faf65fd064dba1f0b8be6fdae30e6a1ba638ad6f5a59d1cb"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/results/20261111_175450_102247_Elbow/summary.json",
+      "bytes": 41479,
+      "sha256": "ea666d8d7775b4ab665dde109f006e18ba03ba7bd00c626ce8f5fa35066ae3f4"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/results/20261111_175450_102247_Elbow_return.zip",
+      "bytes": 1856,
+      "sha256": "2a109c7d7088bc7a3d481f6de19c746f1ed7abd47f1a39ca3587ad794bf93ebb"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/REVIEW_zh.md",
+      "bytes": 2089,
+      "sha256": "0fffaad53f8ebf1fb2abaa851dadb0089a8de15242eca915fa3c82f584297356"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/test_activation_probe.py",
+      "bytes": 1627,
+      "sha256": "7d760cdc1cd8aed41a2c075b20e2e1fad83b6687f67fb7f799be65ec9f46e6cc"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/test_control.py",
+      "bytes": 9432,
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/test_elbow_probe_fixed.py",
+      "bytes": 1766,
+      "sha256": "990a88116ed6d0bd8c18c646a59c408770da08b75ebc272bf0cdbec8d339a55c"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_activation_probe/test_fixed_wrist.py",
+      "bytes": 5675,
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/manifest.json",
+      "bytes": 766,
+      "sha256": "7c277d7308ecaa33e053606af661dd77dcb2d72ecec434fa0115a1c0ddb11b74"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/README_zh.md",
+      "bytes": 1203,
+      "sha256": "d13403574f0dc48b6daf59b23141bae271b9f9ac51efbd1f3c0ce94d221dfdbd"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/results/20261111_174824_465035_WristWatch/summary.json",
+      "bytes": 73225,
+      "sha256": "e15aefc6cc82d28d18fd614619abf7de215f7505cf48b5c2776c9ba093e3b7a1"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/results/20261111_174824_465035_WristWatch_return.zip",
+      "bytes": 2885,
+      "sha256": "e675f4baf300fdccbdc7917495a36545afcf09c6e7b0d9d1cfa5af66085ff2c9"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/test_watch_wrist.py",
+      "bytes": 1449,
+      "sha256": "2c778de25226e3a6f8405b108fda126c398e06af51a5411e2e0f85f7c850f9e1"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/Watch-Wrist.ps1",
+      "bytes": 679,
+      "sha256": "7435b14185465bf4d449bd6e220554589c2938fc000005f7ce2c36476e709740"
+    },
+    {
+      "path": "handoff/windows_runtime/wrist_position_watch/watch_wrist.py",
+      "bytes": 4372,
+      "sha256": "8e7ed3b03f261b892d251676b5a7ad993c57f722167593f43c237a9397191be5"
+    },
+    {
+      "path": "handoff/records/20261111_1749_readonly/inference_summary.json",
+      "bytes": 591,
+      "sha256": "6b839dc0279ee2802b38c6ab21cb9fafbf072b34066dff73b59367461b4327dc"
+    },
+    {
+      "path": "handoff/records/20261111_1749_readonly/summary.json",
+      "bytes": 7584,
+      "sha256": "2aa63610ab526ae56db1582c7d10eb0b5c49690a959a3a642fb075a091e94b4d"
     }
   ],
-  "fixed_wrist_update": "2026-11-11: added tested code and image-free validation summary; real camera images and result ZIPs remain local."
+  "fixed_wrist_update": "2026-11-11: added tested code and image-free validation summary; real camera images and result ZIPs remain local.",
+  "fixed_wrist_activation_update": "2026-11-11: image-free current-pose and small-elbow physical diagnostic evidence and wrist position watcher."
 }

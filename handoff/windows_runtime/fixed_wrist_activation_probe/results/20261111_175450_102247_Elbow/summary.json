@@ -1,0 +1,1725 @@
+{
+  "status": "completed",
+  "samples": [
+    {
+      "elapsed_s": 0.010848799996892922,
+      "command": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.0166292
+    },
+    {
+      "elapsed_s": 0.11141859999770531,
+      "command": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.1175238
+    },
+    {
+      "elapsed_s": 0.21147349999955622,
+      "command": [
+        1985,
+        777,
+        3273,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3273,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 20,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.2168678
+    },
+    {
+      "elapsed_s": 0.3111895999973058,
+      "command": [
+        1985,
+        777,
+        3272,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3272,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 24,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.3175142
+    },
+    {
+      "elapsed_s": 0.4124932999984594,
+      "command": [
+        1985,
+        777,
+        3271,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3271,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 28,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.4191156
+    },
+    {
+      "elapsed_s": 0.5110675999967498,
+      "command": [
+        1985,
+        777,
+        3270,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3275,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3275,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3270,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 32,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.5163117
+    },
+    {
+      "elapsed_s": 0.6114547999968636,
+      "command": [
+        1985,
+        777,
+        3269,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3269,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 28,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.6166047
+    },
+    {
+      "elapsed_s": 0.7115456999999878,
+      "command": [
+        1985,
+        777,
+        3268,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3268,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 36,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.7167137
+    },
+    {
+      "elapsed_s": 0.8118732000002638,
+      "command": [
+        1985,
+        777,
+        3267,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3267,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 40,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.8171817
+    },
+    {
+      "elapsed_s": 0.9124061999973492,
+      "command": [
+        1985,
+        777,
+        3266,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3266,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 44,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32505.9175963
+    },
+    {
+      "elapsed_s": 1.0125441999989562,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.0178185
+    },
+    {
+      "elapsed_s": 1.1130884999984119,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 2,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.118317
+    },
+    {
+      "elapsed_s": 1.2136798999999883,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 2,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.218928
+    },
+    {
+      "elapsed_s": 1.314689399998315,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 2,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.3201043
+    },
+    {
+      "elapsed_s": 1.4146414999995613,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.4201889
+    },
+    {
+      "elapsed_s": 1.5144550999975763,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.5196104
+    },
+    {
+      "elapsed_s": 1.6144936999990023,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.6197131
+    },
+    {
+      "elapsed_s": 1.7158543999976246,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.7212776
+    },
+    {
+      "elapsed_s": 1.8155396000001929,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 2,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.8208177
+    },
+    {
+      "elapsed_s": 1.9170433999970555,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 1,
+          "wrist_flex": 0,
+          "wrist_roll": 1,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 124,
+          "wrist_flex": 124,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32506.9226487
+    },
+    {
+      "elapsed_s": 2.016047499997512,
+      "command": [
+        1985,
+        777,
+        3265,
+        2751,
+        2050,
+        2045
+      ],
+      "raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "registers": {
+        "Torque_Enable": {
+          "shoulder_pan": 1,
+          "shoulder_lift": 1,
+          "elbow_flex": 1,
+          "wrist_flex": 1,
+          "wrist_roll": 0,
+          "gripper": 1
+        },
+        "Present_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3274,
+          "wrist_flex": 2751,
+          "wrist_roll": 2050,
+          "gripper": 2045
+        },
+        "Goal_Position": {
+          "shoulder_pan": 1985,
+          "shoulder_lift": 777,
+          "elbow_flex": 3265,
+          "wrist_flex": 2751,
+          "wrist_roll": 0,
+          "gripper": 2045
+        },
+        "Present_Current": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 2,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Load": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 48,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        },
+        "Present_Voltage": {
+          "shoulder_pan": 126,
+          "shoulder_lift": 125,
+          "elbow_flex": 125,
+          "wrist_flex": 125,
+          "wrist_roll": 126,
+          "gripper": 126
+        },
+        "Status": {
+          "shoulder_pan": 0,
+          "shoulder_lift": 0,
+          "elbow_flex": 0,
+          "wrist_flex": 0,
+          "wrist_roll": 0,
+          "gripper": 0
+        }
+      },
+      "monotonic": 32507.0214762
+    }
+  ],
+  "max_elbow_goal_ticks": 10,
+  "tracking_bound_degrees": 2,
+  "initial_raw": [
+    1985,
+    777,
+    3275,
+    2751,
+    2050,
+    2045
+  ],
+  "release_confirmed": true,
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 23,
+    "write_packets": 23,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 37,
+      "0x82": 398,
+      "0x83": 23
+    },
+    "blocked_packets": 0,
+    "events": [
+      {
+        "event": "goal_triggered_activation_verified",
+        "time": 32504.9978215,
+        "raw": [
+          1985,
+          777,
+          3275,
+          2751,
+          2050,
+          2045
+        ]
+      },
+      {
+        "event": "torque_released"
+      }
+    ],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  },
+  "write_frames_hex": [
+    "fffffe13832a0201c10702090303cb0c04bf0a06fd07b7",
+    "fffffe13832a0201c10702090303cb0c04bf0a06fd07b7",
+    "fffffe13832a0201c10702090303ca0c04bf0a06fd07b8",
+    "fffffe13832a0201c10702090303c90c04bf0a06fd07b9",
+    "fffffe13832a0201c10702090303c80c04bf0a06fd07ba",
+    "fffffe13832a0201c10702090303c70c04bf0a06fd07bb",
+    "fffffe13832a0201c10702090303c60c04bf0a06fd07bc",
+    "fffffe13832a0201c10702090303c50c04bf0a06fd07bd",
+    "fffffe13832a0201c10702090303c40c04bf0a06fd07be",
+    "fffffe13832a0201c10702090303c30c04bf0a06fd07bf",
+    "fffffe13832a0201c10702090303c20c04bf0a06fd07c0",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe13832a0201c10702090303c10c04bf0a06fd07c1",
+    "fffffe1083280101000200030004000500060030"
+  ]
+}
