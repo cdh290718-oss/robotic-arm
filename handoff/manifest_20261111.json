@@ -1,8 +1,8 @@
 {
   "created_utc": "2026-11-11T01:10:28.887529+00:00",
   "description": "SHA256 for staged 20260921-20261111 project assets, data and checkpoints; original legacy archive manifests cover older snapshot.",
-  "file_count": 532,
-  "total_bytes": 3832676279,
+  "file_count": 553,
+  "total_bytes": 3832855018,
   "files": [
     {
       "path": "handoff/device_configuration/calibration/robots/so_follower/lerobot.json",
@@ -2663,6 +2663,112 @@
       "path": "references/project-materials/20260920-competition/基于VLA的小型机械臂验证及智能服务场景应用研究项目介绍材料.pdf",
       "bytes": 81547,
       "sha256": "605c190586530fef053735987dddd0c136029813ac790d7f05c14078b91cd0e7"
+    },
+    {
+      "path": "handoff/deliveries/policy_fixed_wrist_kit_20261111.zip",
+      "bytes": 48321,
+      "sha256": "7256853a47e48f4225026727e61968575aa28fb58bc87eca9461b9fb992c0ed7"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/bounded_run.py",
+      "bytes": 28582,
+      "sha256": "8c5bdda76807e82598b5f4f50e2329374155349399a54bb67638176416d05eba"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/checkpoint_manifest.json",
+      "bytes": 3182,
+      "sha256": "5cb834444b9f9e0fa0277e60067d01efa9c229e640fa20baba2ef08bc5632fbe"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/control_core.py",
+      "bytes": 16247,
+      "sha256": "dffc75f8954870509d5c67173e5cf25258bcef96063b45636e5b6b78c7e79b8a"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/FIXED_WRIST_zh.md",
+      "bytes": 3802,
+      "sha256": "8dd468e690f8596ca56f8b4252fcdc85492960a7b231fd77e6b216f5097f2ba6"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/live_probe.py",
+      "bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/manifest.json",
+      "bytes": 2480,
+      "sha256": "1a0dc87721f29f53dd523083600931b3c759138ea62f1c843f17525a1038316d"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/probe_cameras_readonly.py",
+      "bytes": 1825,
+      "sha256": "a219cddb02e8dd787d013839030ea07eb16fade3b846e73843e1cf4d2932a32c"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/README_zh.md",
+      "bytes": 5575,
+      "sha256": "6f84d58528fe5f6e2d599bd658321922263c5407d72a716972c586b7d0f18097"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/robot_config_fixed_wrist.json",
+      "bytes": 690,
+      "sha256": "c8884d29921ef5700b77df6d10a1082b741ce5c4d580c229d6d5ce0390cff321"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/Run-Policy.ps1",
+      "bytes": 2943,
+      "sha256": "e3f732149833179cc9bab243cd06b2ad7e24d111c153ef8f0b7a10e81bad1134"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/test_control.py",
+      "bytes": 9432,
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/test_fixed_wrist.py",
+      "bytes": 5675,
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/test_grasp_limits.py",
+      "bytes": 1539,
+      "sha256": "52524232fffc350f1b9cd6ca1115d37f090683601a9c2ad7cb1026af8e80e4ce"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/test_integration.py",
+      "bytes": 8082,
+      "sha256": "369b00bb154594216cf754271cb8792fee73a2b0cc517800ee647ff67932ac41"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/test_policy_startup.py",
+      "bytes": 2037,
+      "sha256": "9cf0bf8f945bead7d6404ee87e78bcc2188b85b5fa2b37653377f22d714b3686"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/validation_fixed_wrist.json",
+      "bytes": 1157,
+      "sha256": "b49a1cfa3063804f1b0b43ecfc7874b5ba2d607f1eefc4945feb92b84487e7fd"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/validation_real_model.json",
+      "bytes": 591,
+      "sha256": "151c9545c4085f3dc10f59ba191e89a26a77a7e1cf2f312668615a8861fa3ae7"
+    },
+    {
+      "path": "handoff/windows_runtime/policy_fixed_wrist_kit/validation_simulated_summary.json",
+      "bytes": 4831,
+      "sha256": "a5115686836f6b3e88953e379412723ccbbea3b06591fde682f9c9c19d98e584"
     }
-  ]
+  ],
+  "fixed_wrist_update": "2026-11-11: added tested code and image-free validation summary; real camera images and result ZIPs remain local."
 }
