@@ -1,0 +1,138 @@
+{
+  "status": "completed",
+  "reference": [
+    1985,
+    777,
+    3274,
+    2751,
+    2050,
+    2045
+  ],
+  "before_p20": [
+    1985,
+    777,
+    3274,
+    2751,
+    2050,
+    2045
+  ],
+  "same_commands": true,
+  "goal_packets": 74,
+  "all_goal_ids_1_2_3_4_6": true,
+  "config_write_frames": [
+    "ffff0304031514cc",
+    "ffff0304031510d0"
+  ],
+  "p16_restored": true,
+  "final_p": {
+    "shoulder_pan": 16,
+    "shoulder_lift": 16,
+    "elbow_flex": 16,
+    "wrist_flex": 16,
+    "wrist_roll": 16,
+    "gripper": 16
+  },
+  "final_lock": {
+    "shoulder_pan": 1,
+    "shoulder_lift": 1,
+    "elbow_flex": 1,
+    "wrist_flex": 1,
+    "wrist_roll": 1,
+    "gripper": 1
+  },
+  "final_torque": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0,
+    "gripper": 0
+  },
+  "zip_crc_error": null,
+  "trials": [
+    {
+      "gain": 16,
+      "samples": 36,
+      "start_raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "metrics": {
+        "target_raw": 3264,
+        "measured_raw": 3274,
+        "error_ticks": 10,
+        "error_degrees": 0.8791208791208792
+      },
+      "elbow_actual_minmax": [
+        3274,
+        3274
+      ],
+      "wrist_raw_unique": [
+        2050
+      ],
+      "wrist_torque_unique": [
+        0
+      ],
+      "elbow_load_raw_minmax": [
+        0,
+        56
+      ],
+      "elbow_current_raw_minmax": [
+        0,
+        2
+      ],
+      "elbow_voltage_raw_minmax": [
+        124,
+        125
+      ],
+      "p_before": 16,
+      "p_after": 16
+    },
+    {
+      "gain": 20,
+      "samples": 36,
+      "start_raw": [
+        1985,
+        777,
+        3274,
+        2751,
+        2050,
+        2045
+      ],
+      "metrics": {
+        "target_raw": 3264,
+        "measured_raw": 3274,
+        "error_ticks": 10,
+        "error_degrees": 0.8791208791208792
+      },
+      "elbow_actual_minmax": [
+        3274,
+        3274
+      ],
+      "wrist_raw_unique": [
+        2050
+      ],
+      "wrist_torque_unique": [
+        0
+      ],
+      "elbow_load_raw_minmax": [
+        0,
+        65
+      ],
+      "elbow_current_raw_minmax": [
+        0,
+        2
+      ],
+      "elbow_voltage_raw_minmax": [
+        124,
+        125
+      ],
+      "p_before": 20,
+      "p_after": 20
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 项目包含双相机遥操作采集、黄色方块抓取数据、SmolVLA 微调，以及 Windows 离线推理、只读实时推理和受限实机试验的代码与记录。最新状态以 **[2026-11-11 项目状态与交接](docs/项目状态与交接_20261111.md)** 为准；先前交接文档保留历史时间点，不代表当前结论。
 
-目前完成了 0918 数据 10k 微调、离线推理、双相机只读推理和受限实机测试；**完整抓取成功率尚未验证**。用户已澄清 `wrist_roll` 没有损坏、只是任务中不需要主动旋转；[固定腕部模式](handoff/windows_runtime/policy_fixed_wrist_kit/FIXED_WRIST_zh.md)已通过只读推理。用户手动将腕部放回训练范围后，短时五电机启动及肘关节微幅诊断中ID5保持断扭矩；肘关节跟随偏差仍在，完整抓取未验证。详见[最新诊断](handoff/windows_runtime/fixed_wrist_activation_probe/REVIEW_zh.md)。
+目前完成了 0918 数据 10k 微调、离线推理、双相机只读推理和受限实机测试；**完整抓取成功率尚未验证**。用户已澄清 `wrist_roll` 没有损坏、只是任务中不需要主动旋转；[固定腕部模式](handoff/windows_runtime/policy_fixed_wrist_kit/FIXED_WRIST_zh.md)已通过只读推理。用户手动将腕部放回训练范围后，短时五电机启动及肘关节微幅诊断中ID5保持断扭矩。固定腕部的小幅P16/P20对照均未观察到肘关节编码器至少1刻度的位移，完整抓取未验证。详见[最新对照](handoff/windows_runtime/fixed_wrist_gain_compare/REVIEW_zh.md)。
 
 ## 目录
 

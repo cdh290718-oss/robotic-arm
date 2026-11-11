@@ -1,8 +1,8 @@
 {
   "created_utc": "2026-11-11T01:10:28.887529+00:00",
   "description": "SHA256 for staged 20260921-20261111 project assets, data and checkpoints; original legacy archive manifests cover older snapshot.",
-  "file_count": 580,
-  "total_bytes": 3833107290,
+  "file_count": 597,
+  "total_bytes": 3833417284,
   "files": [
     {
       "path": "handoff/device_configuration/calibration/robots/so_follower/lerobot.json",
@@ -2903,8 +2903,94 @@
       "path": "handoff/records/20261111_1749_readonly/summary.json",
       "bytes": 7584,
       "sha256": "2aa63610ab526ae56db1582c7d10eb0b5c49690a959a3a642fb075a091e94b4d"
+    },
+    {
+      "path": "handoff/records/20261111_180548_gain_readback.json",
+      "bytes": 4423,
+      "sha256": "a9d89e25ccd51d4bcdc8d99023204f7b2172fc2ee1435dec3d158f6691a0826d"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/bounded_run.py",
+      "bytes": 28582,
+      "sha256": "8c5bdda76807e82598b5f4f50e2329374155349399a54bb67638176416d05eba"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/compare_fixed_gain.py",
+      "bytes": 9038,
+      "sha256": "73b8ee7f928061ae274479e99655abc5a99d725488b9051b26554d84e30140af"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/control_core.py",
+      "bytes": 16247,
+      "sha256": "dffc75f8954870509d5c67173e5cf25258bcef96063b45636e5b6b78c7e79b8a"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/elbow_probe_fixed.py",
+      "bytes": 4886,
+      "sha256": "b5f7d4c29a2f86ac330264bf830f417396d0c35124da0af55124d7d80529d9f2"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/live_probe.py",
+      "bytes": 26773,
+      "sha256": "e45942d38939dc56a55294bdb34ae2997aabc911159583c45dfd580af7fbc635"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/readonly_bus.py",
+      "bytes": 4054,
+      "sha256": "39a056ea35c97c24d7d94d99da71e04353c7e2a98507f2d2805d0159a4a4bcad"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/reference_calibration.json",
+      "bytes": 921,
+      "sha256": "7c08da8ac53daa118c14a4e4aa29f5e4ccd92894425d305542d47df44fbd4cb3"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/results/20261111_180428_366659_FixedWrist_P16_P20/review.json",
+      "bytes": 2467,
+      "sha256": "487fe8a907f0a47a99b013c6a5684d02ac618d5053a918d605b211e574757d44"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/results/20261111_180428_366659_FixedWrist_P16_P20/summary.json",
+      "bytes": 180592,
+      "sha256": "b54414741bffea450c649a5581e614c6c3d0b1b3abc027e1a989d6176d2c0bae"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/results/20261111_180428_366659_FixedWrist_P16_P20_return.zip",
+      "bytes": 5224,
+      "sha256": "3eadce1da09cafe5188aaf3745c71ac833219e54e4dd65e7f1de73caf9917918"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/review_compare.py",
+      "bytes": 1924,
+      "sha256": "37cf820df39e8d39f2c9d988a51ac05bfd7b51d372bf27184b27972b8f801bd3"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/REVIEW_zh.md",
+      "bytes": 2682,
+      "sha256": "474aef640e138b747abb39f63a8e0a6010624ee6c7c8cb71b96e154249f1fa03"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/test_compare_fixed_gain.py",
+      "bytes": 5308,
+      "sha256": "e7f9fe00cc6a93950f2270b52a7a007a1e5c83bcb86b4c73046db98a9606abc7"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/test_control.py",
+      "bytes": 9432,
+      "sha256": "28b096865c7a27774e48b9f4c9714e005887b89a4b5747be80ad5d60ea8ebf41"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/test_elbow_probe_fixed.py",
+      "bytes": 1766,
+      "sha256": "990a88116ed6d0bd8c18c646a59c408770da08b75ebc272bf0cdbec8d339a55c"
+    },
+    {
+      "path": "handoff/windows_runtime/fixed_wrist_gain_compare/test_fixed_wrist.py",
+      "bytes": 5675,
+      "sha256": "6f5f70aacb18bd3786c425e57f794a8980c8c12a25edd88b11806689631803fc"
     }
   ],
   "fixed_wrist_update": "2026-11-11: added tested code and image-free validation summary; real camera images and result ZIPs remain local.",
-  "fixed_wrist_activation_update": "2026-11-11: image-free current-pose and small-elbow physical diagnostic evidence and wrist position watcher."
+  "fixed_wrist_activation_update": "2026-11-11: image-free current-pose and small-elbow physical diagnostic evidence and wrist position watcher.",
+  "fixed_wrist_p16_p20_update": "2026-11-11: image-free fixed-wrist comparison code, original return and independent readback."
 }

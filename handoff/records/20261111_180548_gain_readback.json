@@ -1,0 +1,201 @@
+{
+  "expected": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": -819,
+      "range_min": 701,
+      "range_max": 3307
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": -1544,
+      "range_min": 772,
+      "range_max": 3109
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": 1722,
+      "range_min": 1064,
+      "range_max": 3286
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": -1451,
+      "range_min": 892,
+      "range_max": 3243
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": 467,
+      "range_min": 2042,
+      "range_max": 2051
+    },
+    "gripper": {
+      "id": 6,
+      "drive_mode": 0,
+      "homing_offset": -1747,
+      "range_min": 2028,
+      "range_max": 3474
+    }
+  },
+  "registers": {
+    "P_Coefficient": {
+      "shoulder_pan": 16,
+      "shoulder_lift": 16,
+      "elbow_flex": 16,
+      "wrist_flex": 16,
+      "wrist_roll": 16,
+      "gripper": 16
+    },
+    "I_Coefficient": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "D_Coefficient": {
+      "shoulder_pan": 32,
+      "shoulder_lift": 32,
+      "elbow_flex": 32,
+      "wrist_flex": 32,
+      "wrist_roll": 32,
+      "gripper": 32
+    },
+    "Torque_Limit": {
+      "shoulder_pan": 1000,
+      "shoulder_lift": 1000,
+      "elbow_flex": 1000,
+      "wrist_flex": 1000,
+      "wrist_roll": 1000,
+      "gripper": 500
+    },
+    "Max_Torque_Limit": {
+      "shoulder_pan": 1000,
+      "shoulder_lift": 1000,
+      "elbow_flex": 1000,
+      "wrist_flex": 1000,
+      "wrist_roll": 1000,
+      "gripper": 500
+    },
+    "Present_Position": {
+      "shoulder_pan": 1985,
+      "shoulder_lift": 777,
+      "elbow_flex": 3274,
+      "wrist_flex": 2751,
+      "wrist_roll": 2050,
+      "gripper": 2045
+    },
+    "Goal_Position": {
+      "shoulder_pan": 1985,
+      "shoulder_lift": 777,
+      "elbow_flex": 3274,
+      "wrist_flex": 2751,
+      "wrist_roll": 0,
+      "gripper": 2045
+    },
+    "Torque_Enable": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "Lock": {
+      "shoulder_pan": 1,
+      "shoulder_lift": 1,
+      "elbow_flex": 1,
+      "wrist_flex": 1,
+      "wrist_roll": 1,
+      "gripper": 1
+    },
+    "Status": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    }
+  },
+  "device": {
+    "shoulder_pan": {
+      "id": 1,
+      "drive_mode": 0,
+      "homing_offset": -819,
+      "range_min": 701,
+      "range_max": 3307
+    },
+    "shoulder_lift": {
+      "id": 2,
+      "drive_mode": 0,
+      "homing_offset": -1544,
+      "range_min": 772,
+      "range_max": 3109
+    },
+    "elbow_flex": {
+      "id": 3,
+      "drive_mode": 0,
+      "homing_offset": 1722,
+      "range_min": 1064,
+      "range_max": 3286
+    },
+    "wrist_flex": {
+      "id": 4,
+      "drive_mode": 0,
+      "homing_offset": -1451,
+      "range_min": 892,
+      "range_max": 3243
+    },
+    "wrist_roll": {
+      "id": 5,
+      "drive_mode": 0,
+      "homing_offset": 467,
+      "range_min": 2042,
+      "range_max": 2051
+    },
+    "gripper": {
+      "id": 6,
+      "drive_mode": 0,
+      "homing_offset": -1747,
+      "range_min": 2028,
+      "range_max": 3474
+    }
+  },
+  "differences": {},
+  "bus": {
+    "allowed_packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 12
+    },
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "units": "five body joints in calibrated degrees; gripper normalized 0..100",
+    "normal_robot_connect_called": false,
+    "motor_register_write_commands_sent": 0
+  }
+}
