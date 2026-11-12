@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "requested_d": 32,
+  "write_frames_hex": [
+    "fffffe0e8337010100020003000400060028",
+    "fffffe0e83160101200220032004200620a9",
+    "fffffe0e8337010101020103010401060123"
+  ],
+  "d_before": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 32,
+    "gripper": 0
+  },
+  "d_after": {
+    "shoulder_pan": 32,
+    "shoulder_lift": 32,
+    "elbow_flex": 32,
+    "wrist_flex": 32,
+    "wrist_roll": 32,
+    "gripper": 32
+  },
+  "lock_after": {
+    "shoulder_pan": 1,
+    "shoulder_lift": 1,
+    "elbow_flex": 1,
+    "wrist_flex": 1,
+    "wrist_roll": 1,
+    "gripper": 1
+  },
+  "bus": {
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "write_attempts": 3,
+    "write_packets": 3,
+    "packet_counts": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 13,
+      "0x83": 3
+    },
+    "blocked_packets": 0,
+    "events": [],
+    "normal_robot_connect_called": false,
+    "fixed_wrist": true
+  }
+}
