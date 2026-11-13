@@ -1,0 +1,257 @@
+{
+  "created_at": "2026-11-13T13:22:30+0800",
+  "argv": [
+    "G:\\MolmoAct2_NF4\\execute_small_move.py",
+    "--target",
+    "7.56",
+    "-96.0",
+    "83.0",
+    "73.0",
+    "1.23",
+    "10.25",
+    "--fraction",
+    "0.25",
+    "--max-step",
+    "2.0",
+    "--speed-deg-s",
+    "5.0",
+    "--run-name",
+    "small_move_run"
+  ],
+  "mode": "bounded small-range motion test",
+  "status": "completed",
+  "torque_before": {
+    "shoulder_pan": 0,
+    "shoulder_lift": 0,
+    "elbow_flex": 0,
+    "wrist_flex": 0,
+    "wrist_roll": 0,
+    "gripper": 0
+  },
+  "state_before": [
+    3.956,
+    -82.066,
+    51.78,
+    79.077,
+    0.132,
+    12.379
+  ],
+  "target_model": [
+    7.56,
+    -96.0,
+    83.0,
+    73.0,
+    1.23,
+    10.25
+  ],
+  "fraction": 0.25,
+  "max_step_deg": 2.0,
+  "speed_deg_s": 5.0,
+  "plan": [
+    {
+      "joint": "shoulder_pan",
+      "current": 3.956,
+      "model_target": 7.56,
+      "wanted": 4.857,
+      "delta": 0.901,
+      "travel": [
+        -114.55,
+        114.55
+      ],
+      "actuated": true
+    },
+    {
+      "joint": "shoulder_lift",
+      "current": -82.066,
+      "model_target": -96.0,
+      "wanted": -85.549,
+      "delta": -3.484,
+      "travel": [
+        -102.73,
+        102.73
+      ],
+      "actuated": true
+    },
+    {
+      "joint": "elbow_flex",
+      "current": 51.78,
+      "model_target": 83.0,
+      "wanted": 59.585,
+      "delta": 7.805,
+      "travel": [
+        -97.67,
+        97.67
+      ],
+      "actuated": true
+    },
+    {
+      "joint": "wrist_flex",
+      "current": 79.077,
+      "model_target": 73.0,
+      "wanted": 77.558,
+      "delta": -1.519,
+      "travel": [
+        -103.34,
+        103.34
+      ],
+      "actuated": true
+    },
+    {
+      "joint": "wrist_roll",
+      "current": 0.132,
+      "model_target": 1.23,
+      "wanted": 0.132,
+      "delta": 0.0,
+      "travel": [
+        -0.4,
+        0.4
+      ],
+      "actuated": false
+    },
+    {
+      "joint": "gripper",
+      "current": 12.379,
+      "model_target": 10.25,
+      "wanted": 11.847,
+      "delta": -0.532,
+      "travel": [
+        0.0,
+        100.0
+      ],
+      "actuated": true
+    }
+  ],
+  "goal_primed": true,
+  "torque_enabled_on": [
+    "shoulder_pan",
+    "shoulder_lift",
+    "elbow_flex",
+    "wrist_flex",
+    "gripper"
+  ],
+  "state_after_torque_enable": [
+    3.956,
+    -82.066,
+    51.78,
+    79.077,
+    0.132,
+    12.379
+  ],
+  "max_jump_on_enable_deg": 0.0,
+  "planned_steps": 4,
+  "steps": [
+    {
+      "step": 0,
+      "commanded": [
+        4.857,
+        -84.066,
+        53.78,
+        77.558,
+        0.132,
+        11.847
+      ],
+      "measured": [
+        4.571,
+        -83.824,
+        53.978,
+        78.198,
+        0.132,
+        11.964
+      ],
+      "max_error_deg": 0.64
+    },
+    {
+      "step": 1,
+      "commanded": [
+        4.857,
+        -85.549,
+        55.978,
+        77.558,
+        0.132,
+        11.847
+      ],
+      "measured": [
+        4.571,
+        -85.407,
+        56.176,
+        78.198,
+        0.132,
+        11.964
+      ],
+      "max_error_deg": 0.64
+    },
+    {
+      "step": 2,
+      "commanded": [
+        4.857,
+        -85.549,
+        58.176,
+        77.558,
+        0.132,
+        11.847
+      ],
+      "measured": [
+        4.571,
+        -85.582,
+        58.286,
+        78.198,
+        0.132,
+        11.964
+      ],
+      "max_error_deg": 0.64
+    },
+    {
+      "step": 3,
+      "commanded": [
+        4.857,
+        -85.549,
+        59.585,
+        77.558,
+        0.132,
+        11.847
+      ],
+      "measured": [
+        4.571,
+        -85.758,
+        59.692,
+        78.198,
+        0.132,
+        11.964
+      ],
+      "max_error_deg": 0.64
+    }
+  ],
+  "state_final": [
+    4.571,
+    -85.758,
+    59.692,
+    78.198,
+    0.132,
+    11.964
+  ],
+  "total_delta_deg": [
+    0.615,
+    -3.692,
+    7.912,
+    -0.879,
+    0.0,
+    -0.415
+  ],
+  "torque_enabled_after": {
+    "shoulder_pan": 1,
+    "shoulder_lift": 1,
+    "elbow_flex": 1,
+    "wrist_flex": 1,
+    "wrist_roll": 0,
+    "gripper": 1
+  },
+  "note": "torque is left ENABLED so the arm holds the final pose; disable it explicitly if you want the arm released",
+  "torque_at_exit": {
+    "shoulder_pan": 1,
+    "shoulder_lift": 1,
+    "elbow_flex": 1,
+    "wrist_flex": 1,
+    "wrist_roll": 0,
+    "gripper": 1
+  }
+}

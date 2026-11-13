@@ -1,0 +1,2019 @@
+{
+  "created_at": "2026-11-13T10:46:17+0800",
+  "argv": [
+    "G:\\MolmoAct2_NF4\\offline_inference.py",
+    "--model-dir",
+    "G:\\MolmoAct2_NF4\\model",
+    "--run-name",
+    "d4_patch_graph_off",
+    "--run-root",
+    "G:\\MolmoAct2_NF4\\tmp\\runs",
+    "--chunks",
+    "30",
+    "--warmup",
+    "3",
+    "--synthetic",
+    "--state",
+    "-11.5165",
+    "26.8571",
+    "-27.6044",
+    "88.3956",
+    "0.2198",
+    "2.1438",
+    "--task",
+    "put the yellow block into the basket",
+    "--cuda-graph",
+    "off",
+    "--patch-embedding"
+  ],
+  "run_dir": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_104617_d4_patch_graph_off",
+  "mode": "offline_only_no_robot_no_camera_no_serial",
+  "stages": {
+    "environment": {
+      "python": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "G:\\MolmoAct2_NF4\\.venv\\Scripts\\python.exe",
+      "torch": "2.10.0+cu128",
+      "torch_cuda": "12.8",
+      "cuda_available": true,
+      "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+      "capability": [
+        12,
+        0
+      ],
+      "host_memory": {
+        "total_GiB": 15.73,
+        "available_GiB": 5.85,
+        "process_rss_GiB": 0.61
+      },
+      "nvidia_smi": "NVIDIA GeForce RTX 5060 Laptop GPU, 8151, 1144, 6667, 582.05",
+      "allocator": {
+        "env_before": {
+          "PYTORCH_ALLOC_CONF": null,
+          "PYTORCH_CUDA_ALLOC_CONF": null
+        },
+        "cuda_initialized_before": false,
+        "applied": true,
+        "torch_version": "2.10.0+cu128",
+        "cuda_available": true,
+        "env_after": {
+          "PYTORCH_ALLOC_CONF": "expandable_segments:True",
+          "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+        },
+        "allocator_probe_warnings": [
+          "expandable_segments not supported on this platform (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\c10/cuda/CUDAAllocatorConfig.h:39.)"
+        ],
+        "expandable_segments_effective": false,
+        "note": "torch reports expandable_segments is not supported on this platform; the setting is recorded as requested but NOT active"
+      },
+      "cuda_mem_before": {
+        "at": "2026-11-13T10:46:20+0800",
+        "free_GiB": 6.766,
+        "total_GiB": 7.96,
+        "allocated_GiB": 0.0,
+        "reserved_GiB": 0.002,
+        "peak_allocated_GiB": 0.0,
+        "peak_reserved_GiB": 0.002,
+        "nvidia_smi_used_MiB": "1144",
+        "nvidia_smi_free_MiB": "6667",
+        "fields": {
+          "free_GiB": "CUDA-usable free memory at this instant (not a peak)",
+          "peak_allocated_GiB": "max allocated since the stage reset",
+          "peak_reserved_GiB": "max reserved since the stage reset"
+        }
+      },
+      "transformers": "5.5.4",
+      "bitsandbytes": "0.50.2",
+      "accelerate": "1.15.0",
+      "safetensors": "0.8.0",
+      "torchvision_import": "0.25.0+cu128",
+      "torchvision_transforms_import": true
+    },
+    "processor": {
+      "observation_source": "synthetic",
+      "images": [
+        {
+          "synthetic": true,
+          "size": [
+            640,
+            480
+          ]
+        },
+        {
+          "synthetic": true,
+          "size": [
+            640,
+            480
+          ]
+        }
+      ],
+      "max_crops": 8,
+      "prompt_text": "Image 1<|image|>Image 2<|image|><|im_start|>user\nThe task is to put the yellow block into the basket. The setup is <setup_start>single so100/so101 robotic arm in molmoact2<setup_end>. The current state of the robot is <state_start><state_86><state_0><state_0><state_245><state_153><state_7><state_end>. The expected control mode is <control_start>absolute joint pose<control_end>. Given these, what action should the robot take to complete the task?<|im_end|>\n<|im_start|>assistant\n<action_output>",
+      "prompt_chars": 497,
+      "input_ids_shape": [
+        1,
+        491
+      ],
+      "pixel_values_shape": [
+        2,
+        729,
+        588
+      ],
+      "pixel_values_dtype": "torch.float32",
+      "image_num_crops": [
+        1,
+        1
+      ],
+      "image_grids": [
+        [
+          14,
+          14,
+          0,
+          0
+        ],
+        [
+          14,
+          14,
+          0,
+          0
+        ]
+      ],
+      "state_degrees": [
+        -11.516500473022461,
+        26.857099533081055,
+        -27.604400634765625,
+        88.39559936523438,
+        0.21979999542236328,
+        2.1438000202178955
+      ],
+      "norm_tag": "so100_so101_molmoact2"
+    },
+    "embedding_patch": {
+      "installed": true,
+      "already": false
+    },
+    "load": {
+      "load_seconds": 3.169,
+      "load_report": {
+        "safetensors": "G:\\MolmoAct2_NF4\\model\\model.safetensors",
+        "quantization_metadata": {
+          "source_repo": "allenai/MolmoAct2-SO100_101",
+          "source_revision": "152569fe57914d97be91055800035f54e250d009",
+          "policy_class": "transformers:AutoModelForImageTextToText",
+          "quantization": {
+            "scheme": "nf4",
+            "backend": "bitsandbytes",
+            "compute_dtype": "bfloat16",
+            "min_params_to_quantize": 4000000,
+            "rule": "Linear modules with >=4_000_000 weight elements rewritten to bnb.nn.Linear4bit; smaller heads kept in compute_dtype (bfloat16).",
+            "runtime_status": "loader-backed (install_prequantized_linears)"
+          },
+          "dropped_state_entries": []
+        },
+        "file_keys": 2465,
+        "quantized_modules": 234,
+        "quant_aux_keys": 1170,
+        "min_numel_rule": 4000000,
+        "installed": [
+          "lm_head",
+          "model.action_expert.blocks.0.modulation.linear",
+          "model.action_expert.blocks.1.modulation.linear",
+          "model.action_expert.blocks.10.modulation.linear",
+          "model.action_expert.blocks.11.modulation.linear",
+          "model.action_expert.blocks.12.modulation.linear",
+          "model.action_expert.blocks.13.modulation.linear",
+          "model.action_expert.blocks.14.modulation.linear",
+          "model.action_expert.blocks.15.modulation.linear",
+          "model.action_expert.blocks.16.modulation.linear",
+          "model.action_expert.blocks.17.modulation.linear",
+          "model.action_expert.blocks.18.modulation.linear",
+          "model.action_expert.blocks.19.modulation.linear",
+          "model.action_expert.blocks.2.modulation.linear",
+          "model.action_expert.blocks.20.modulation.linear",
+          "model.action_expert.blocks.21.modulation.linear",
+          "model.action_expert.blocks.22.modulation.linear",
+          "model.action_expert.blocks.23.modulation.linear",
+          "model.action_expert.blocks.24.modulation.linear",
+          "model.action_expert.blocks.25.modulation.linear",
+          "model.action_expert.blocks.26.modulation.linear",
+          "model.action_expert.blocks.27.modulation.linear",
+          "model.action_expert.blocks.28.modulation.linear",
+          "model.action_expert.blocks.29.modulation.linear",
+          "model.action_expert.blocks.3.modulation.linear",
+          "model.action_expert.blocks.30.modulation.linear",
+          "model.action_expert.blocks.31.modulation.linear",
+          "model.action_expert.blocks.32.modulation.linear",
+          "model.action_expert.blocks.33.modulation.linear",
+          "model.action_expert.blocks.34.modulation.linear",
+          "model.action_expert.blocks.35.modulation.linear",
+          "model.action_expert.blocks.4.modulation.linear",
+          "model.action_expert.blocks.5.modulation.linear",
+          "model.action_expert.blocks.6.modulation.linear",
+          "model.action_expert.blocks.7.modulation.linear",
+          "model.action_expert.blocks.8.modulation.linear",
+          "model.action_expert.blocks.9.modulation.linear",
+          "model.transformer.blocks.0.mlp.ff_out",
+          "model.transformer.blocks.0.mlp.ff_proj",
+          "model.transformer.blocks.0.self_attn.att_proj",
+          "model.transformer.blocks.0.self_attn.attn_out",
+          "model.transformer.blocks.1.mlp.ff_out",
+          "model.transformer.blocks.1.mlp.ff_proj",
+          "model.transformer.blocks.1.self_attn.att_proj",
+          "model.transformer.blocks.1.self_attn.attn_out",
+          "model.transformer.blocks.10.mlp.ff_out",
+          "model.transformer.blocks.10.mlp.ff_proj",
+          "model.transformer.blocks.10.self_attn.att_proj",
+          "model.transformer.blocks.10.self_attn.attn_out",
+          "model.transformer.blocks.11.mlp.ff_out",
+          "model.transformer.blocks.11.mlp.ff_proj",
+          "model.transformer.blocks.11.self_attn.att_proj",
+          "model.transformer.blocks.11.self_attn.attn_out",
+          "model.transformer.blocks.12.mlp.ff_out",
+          "model.transformer.blocks.12.mlp.ff_proj",
+          "model.transformer.blocks.12.self_attn.att_proj",
+          "model.transformer.blocks.12.self_attn.attn_out",
+          "model.transformer.blocks.13.mlp.ff_out",
+          "model.transformer.blocks.13.mlp.ff_proj",
+          "model.transformer.blocks.13.self_attn.att_proj",
+          "model.transformer.blocks.13.self_attn.attn_out",
+          "model.transformer.blocks.14.mlp.ff_out",
+          "model.transformer.blocks.14.mlp.ff_proj",
+          "model.transformer.blocks.14.self_attn.att_proj",
+          "model.transformer.blocks.14.self_attn.attn_out",
+          "model.transformer.blocks.15.mlp.ff_out",
+          "model.transformer.blocks.15.mlp.ff_proj",
+          "model.transformer.blocks.15.self_attn.att_proj",
+          "model.transformer.blocks.15.self_attn.attn_out",
+          "model.transformer.blocks.16.mlp.ff_out",
+          "model.transformer.blocks.16.mlp.ff_proj",
+          "model.transformer.blocks.16.self_attn.att_proj",
+          "model.transformer.blocks.16.self_attn.attn_out",
+          "model.transformer.blocks.17.mlp.ff_out",
+          "model.transformer.blocks.17.mlp.ff_proj",
+          "model.transformer.blocks.17.self_attn.att_proj",
+          "model.transformer.blocks.17.self_attn.attn_out",
+          "model.transformer.blocks.18.mlp.ff_out",
+          "model.transformer.blocks.18.mlp.ff_proj",
+          "model.transformer.blocks.18.self_attn.att_proj",
+          "model.transformer.blocks.18.self_attn.attn_out",
+          "model.transformer.blocks.19.mlp.ff_out",
+          "model.transformer.blocks.19.mlp.ff_proj",
+          "model.transformer.blocks.19.self_attn.att_proj",
+          "model.transformer.blocks.19.self_attn.attn_out",
+          "model.transformer.blocks.2.mlp.ff_out",
+          "model.transformer.blocks.2.mlp.ff_proj",
+          "model.transformer.blocks.2.self_attn.att_proj",
+          "model.transformer.blocks.2.self_attn.attn_out",
+          "model.transformer.blocks.20.mlp.ff_out",
+          "model.transformer.blocks.20.mlp.ff_proj",
+          "model.transformer.blocks.20.self_attn.att_proj",
+          "model.transformer.blocks.20.self_attn.attn_out",
+          "model.transformer.blocks.21.mlp.ff_out",
+          "model.transformer.blocks.21.mlp.ff_proj",
+          "model.transformer.blocks.21.self_attn.att_proj",
+          "model.transformer.blocks.21.self_attn.attn_out",
+          "model.transformer.blocks.22.mlp.ff_out",
+          "model.transformer.blocks.22.mlp.ff_proj",
+          "model.transformer.blocks.22.self_attn.att_proj",
+          "model.transformer.blocks.22.self_attn.attn_out",
+          "model.transformer.blocks.23.mlp.ff_out",
+          "model.transformer.blocks.23.mlp.ff_proj",
+          "model.transformer.blocks.23.self_attn.att_proj",
+          "model.transformer.blocks.23.self_attn.attn_out",
+          "model.transformer.blocks.24.mlp.ff_out",
+          "model.transformer.blocks.24.mlp.ff_proj",
+          "model.transformer.blocks.24.self_attn.att_proj",
+          "model.transformer.blocks.24.self_attn.attn_out",
+          "model.transformer.blocks.25.mlp.ff_out",
+          "model.transformer.blocks.25.mlp.ff_proj",
+          "model.transformer.blocks.25.self_attn.att_proj",
+          "model.transformer.blocks.25.self_attn.attn_out",
+          "model.transformer.blocks.26.mlp.ff_out",
+          "model.transformer.blocks.26.mlp.ff_proj",
+          "model.transformer.blocks.26.self_attn.att_proj",
+          "model.transformer.blocks.26.self_attn.attn_out",
+          "model.transformer.blocks.27.mlp.ff_out",
+          "model.transformer.blocks.27.mlp.ff_proj",
+          "model.transformer.blocks.27.self_attn.att_proj",
+          "model.transformer.blocks.27.self_attn.attn_out",
+          "model.transformer.blocks.28.mlp.ff_out",
+          "model.transformer.blocks.28.mlp.ff_proj",
+          "model.transformer.blocks.28.self_attn.att_proj",
+          "model.transformer.blocks.28.self_attn.attn_out",
+          "model.transformer.blocks.29.mlp.ff_out",
+          "model.transformer.blocks.29.mlp.ff_proj",
+          "model.transformer.blocks.29.self_attn.att_proj",
+          "model.transformer.blocks.29.self_attn.attn_out",
+          "model.transformer.blocks.3.mlp.ff_out",
+          "model.transformer.blocks.3.mlp.ff_proj",
+          "model.transformer.blocks.3.self_attn.att_proj",
+          "model.transformer.blocks.3.self_attn.attn_out",
+          "model.transformer.blocks.30.mlp.ff_out",
+          "model.transformer.blocks.30.mlp.ff_proj",
+          "model.transformer.blocks.30.self_attn.att_proj",
+          "model.transformer.blocks.30.self_attn.attn_out",
+          "model.transformer.blocks.31.mlp.ff_out",
+          "model.transformer.blocks.31.mlp.ff_proj",
+          "model.transformer.blocks.31.self_attn.att_proj",
+          "model.transformer.blocks.31.self_attn.attn_out",
+          "model.transformer.blocks.32.mlp.ff_out",
+          "model.transformer.blocks.32.mlp.ff_proj",
+          "model.transformer.blocks.32.self_attn.att_proj",
+          "model.transformer.blocks.32.self_attn.attn_out",
+          "model.transformer.blocks.33.mlp.ff_out",
+          "model.transformer.blocks.33.mlp.ff_proj",
+          "model.transformer.blocks.33.self_attn.att_proj",
+          "model.transformer.blocks.33.self_attn.attn_out",
+          "model.transformer.blocks.34.mlp.ff_out",
+          "model.transformer.blocks.34.mlp.ff_proj",
+          "model.transformer.blocks.34.self_attn.att_proj",
+          "model.transformer.blocks.34.self_attn.attn_out",
+          "model.transformer.blocks.35.mlp.ff_out",
+          "model.transformer.blocks.35.mlp.ff_proj",
+          "model.transformer.blocks.35.self_attn.att_proj",
+          "model.transformer.blocks.35.self_attn.attn_out",
+          "model.transformer.blocks.4.mlp.ff_out",
+          "model.transformer.blocks.4.mlp.ff_proj",
+          "model.transformer.blocks.4.self_attn.att_proj",
+          "model.transformer.blocks.4.self_attn.attn_out",
+          "model.transformer.blocks.5.mlp.ff_out",
+          "model.transformer.blocks.5.mlp.ff_proj",
+          "model.transformer.blocks.5.self_attn.att_proj",
+          "model.transformer.blocks.5.self_attn.attn_out",
+          "model.transformer.blocks.6.mlp.ff_out",
+          "model.transformer.blocks.6.mlp.ff_proj",
+          "model.transformer.blocks.6.self_attn.att_proj",
+          "model.transformer.blocks.6.self_attn.attn_out",
+          "model.transformer.blocks.7.mlp.ff_out",
+          "model.transformer.blocks.7.mlp.ff_proj",
+          "model.transformer.blocks.7.self_attn.att_proj",
+          "model.transformer.blocks.7.self_attn.attn_out",
+          "model.transformer.blocks.8.mlp.ff_out",
+          "model.transformer.blocks.8.mlp.ff_proj",
+          "model.transformer.blocks.8.self_attn.att_proj",
+          "model.transformer.blocks.8.self_attn.attn_out",
+          "model.transformer.blocks.9.mlp.ff_out",
+          "model.transformer.blocks.9.mlp.ff_proj",
+          "model.transformer.blocks.9.self_attn.att_proj",
+          "model.transformer.blocks.9.self_attn.attn_out",
+          "model.vision_backbone.image_projector.w1",
+          "model.vision_backbone.image_projector.w2",
+          "model.vision_backbone.image_projector.w3",
+          "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.1.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.1.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.10.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.10.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.11.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.11.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.12.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.12.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.13.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.13.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.14.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.14.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.15.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.15.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.16.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.16.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.17.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.17.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.18.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.18.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.19.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.19.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.2.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.2.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.20.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.20.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.21.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.21.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.22.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.22.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.23.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.23.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.24.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.24.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.3.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.3.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.4.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.4.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.5.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.5.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.6.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.6.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.7.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.7.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.8.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.8.feed_forward.w2",
+          "model.vision_backbone.image_vit.transformer.resblocks.9.feed_forward.w1",
+          "model.vision_backbone.image_vit.transformer.resblocks.9.feed_forward.w2"
+        ],
+        "kept_bf16_large_linears": [],
+        "linear4bit_init_device": "meta",
+        "errors": [],
+        "bitsandbytes_version": "0.50.2",
+        "compute_dtype": "torch.bfloat16",
+        "consumed_file_keys": 1061,
+        "assigned_tensors": 1061,
+        "installed_weight_keys": 234,
+        "unexpected_keys": [],
+        "missing_keys_explained_count": 0,
+        "meta_tensors_left": [],
+        "runtime_derived_buffers": [
+          "model.transformer.rotary_emb._pos_sin_cache",
+          "model.transformer.rotary_emb._pos_cos_cache"
+        ],
+        "key_accounting": {
+          "file_keys": 2465,
+          "assigned_dense_tensors": 1061,
+          "packed_nf4_weights": 234,
+          "quant_state_tensors_consumed_by_quantstate": 1170,
+          "sum": 2465
+        },
+        "audit": {
+          "param_dtype_elements": {
+            "torch.bfloat16": 926712624,
+            "torch.uint8": 2257741824,
+            "torch.float32": 0
+          },
+          "param_dtype_bytes": {
+            "torch.bfloat16": 1853425248,
+            "torch.uint8": 2257741824,
+            "torch.float32": 0
+          },
+          "param_dtype_GiB": {
+            "torch.bfloat16": 1.7261,
+            "torch.uint8": 2.1027,
+            "torch.float32": 0.0
+          },
+          "devices": {
+            "cuda:0": 1295,
+            "meta": 2
+          },
+          "linear4bit_modules": 234,
+          "plain_linear_modules": 364,
+          "quant_types": {
+            "nf4": 234
+          },
+          "quant_state_devices": {
+            "cuda:0": 234
+          },
+          "cuda_allocated_GiB": 3.9558,
+          "cuda_reserved_GiB": 4.0098
+        }
+      },
+      "cuda_mem_after_load": {
+        "at": "2026-11-13T10:46:37+0800",
+        "free_GiB": 2.758,
+        "total_GiB": 7.96,
+        "allocated_GiB": 3.956,
+        "reserved_GiB": 4.01,
+        "peak_allocated_GiB": 3.957,
+        "peak_reserved_GiB": 4.01,
+        "nvidia_smi_used_MiB": "5437",
+        "nvidia_smi_free_MiB": "2374",
+        "fields": {
+          "free_GiB": "CUDA-usable free memory at this instant (not a peak)",
+          "peak_allocated_GiB": "max allocated since the stage reset",
+          "peak_reserved_GiB": "max reserved since the stage reset"
+        }
+      },
+      "host_memory_after_load": {
+        "total_GiB": 15.73,
+        "available_GiB": 5.46,
+        "process_rss_GiB": 0.9
+      },
+      "quant_state_roundtrip": {
+        "modules_checked": 234,
+        "keys_per_module": [
+          "weight",
+          "weight.absmax",
+          "weight.nested_absmax",
+          "weight.nested_quant_map",
+          "weight.quant_map",
+          "weight.quant_state.bitsandbytes__nf4"
+        ],
+        "note": "Linear4bit exposes 6 state_dict entries per module (packed weight + 5 quant-state tensors); all are compared with the file, none ignored"
+      },
+      "verify_nf4": {
+        "checked_layers": 8,
+        "families": [
+          "action_expert",
+          "image_projector",
+          "text_attn",
+          "vision_ff"
+        ],
+        "method": "independent high-nibble-first NF4 decode vs bnb.dequantize_4bit, plus bnb.matmul_4bit vs dense matmul on the dequantized weights",
+        "tolerance_rule": "2*eps_bf16*max|ref| for decode, 8*eps_bf16*max|y| for matmul",
+        "checked": [
+          {
+            "family": "text_attn",
+            "module": "model.transformer.blocks.0.self_attn.attn_out",
+            "shape": [
+              2560,
+              4096
+            ],
+            "numel": 10485760,
+            "rows_checked": 8,
+            "max_abs_diff": 0.0009129345417022705,
+            "tolerance": 0.0078125,
+            "max_abs_diff_over_tolerance": 0.11685562133789062,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.055568184703588486,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 5242880,
+            "bf16_bytes_if_dense": 20971520,
+            "matmul_vs_dense_max_abs_diff": 0.0,
+            "matmul_tolerance": 0.2373046875,
+            "matmul_matches": true
+          },
+          {
+            "family": "text_attn",
+            "module": "model.transformer.blocks.1.self_attn.attn_out",
+            "shape": [
+              2560,
+              4096
+            ],
+            "numel": 10485760,
+            "rows_checked": 8,
+            "max_abs_diff": 0.0008506476879119873,
+            "tolerance": 0.00537109375,
+            "max_abs_diff_over_tolerance": 0.15837513316761365,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.05631503090262413,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 5242880,
+            "bf16_bytes_if_dense": 20971520,
+            "matmul_vs_dense_max_abs_diff": 0.0,
+            "matmul_tolerance": 0.181640625,
+            "matmul_matches": true
+          },
+          {
+            "family": "vision_ff",
+            "module": "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w1",
+            "shape": [
+              4304,
+              1152
+            ],
+            "numel": 4958208,
+            "rows_checked": 8,
+            "max_abs_diff": 0.00027967989444732666,
+            "tolerance": 0.0027618408203125,
+            "max_abs_diff_over_tolerance": 0.10126575448895028,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.07151146978139877,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 2479104,
+            "bf16_bytes_if_dense": 9916416,
+            "matmul_vs_dense_max_abs_diff": 1.52587890625e-05,
+            "matmul_tolerance": 0.1259765625,
+            "matmul_matches": true
+          },
+          {
+            "family": "vision_ff",
+            "module": "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w2",
+            "shape": [
+              1152,
+              4304
+            ],
+            "numel": 4958208,
+            "rows_checked": 8,
+            "max_abs_diff": 0.00024332106113433838,
+            "tolerance": 0.0027313232421875,
+            "max_abs_diff_over_tolerance": 0.08908541375698324,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.05908337980508804,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 2479104,
+            "bf16_bytes_if_dense": 9916416,
+            "matmul_vs_dense_max_abs_diff": 0.0,
+            "matmul_tolerance": 0.1962890625,
+            "matmul_matches": true
+          },
+          {
+            "family": "action_expert",
+            "module": "model.action_expert.blocks.0.modulation.linear",
+            "shape": [
+              6912,
+              768
+            ],
+            "numel": 5308416,
+            "rows_checked": 8,
+            "max_abs_diff": 1.2826640158891678e-05,
+            "tolerance": 8.0108642578125e-05,
+            "max_abs_diff_over_tolerance": 0.16011555989583334,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.0029190811328589916,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 2654208,
+            "bf16_bytes_if_dense": 10616832,
+            "matmul_vs_dense_max_abs_diff": 1.9073486328125e-06,
+            "matmul_tolerance": 0.0289306640625,
+            "matmul_matches": true
+          },
+          {
+            "family": "action_expert",
+            "module": "model.action_expert.blocks.1.modulation.linear",
+            "shape": [
+              6912,
+              768
+            ],
+            "numel": 5308416,
+            "rows_checked": 8,
+            "max_abs_diff": 1.4403369277715683e-05,
+            "tolerance": 0.00010919570922851562,
+            "max_abs_diff_over_tolerance": 0.13190416894104803,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.0036601561587303877,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 2654208,
+            "bf16_bytes_if_dense": 10616832,
+            "matmul_vs_dense_max_abs_diff": 7.62939453125e-06,
+            "matmul_tolerance": 0.017333984375,
+            "matmul_matches": true
+          },
+          {
+            "family": "image_projector",
+            "module": "model.vision_backbone.image_projector.w1",
+            "shape": [
+              9728,
+              1152
+            ],
+            "numel": 11206656,
+            "rows_checked": 8,
+            "max_abs_diff": 0.00024337321519851685,
+            "tolerance": 0.001617431640625,
+            "max_abs_diff_over_tolerance": 0.15046893425707547,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.06598242372274399,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 5603328,
+            "bf16_bytes_if_dense": 22413312,
+            "matmul_vs_dense_max_abs_diff": 0.0001220703125,
+            "matmul_tolerance": 0.11376953125,
+            "matmul_matches": true
+          },
+          {
+            "family": "image_projector",
+            "module": "model.vision_backbone.image_projector.w3",
+            "shape": [
+              9728,
+              1152
+            ],
+            "numel": 11206656,
+            "rows_checked": 8,
+            "max_abs_diff": 0.00023128092288970947,
+            "tolerance": 0.00146484375,
+            "max_abs_diff_over_tolerance": 0.15788777669270834,
+            "decode_matches": true,
+            "blocksize": 64,
+            "nested_blocksize": 256,
+            "offset": 0.06522061675786972,
+            "quant_type": "nf4",
+            "storage_dtype": "torch.uint8",
+            "output_dtype": "torch.bfloat16",
+            "packed_bytes": 5603328,
+            "bf16_bytes_if_dense": 22413312,
+            "matmul_vs_dense_max_abs_diff": 0.0,
+            "matmul_tolerance": 0.125,
+            "matmul_matches": true
+          }
+        ]
+      }
+    },
+    "first_prediction": {
+      "first_prediction": {
+        "tag": "first_prediction",
+        "wall_ms": 1938.74,
+        "cuda_event_ms": 1938.69,
+        "actions_shape": [
+          1,
+          30,
+          6
+        ],
+        "actions_dtype": "torch.float32",
+        "action_rows": 30,
+        "action_dim": 6,
+        "all_finite": true,
+        "min": -11.312,
+        "max": 92.5,
+        "first_action_row": [
+          -11.312,
+          46.5,
+          36.0,
+          87.5,
+          -0.367,
+          1.898
+        ],
+        "last_action_row": [
+          -10.188,
+          46.25,
+          36.75,
+          92.5,
+          -0.101,
+          33.5
+        ],
+        "action_checksum": 5561.894287,
+        "module_calls": [
+          {
+            "module": "lm_head",
+            "calls": 0,
+            "output_shapes": []
+          },
+          {
+            "module": "wte(MolmoAct2Embedding)",
+            "calls": 1,
+            "output_shapes": [
+              [
+                1,
+                491,
+                2560
+              ]
+            ]
+          },
+          {
+            "module": "vision_backbone",
+            "calls": 1,
+            "output_shapes": [
+              [
+                392,
+                2560
+              ]
+            ]
+          }
+        ]
+      },
+      "cuda_graph_state": {
+        "action_flow": {
+          "manager_enabled": false,
+          "graph_captured": false,
+          "key": null,
+          "output_shape": null
+        },
+        "depth_decode": {
+          "manager_enabled": false,
+          "graph_captured": false
+        }
+      },
+      "cuda_mem_after_first": {
+        "at": "2026-11-13T10:46:41+0800",
+        "free_GiB": 2.23,
+        "total_GiB": 7.96,
+        "allocated_GiB": 3.985,
+        "reserved_GiB": 4.525,
+        "peak_allocated_GiB": 4.184,
+        "peak_reserved_GiB": 4.525,
+        "nvidia_smi_used_MiB": "5925",
+        "nvidia_smi_free_MiB": "1886",
+        "fields": {
+          "free_GiB": "CUDA-usable free memory at this instant (not a peak)",
+          "peak_allocated_GiB": "max allocated since the stage reset",
+          "peak_reserved_GiB": "max reserved since the stage reset"
+        }
+      },
+      "host_memory_after_first": {
+        "total_GiB": 15.73,
+        "available_GiB": 4.56,
+        "process_rss_GiB": 1.82
+      }
+    },
+    "continuous": {
+      "chunks": 30,
+      "warmup_chunks": 3,
+      "seed": 20261112,
+      "num_steps": 10,
+      "n_action_steps": null,
+      "cuda_graph": false,
+      "embedding_patch": true,
+      "max_crops": 8,
+      "input": {
+        "observation_source": "synthetic",
+        "images": [
+          {
+            "synthetic": true,
+            "size": [
+              640,
+              480
+            ]
+          },
+          {
+            "synthetic": true,
+            "size": [
+              640,
+              480
+            ]
+          }
+        ],
+        "state_degrees": [
+          -11.516500473022461,
+          26.857099533081055,
+          -27.604400634765625,
+          88.39559936523438,
+          0.21979999542236328,
+          2.1438000202178955
+        ],
+        "task": "put the yellow block into the basket",
+        "fixed_observation": "same observation for every chunk (throughput test)"
+      },
+      "timings": [
+        {
+          "tag": "chunk_00",
+          "wall_ms": 1402.13,
+          "cuda_event_ms": 1402.08,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_01",
+          "wall_ms": 1462.92,
+          "cuda_event_ms": 1462.9,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_02",
+          "wall_ms": 1461.89,
+          "cuda_event_ms": 1461.77,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_03",
+          "wall_ms": 2694.37,
+          "cuda_event_ms": 2694.36,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_04",
+          "wall_ms": 2189.44,
+          "cuda_event_ms": 2189.42,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_05",
+          "wall_ms": 1778.69,
+          "cuda_event_ms": 1778.67,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_06",
+          "wall_ms": 2057.98,
+          "cuda_event_ms": 2057.96,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_07",
+          "wall_ms": 2525.61,
+          "cuda_event_ms": 2525.59,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_08",
+          "wall_ms": 2664.3,
+          "cuda_event_ms": 2664.28,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_09",
+          "wall_ms": 2789.11,
+          "cuda_event_ms": 2789.05,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_10",
+          "wall_ms": 2576.75,
+          "cuda_event_ms": 2576.7,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_11",
+          "wall_ms": 2819.77,
+          "cuda_event_ms": 2819.76,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_12",
+          "wall_ms": 2779.91,
+          "cuda_event_ms": 2779.89,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_13",
+          "wall_ms": 2773.59,
+          "cuda_event_ms": 2773.56,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_14",
+          "wall_ms": 2757.76,
+          "cuda_event_ms": 2757.72,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_15",
+          "wall_ms": 2929.92,
+          "cuda_event_ms": 2929.89,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_16",
+          "wall_ms": 3261.31,
+          "cuda_event_ms": 3261.25,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_17",
+          "wall_ms": 3169.71,
+          "cuda_event_ms": 3169.69,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_18",
+          "wall_ms": 3187.84,
+          "cuda_event_ms": 3187.81,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_19",
+          "wall_ms": 3201.93,
+          "cuda_event_ms": 3201.91,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_20",
+          "wall_ms": 2757.93,
+          "cuda_event_ms": 2757.9,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_21",
+          "wall_ms": 2802.47,
+          "cuda_event_ms": 2802.46,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_22",
+          "wall_ms": 3260.36,
+          "cuda_event_ms": 3260.35,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_23",
+          "wall_ms": 3296.67,
+          "cuda_event_ms": 3296.61,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_24",
+          "wall_ms": 3234.0,
+          "cuda_event_ms": 3233.94,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_25",
+          "wall_ms": 3219.1,
+          "cuda_event_ms": 3219.07,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_26",
+          "wall_ms": 3054.51,
+          "cuda_event_ms": 3054.5,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_27",
+          "wall_ms": 2914.83,
+          "cuda_event_ms": 2914.81,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_28",
+          "wall_ms": 2781.5,
+          "cuda_event_ms": 2781.48,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "chunk_29",
+          "wall_ms": 3028.04,
+          "cuda_event_ms": 3028.02,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        }
+      ],
+      "warmup": [
+        {
+          "tag": "warmup_0",
+          "wall_ms": 1410.55,
+          "cuda_event_ms": 1410.49,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "warmup_1",
+          "wall_ms": 1458.19,
+          "cuda_event_ms": 1458.17,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        },
+        {
+          "tag": "warmup_2",
+          "wall_ms": 1453.16,
+          "cuda_event_ms": 1453.15,
+          "actions_shape": [
+            1,
+            30,
+            6
+          ],
+          "actions_dtype": "torch.float32",
+          "action_rows": 30,
+          "action_dim": 6,
+          "all_finite": true,
+          "min": -11.312,
+          "max": 92.5,
+          "first_action_row": [
+            -11.312,
+            46.5,
+            36.0,
+            87.5,
+            -0.367,
+            1.898
+          ],
+          "last_action_row": [
+            -10.188,
+            46.25,
+            36.75,
+            92.5,
+            -0.101,
+            33.5
+          ],
+          "action_checksum": 5561.894287
+        }
+      ],
+      "cuda_mem_before_measured": {
+        "at": "2026-11-13T10:46:45+0800",
+        "free_GiB": 2.23,
+        "total_GiB": 7.96,
+        "allocated_GiB": 3.985,
+        "reserved_GiB": 4.525,
+        "peak_allocated_GiB": 3.985,
+        "peak_reserved_GiB": 4.525,
+        "nvidia_smi_used_MiB": "5924",
+        "nvidia_smi_free_MiB": "1887",
+        "fields": {
+          "free_GiB": "CUDA-usable free memory at this instant (not a peak)",
+          "peak_allocated_GiB": "max allocated since the stage reset",
+          "peak_reserved_GiB": "max reserved since the stage reset"
+        }
+      },
+      "cuda_mem_after_measured": {
+        "at": "2026-11-13T10:48:06+0800",
+        "free_GiB": 2.23,
+        "total_GiB": 7.96,
+        "allocated_GiB": 3.985,
+        "reserved_GiB": 4.525,
+        "peak_allocated_GiB": 4.189,
+        "peak_reserved_GiB": 4.525,
+        "nvidia_smi_used_MiB": "5817",
+        "nvidia_smi_free_MiB": "1994",
+        "fields": {
+          "free_GiB": "CUDA-usable free memory at this instant (not a peak)",
+          "peak_allocated_GiB": "max allocated since the stage reset",
+          "peak_reserved_GiB": "max reserved since the stage reset"
+        }
+      },
+      "host_memory_after_measured": {
+        "total_GiB": 15.73,
+        "available_GiB": 4.73,
+        "process_rss_GiB": 1.83
+      },
+      "summary": {
+        "wall_ms": {
+          "median": 2785.31,
+          "mean": 2694.48,
+          "p95": 3261.31,
+          "max": 3296.67,
+          "min": 1402.13
+        },
+        "cuda_event_ms": {
+          "median": 2785.27,
+          "mean": 2694.45,
+          "p95": 3261.25,
+          "max": 3296.61,
+          "min": 1402.08
+        },
+        "all_finite": true,
+        "shapes": [
+          "[1, 30, 6]"
+        ],
+        "oom": false
+      }
+    },
+    "artifacts": {
+      "actions_npz": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_104617_d4_patch_graph_off\\actions.npz",
+      "actions_arrays": 34
+    },
+    "cuda_graph_state_final": {
+      "action_flow": {
+        "manager_enabled": false,
+        "graph_captured": false,
+        "key": null,
+        "output_shape": null
+      },
+      "depth_decode": {
+        "manager_enabled": false,
+        "graph_captured": false
+      }
+    }
+  },
+  "status": "completed",
+  "saved_to": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_104617_d4_patch_graph_off\\report.json",
+  "total_seconds": 109.3
+}

@@ -1,0 +1,565 @@
+{
+  "created_at": "2026-11-13T12:03:19+0800",
+  "status": "completed",
+  "sample": "G:\\MolmoAct2_NF4\\tmp\\live_spool3\\sample_000179",
+  "windows": {
+    "state_window_local": {
+      "shoulder_pan": [
+        -41.91,
+        48.29
+      ],
+      "shoulder_lift": [
+        -95.26,
+        46.33
+      ],
+      "elbow_flex": [
+        -51.61,
+        83.14
+      ],
+      "wrist_flex": [
+        5.71,
+        91.78
+      ],
+      "wrist_roll": [
+        -63.45,
+        42.94
+      ],
+      "gripper": [
+        0.94,
+        44.14
+      ]
+    },
+    "action_window_local": {
+      "shoulder_pan": [
+        -42.13,
+        48.55
+      ],
+      "shoulder_lift": [
+        -96.11,
+        44.82
+      ],
+      "elbow_flex": [
+        -54.6,
+        83.61
+      ],
+      "wrist_flex": [
+        4.93,
+        93.41
+      ],
+      "wrist_roll": [
+        -65.58,
+        43.53
+      ],
+      "gripper": [
+        -0.3,
+        44.75
+      ]
+    },
+    "mechanical_travel_local": {
+      "shoulder_pan": [
+        -114.55,
+        114.55
+      ],
+      "shoulder_lift": [
+        -102.73,
+        102.73
+      ],
+      "elbow_flex": [
+        -97.67,
+        97.67
+      ],
+      "wrist_flex": [
+        -103.34,
+        103.34
+      ],
+      "wrist_roll": [
+        -0.4,
+        0.4
+      ],
+      "gripper": [
+        0.0,
+        100.0
+      ]
+    },
+    "note": "state/action windows are the model q01..q99 converted to local coordinates"
+  },
+  "candidates": {
+    "current_measured": {
+      "input_local": [
+        0.44,
+        -101.846,
+        96.615,
+        73.802,
+        -0.044,
+        1.176
+      ],
+      "clipped_dims": [
+        "shoulder_lift",
+        "elbow_flex"
+      ],
+      "clipped_count": 2,
+      "first_action_local": [
+        0.598,
+        -96.0,
+        83.0,
+        74.0,
+        0.006,
+        0.227
+      ],
+      "delta": [
+        0.158,
+        5.846,
+        -13.615,
+        0.198,
+        0.05,
+        -0.949
+      ],
+      "max_abs_delta": 13.615,
+      "pinned_joints": [
+        "shoulder_lift",
+        "elbow_flex",
+        "gripper"
+      ],
+      "per_joint": {
+        "shoulder_pan": {
+          "input_local": 0.44,
+          "input_model": 0.44,
+          "normalized": -0.061,
+          "clipped": false,
+          "first_action_local": 0.598,
+          "delta": 0.158,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -114.55,
+            114.55
+          ]
+        },
+        "shoulder_lift": {
+          "input_local": -101.846,
+          "input_model": 191.846,
+          "normalized": 1.0,
+          "clipped": true,
+          "first_action_local": -96.0,
+          "delta": 5.846,
+          "at_action_min": true,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -102.73,
+            102.73
+          ]
+        },
+        "elbow_flex": {
+          "input_local": 96.615,
+          "input_model": 186.615,
+          "normalized": 1.0,
+          "clipped": true,
+          "first_action_local": 83.0,
+          "delta": -13.615,
+          "at_action_min": false,
+          "at_action_max": true,
+          "mechanical_travel": [
+            -97.67,
+            97.67
+          ]
+        },
+        "wrist_flex": {
+          "input_local": 73.802,
+          "input_model": 73.802,
+          "normalized": 0.5822,
+          "clipped": false,
+          "first_action_local": 74.0,
+          "delta": 0.198,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -103.34,
+            103.34
+          ]
+        },
+        "wrist_roll": {
+          "input_local": -0.044,
+          "input_model": -0.044,
+          "normalized": 0.1919,
+          "clipped": false,
+          "first_action_local": 0.006,
+          "delta": 0.05,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -0.4,
+            0.4
+          ]
+        },
+        "gripper": {
+          "input_local": 1.176,
+          "input_model": 1.176,
+          "normalized": -0.9893,
+          "clipped": false,
+          "first_action_local": 0.227,
+          "delta": -0.949,
+          "at_action_min": true,
+          "at_action_max": false,
+          "mechanical_travel": [
+            0.0,
+            100.0
+          ]
+        }
+      }
+    },
+    "candidate_a": {
+      "input_local": [
+        0.0,
+        -60.0,
+        60.0,
+        60.0,
+        0.0,
+        10.0
+      ],
+      "clipped_dims": [],
+      "clipped_count": 0,
+      "first_action_local": [
+        0.422,
+        -60.0,
+        58.0,
+        60.0,
+        0.059,
+        9.625
+      ],
+      "delta": [
+        0.422,
+        0.0,
+        -2.0,
+        0.0,
+        0.059,
+        -0.375
+      ],
+      "max_abs_delta": 2.0,
+      "pinned_joints": [],
+      "per_joint": {
+        "shoulder_pan": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": -0.0708,
+          "clipped": false,
+          "first_action_local": 0.422,
+          "delta": 0.422,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -114.55,
+            114.55
+          ]
+        },
+        "shoulder_lift": {
+          "input_local": -60.0,
+          "input_model": 150.0,
+          "normalized": 0.5019,
+          "clipped": false,
+          "first_action_local": -60.0,
+          "delta": 0.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -102.73,
+            102.73
+          ]
+        },
+        "elbow_flex": {
+          "input_local": 60.0,
+          "input_model": 150.0,
+          "normalized": 0.6566,
+          "clipped": false,
+          "first_action_local": 58.0,
+          "delta": -2.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -97.67,
+            97.67
+          ]
+        },
+        "wrist_flex": {
+          "input_local": 60.0,
+          "input_model": 60.0,
+          "normalized": 0.2615,
+          "clipped": false,
+          "first_action_local": 60.0,
+          "delta": 0.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -103.34,
+            103.34
+          ]
+        },
+        "wrist_roll": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": 0.1927,
+          "clipped": false,
+          "first_action_local": 0.059,
+          "delta": 0.059,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -0.4,
+            0.4
+          ]
+        },
+        "gripper": {
+          "input_local": 10.0,
+          "input_model": 10.0,
+          "normalized": -0.5807,
+          "clipped": false,
+          "first_action_local": 9.625,
+          "delta": -0.375,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            0.0,
+            100.0
+          ]
+        }
+      }
+    },
+    "candidate_b": {
+      "input_local": [
+        0.0,
+        -40.0,
+        30.0,
+        55.0,
+        0.0,
+        15.0
+      ],
+      "clipped_dims": [],
+      "clipped_count": 0,
+      "first_action_local": [
+        1.953,
+        -74.0,
+        60.0,
+        51.25,
+        1.18,
+        9.0
+      ],
+      "delta": [
+        1.953,
+        -34.0,
+        30.0,
+        -3.75,
+        1.18,
+        -6.0
+      ],
+      "max_abs_delta": 34.0,
+      "pinned_joints": [],
+      "per_joint": {
+        "shoulder_pan": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": -0.0708,
+          "clipped": false,
+          "first_action_local": 1.953,
+          "delta": 1.953,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -114.55,
+            114.55
+          ]
+        },
+        "shoulder_lift": {
+          "input_local": -40.0,
+          "input_model": 130.0,
+          "normalized": 0.2194,
+          "clipped": false,
+          "first_action_local": -74.0,
+          "delta": -34.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -102.73,
+            102.73
+          ]
+        },
+        "elbow_flex": {
+          "input_local": 30.0,
+          "input_model": 120.0,
+          "normalized": 0.2113,
+          "clipped": false,
+          "first_action_local": 60.0,
+          "delta": 30.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -97.67,
+            97.67
+          ]
+        },
+        "wrist_flex": {
+          "input_local": 55.0,
+          "input_model": 55.0,
+          "normalized": 0.1453,
+          "clipped": false,
+          "first_action_local": 51.25,
+          "delta": -3.75,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -103.34,
+            103.34
+          ]
+        },
+        "wrist_roll": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": 0.1927,
+          "clipped": false,
+          "first_action_local": 1.18,
+          "delta": 1.18,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -0.4,
+            0.4
+          ]
+        },
+        "gripper": {
+          "input_local": 15.0,
+          "input_model": 15.0,
+          "normalized": -0.3491,
+          "clipped": false,
+          "first_action_local": 9.0,
+          "delta": -6.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            0.0,
+            100.0
+          ]
+        }
+      }
+    },
+    "outside_lift_only": {
+      "input_local": [
+        0.0,
+        -101.0,
+        60.0,
+        60.0,
+        0.0,
+        10.0
+      ],
+      "clipped_dims": [
+        "shoulder_lift"
+      ],
+      "clipped_count": 1,
+      "first_action_local": [
+        0.334,
+        -96.0,
+        59.0,
+        60.0,
+        -0.207,
+        9.812
+      ],
+      "delta": [
+        0.334,
+        5.0,
+        -1.0,
+        0.0,
+        -0.207,
+        -0.188
+      ],
+      "max_abs_delta": 5.0,
+      "pinned_joints": [
+        "shoulder_lift"
+      ],
+      "per_joint": {
+        "shoulder_pan": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": -0.0708,
+          "clipped": false,
+          "first_action_local": 0.334,
+          "delta": 0.334,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -114.55,
+            114.55
+          ]
+        },
+        "shoulder_lift": {
+          "input_local": -101.0,
+          "input_model": 191.0,
+          "normalized": 1.0,
+          "clipped": true,
+          "first_action_local": -96.0,
+          "delta": 5.0,
+          "at_action_min": true,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -102.73,
+            102.73
+          ]
+        },
+        "elbow_flex": {
+          "input_local": 60.0,
+          "input_model": 150.0,
+          "normalized": 0.6566,
+          "clipped": false,
+          "first_action_local": 59.0,
+          "delta": -1.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -97.67,
+            97.67
+          ]
+        },
+        "wrist_flex": {
+          "input_local": 60.0,
+          "input_model": 60.0,
+          "normalized": 0.2615,
+          "clipped": false,
+          "first_action_local": 60.0,
+          "delta": 0.0,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -103.34,
+            103.34
+          ]
+        },
+        "wrist_roll": {
+          "input_local": 0.0,
+          "input_model": 0.0,
+          "normalized": 0.1927,
+          "clipped": false,
+          "first_action_local": -0.207,
+          "delta": -0.207,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            -0.4,
+            0.4
+          ]
+        },
+        "gripper": {
+          "input_local": 10.0,
+          "input_model": 10.0,
+          "normalized": -0.5807,
+          "clipped": false,
+          "first_action_local": 9.812,
+          "delta": -0.188,
+          "at_action_min": false,
+          "at_action_max": false,
+          "mechanical_travel": [
+            0.0,
+            100.0
+          ]
+        }
+      }
+    }
+  },
+  "images": "identical in every candidate",
+  "seed": 20261112
+}

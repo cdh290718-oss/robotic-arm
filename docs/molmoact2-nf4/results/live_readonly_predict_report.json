@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-11-13T11:29:16+0800",
+  "run_dir": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_112916_live_predict2",
+  "argv": [
+    "G:\\MolmoAct2_NF4\\predict_live_spool.py",
+    "--spool",
+    "G:\\MolmoAct2_NF4\\tmp\\live_spool2",
+    "--duration",
+    "130",
+    "--run-name",
+    "live_predict2"
+  ],
+  "mode": "model consumes synchronised live samples; no motor command",
+  "status": "completed",
+  "allocator": {
+    "env_before": {
+      "PYTORCH_ALLOC_CONF": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null
+    },
+    "cuda_initialized_before": false,
+    "applied": true,
+    "torch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "env_after": {
+      "PYTORCH_ALLOC_CONF": "expandable_segments:True",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+    },
+    "allocator_probe_warnings": [
+      "expandable_segments not supported on this platform (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\c10/cuda/CUDAAllocatorConfig.h:39.)"
+    ],
+    "expandable_segments_effective": false,
+    "note": "torch reports expandable_segments is not supported on this platform; the setting is recorded as requested but NOT active"
+  },
+  "embedding_patch": {
+    "installed": true,
+    "already": false
+  },
+  "load": {
+    "seconds": 24.17,
+    "audit": {
+      "param_dtype_elements": {
+        "torch.bfloat16": 926712624,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_bytes": {
+        "torch.bfloat16": 1853425248,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_GiB": {
+        "torch.bfloat16": 1.7261,
+        "torch.uint8": 2.1027,
+        "torch.float32": 0.0
+      },
+      "devices": {
+        "cuda:0": 1295,
+        "meta": 2
+      },
+      "linear4bit_modules": 234,
+      "plain_linear_modules": 364,
+      "quant_types": {
+        "nf4": 234
+      },
+      "quant_state_devices": {
+        "cuda:0": 234
+      },
+      "cuda_allocated_GiB": 3.9558,
+      "cuda_reserved_GiB": 4.0098
+    },
+    "key_accounting": {
+      "file_keys": 2465,
+      "assigned_dense_tensors": 1061,
+      "packed_nf4_weights": 234,
+      "quant_state_tensors_consumed_by_quantstate": 1170,
+      "sum": 2465
+    }
+  },
+  "saved_to": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_112916_live_predict2\\report.json",
+  "samples_processed": 105,
+  "first_seq": 43,
+  "last_seq": 285,
+  "samples_jsonl": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_112916_live_predict2\\samples.jsonl",
+  "cuda_mem_end": {
+    "peak_allocated_GiB": 4.262,
+    "peak_reserved_GiB": 4.682
+  }
+}

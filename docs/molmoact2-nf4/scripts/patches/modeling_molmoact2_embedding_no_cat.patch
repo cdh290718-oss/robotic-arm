@@ -1,0 +1,37 @@
+--- a/model/modeling_molmoact2.py
++++ b/model/modeling_molmoact2.py
+@@ -2491,13 +2491,33 @@
+         )
+         self.new_embedding = nn.Parameter(
+             torch.zeros(num_new_embeddings, features, device=device),
+         )
+ 
+     def forward(self, x: torch.Tensor) -> torch.Tensor:
+-        return F.embedding(x, torch.cat([self.embedding, self.new_embedding], dim=0))
++        # Look the two tables up separately and merge only the requested rows:
++        # torch.cat here copies the full 154624+128 vocabulary on every call
++        # (0.7379 GiB in bf16). Token-id semantics, the base/additional
++        # boundary, dtype and out-of-range behaviour are unchanged.
++        n_base = int(self.embedding.shape[0])
++        n_extra = int(self.new_embedding.shape[0])
++        if x.numel():
++            lo = int(x.min())
++            hi = int(x.max())
++            if lo < 0 or hi >= n_base + n_extra:
++                raise IndexError(
++                    "index out of range in self (MolmoAct2Embedding): token ids "
++                    f"must be in [0, {n_base + n_extra}), got [{lo}, {hi}]"
++                )
++        is_extra = x >= n_base
++        if not bool(is_extra.any()):
++            return F.embedding(x, self.embedding)
++        base_ids = torch.where(is_extra, torch.zeros_like(x), x)
++        out = F.embedding(base_ids, self.embedding)
++        extra_vecs = F.embedding((x - n_base).clamp(min=0), self.new_embedding)
++        return torch.where(is_extra.unsqueeze(-1), extra_vecs, out)
+ 
+ 
+ class MolmoAct2PreTrainedModel(PreTrainedModel):
+     config: MolmoAct2Config
+     base_model_prefix = "model"
+     supports_gradient_checkpointing = True

@@ -1,0 +1,504 @@
+{
+  "created_at": "2026-11-13T11:08:28+0800",
+  "hardware_access": "none - file/log analysis only; no motor, no register write, no action sent",
+  "corrections_applied": [
+    "LeRobot 0.6.0 DEGREES branch also uses the calibrated range midpoint and 360/4095; this project's control_core.py follows that convention, it does not deviate from it",
+    "ticks per degree is 4095/360 = 11.375 (max_res = resolution - 1), not 4096/360",
+    "the formula (ticks - homing_offset)/4096*360 is NOT a LeRobot path and has been removed",
+    "the finding is limited to 'normalisation clipping is confirmed'; the cause of the coordinate mismatch is still unverified",
+    "no statistical (median) alignment is offered as a mapping"
+  ],
+  "coordinate_chain": {
+    "authoritative_source": "LeRobot 0.6.0 (installed at G:\\LeRobot\\source\\lerobot-0.6.0)",
+    "steps": [
+      {
+        "step": 1,
+        "what": "bus read of the position register",
+        "detail": "Feetech STS3215 'Present_Position' register (address 56, 2 bytes)",
+        "evidence": "lerobot/motors/feetech/tables.py:83"
+      },
+      {
+        "step": 2,
+        "what": "sign-magnitude decode of the raw register value",
+        "detail": "Present_Position uses sign bit 15; decoded value = -magnitude if bit15 else magnitude",
+        "evidence": "feetech/tables.py:207-216 (STS_SMS_SERIES_ENCODINGS_TABLE) and motors/encoding_utils.py:decode_sign_magnitude"
+      },
+      {
+        "step": 3,
+        "what": "body joints -> degrees",
+        "detail": "deg = (ticks - mid) * 360 / max_res, mid = (range_min + range_max)/2, max_res = model_resolution - 1 = 4095",
+        "evidence": "motors/motors_bus.py:870-873 (MotorNormMode.DEGREES branch)"
+      },
+      {
+        "step": 4,
+        "what": "gripper -> 0..100",
+        "detail": "value = (ticks - range_min) / (range_max - range_min) * 100",
+        "evidence": "motors/motors_bus.py:867-869 (MotorNormMode.RANGE_0_100 branch)"
+      },
+      {
+        "step": 5,
+        "what": "which joint uses which mode",
+        "detail": "shoulder_pan/lift, elbow_flex, wrist_flex, wrist_roll -> DEGREES; gripper -> RANGE_0_100 (default use_degrees=True)",
+        "evidence": "robots/so_follower/so_follower.py:50-59 and config_so_follower.py:42"
+      },
+      {
+        "step": 6,
+        "what": "dataset observation.state / action",
+        "detail": "get_observation() calls sync_read('Present_Position') with normalize=True, so the dataset stores exactly the step-3/step-4 values",
+        "evidence": "robots/so_follower/so_follower.py:182-204"
+      },
+      {
+        "step": 7,
+        "what": "checkpoint normalisation",
+        "detail": "state and action each map linearly from [q01, q99] to [-1, 1] and are clipped; q01/q99 are computed per tag over the training mixture",
+        "evidence": "model/modeling_molmoact2.py:_FeatureNormalizer.normalize (1011-1042) and unnormalize (1044-1064)"
+      },
+      {
+        "step": 8,
+        "what": "prompt state",
+        "detail": "normalised state -> 256 uniform bins -> '<state_i>' tokens (no sign flip, no wrap)",
+        "evidence": "model/modeling_molmoact2.py:_discretize_normalized_state (1271-1278)"
+      }
+    ],
+    "constants_verified": {
+      "sts3215_resolution": 4096,
+      "max_res_used_by_lerobot": 4095,
+      "ticks_per_degree": 11.375,
+      "arithmetic": "4095 / 360 = 11.375 exactly",
+      "evidence": "lerobot/motors/feetech/tables.py:190 (resolution 4096) + motors_bus.py:872 (max_res = resolution - 1)"
+    },
+    "local_convention_vs_lerobot": "identical: this project's control_core.py uses (tick - range midpoint) * 360/4095 and a 0-100 gripper fraction, which is the same DEGREES / RANGE_0_100 path"
+  },
+  "numeric_verification": {
+    "sources": {
+      "states_npz": "D:\\\u684c\u9762\\\u840c\u82bd\u676f\\policy_v1_refined\\results\\20261112_214119_107_Grasp_bf16\\predictions.npz",
+      "control_jsonl": "D:\\\u684c\u9762\\\u840c\u82bd\u676f\\policy_v1_refined\\results\\20261112_214119_107_Grasp_bf16\\control.jsonl",
+      "calibration": "G:\\LeRobot\\data\\calibration\\robots\\so_follower\\lerobot.json"
+    },
+    "calibration_midpoints_ticks": {
+      "shoulder_pan": 2004.0,
+      "shoulder_lift": 1940.5,
+      "elbow_flex": 2175.0,
+      "wrist_flex": 2067.5,
+      "wrist_roll": 2046.5,
+      "gripper": 2751.0
+    },
+    "calibration_range_degrees_DEGREES_branch": {
+      "shoulder_pan": [
+        -114.55,
+        114.55
+      ],
+      "shoulder_lift": [
+        -102.73,
+        102.73
+      ],
+      "elbow_flex": [
+        -97.67,
+        97.67
+      ],
+      "wrist_flex": [
+        -103.34,
+        103.34
+      ],
+      "wrist_roll": [
+        -0.4,
+        0.4
+      ]
+    },
+    "calibration_gripper_0_100_span": {
+      "ticks": [
+        2028,
+        3474
+      ],
+      "ticks_per_unit": 14.46
+    },
+    "formula_reproduction_from_saved_log": {
+      "shoulder_pan": {
+        "rows": 3537,
+        "formula": "(ticks - 2004.0) * 360 / 4095",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      },
+      "shoulder_lift": {
+        "rows": 3537,
+        "formula": "(ticks - 1940.5) * 360 / 4095",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      },
+      "elbow_flex": {
+        "rows": 3537,
+        "formula": "(ticks - 2175.0) * 360 / 4095",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      },
+      "wrist_flex": {
+        "rows": 3537,
+        "formula": "(ticks - 2067.5) * 360 / 4095",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      },
+      "wrist_roll": {
+        "rows": 3537,
+        "formula": "(ticks - 2046.5) * 360 / 4095",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      },
+      "gripper": {
+        "rows": 3537,
+        "formula": "(ticks - range_min)/(range_max - range_min)*100",
+        "max_abs_residual_deg": 0.0,
+        "mean_abs_residual_deg": 0.0,
+        "matches_saved_state": true
+      }
+    },
+    "all_joints_reproduced": true,
+    "saved_state_ranges_degrees": {
+      "shoulder_pan": [
+        -12.923,
+        10.022
+      ],
+      "shoulder_lift": [
+        -102.374,
+        28.703
+      ],
+      "elbow_flex": [
+        -32.791,
+        96.615
+      ],
+      "wrist_flex": [
+        54.11,
+        91.912
+      ],
+      "wrist_roll": [
+        0.044,
+        0.22
+      ],
+      "gripper": [
+        1.452,
+        28.423
+      ]
+    }
+  },
+  "state_vs_action_statistics": {
+    "norm_mode": "q01_q99",
+    "state_q01": [
+      -41.90962240941357,
+      43.66791235922949,
+      38.38770483255723,
+      5.711740446834044,
+      -63.44539045209019,
+      0.9435577790191543
+    ],
+    "state_q99": [
+      48.29435703371732,
+      185.2611055842669,
+      173.13578487933165,
+      91.78122415137209,
+      42.94491979114059,
+      44.13755601580974
+    ],
+    "action_q01": [
+      -42.1300246338976,
+      45.18258358164995,
+      35.40059182962813,
+      4.929781836327758,
+      -65.57568617645342,
+      -0.3016556932619033
+    ],
+    "action_q99": [
+      48.55349563198916,
+      186.10646680077767,
+      173.6076722013997,
+      93.41056417929472,
+      43.53107398260694,
+      44.74649336930881
+    ],
+    "note": "the two blocks differ substantially; using the action statistics for the state input (or the reverse) is a silent error, so normalise and un-normalise are checked separately",
+    "same_pose_same_dimension_different_normalised_value": {
+      "pose_degrees_or_gripper_units": [
+        0.0,
+        90.0,
+        45.0,
+        60.0,
+        0.0,
+        20.0
+      ],
+      "normalised_with_state_stats": [
+        -0.0708,
+        -0.3456,
+        -0.9019,
+        0.2615,
+        0.1927,
+        -0.1176
+      ],
+      "normalised_with_action_stats": [
+        -0.0708,
+        -0.3639,
+        -0.8611,
+        0.2448,
+        0.202,
+        -0.0987
+      ],
+      "max_abs_difference": 0.0408
+    },
+    "inverse_direction_roundtrip": {
+      "state": {
+        "max_abs_error": 0.0
+      },
+      "action": {
+        "max_abs_error": 0.0
+      }
+    },
+    "clipping": {
+      "state_clip_outside_q01_q99": true,
+      "action_clip_outside_q01_q99": true,
+      "consequence": "an input outside [q01, q99] saturates to +-1 before discretisation, so the model cannot see how far outside it is; a predicted action outside the action range is clipped back to the range bounds on un-normalisation"
+    },
+    "gripper": {
+      "dataset_and_robot_scale": "0-100 (RANGE_0_100 branch)",
+      "checkpoint_mask_state": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "checkpoint_mask_action": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "normalize_gripper_flag": true,
+      "code_usage_of_normalize_gripper": "not referenced anywhere in modeling_molmoact2.py; the mask in the statistics is what decides per-dimension normalisation, and here every mask entry is true, so the gripper is normalised with q01/q99 like the arm joints",
+      "direction": "0 = closed end of the calibrated span, 100 = open end; the checkpoint does not define a separate opening direction"
+    },
+    "angle_wrap": {
+      "wrap_handling": "none: the normalisation is a linear map plus clip, and the DEGREES branch of LeRobot does not wrap either",
+      "risk": "a joint crossing the +-180 deg boundary would jump discontinuously in the state token stream; the saved session does not cross it"
+    },
+    "drive_mode": {
+      "effect_on_degrees": "none; motors_bus.py applies drive_mode only in the RANGE_M100_100 and RANGE_0_100 branches",
+      "local_calibration_drive_modes": {
+        "shoulder_pan": 0,
+        "shoulder_lift": 0,
+        "elbow_flex": 0,
+        "wrist_flex": 0,
+        "wrist_roll": 0,
+        "gripper": 0
+      }
+    }
+  },
+  "upstream_provenance": {
+    "model_card": "https://huggingface.co/allenai/MolmoAct2-SO100_101",
+    "card_statements": [
+      "state is the raw robot state and actions are returned in robot scale",
+      "camera order does not matter for this checkpoint",
+      "the sample comes from Beegbrain/pick_lemon_and_drop_in_bowl episode 0 frame 0"
+    ],
+    "dataset": {
+      "id": "Beegbrain/pick_lemon_and_drop_in_bowl",
+      "codebase_version": "v2.1",
+      "robot_type": "so100",
+      "fps": 30,
+      "total_episodes": 40,
+      "total_frames": 15352,
+      "feature_names": [
+        "main_shoulder_pan",
+        "main_shoulder_lift",
+        "main_elbow_flex",
+        "main_wrist_flex",
+        "main_wrist_roll",
+        "main_gripper"
+      ],
+      "cameras": [
+        "observation.images.realsense_top",
+        "observation.images.realsense_side"
+      ],
+      "camera_resolution": [
+        480,
+        640,
+        3
+      ],
+      "episode_rows": 400,
+      "episode_state_range": {
+        "min": [
+          -37.53,
+          69.26,
+          58.1,
+          45.97,
+          -14.15,
+          1.1
+        ],
+        "max": [
+          6.68,
+          189.14,
+          181.41,
+          95.8,
+          0.53,
+          51.33
+        ]
+      },
+      "episode_action_range": {
+        "min": [
+          -38.14,
+          72.07,
+          54.05,
+          45.35,
+          -16.0,
+          0.0
+        ],
+        "max": [
+          7.47,
+          189.58,
+          178.86,
+          96.5,
+          1.93,
+          52.76
+        ]
+      }
+    },
+    "provenance_check": {
+      "card_sample_state": [
+        -0.52734375,
+        189.140625,
+        181.40625,
+        60.64453125,
+        -3.603515625,
+        1.0971786975860596
+      ],
+      "dataset_frame0_state": [
+        -0.527344,
+        189.140625,
+        181.40625,
+        60.644531,
+        -3.603516,
+        1.097179
+      ],
+      "matches": true,
+      "dataset_frame0_action": [
+        -1.757812,
+        189.580078,
+        178.330078,
+        59.326172,
+        -4.921875,
+        0.093545
+      ]
+    },
+    "note": "the dataset ships no robot calibration in its metadata, so the recording rig's range_min/range_max - and therefore the degree zero of the training data - cannot be recovered from public artifacts"
+  },
+  "local_vs_training_distribution": {
+    "shoulder_pan": {
+      "local_logged_range_degrees": [
+        -12.923,
+        10.022
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        -41.91,
+        48.294
+      ],
+      "fraction_of_saved_frames_below_q01": 0.0,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    },
+    "shoulder_lift": {
+      "local_logged_range_degrees": [
+        -102.374,
+        28.703
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        43.668,
+        185.261
+      ],
+      "fraction_of_saved_frames_below_q01": 1.0,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    },
+    "elbow_flex": {
+      "local_logged_range_degrees": [
+        -32.791,
+        96.615
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        38.388,
+        173.136
+      ],
+      "fraction_of_saved_frames_below_q01": 0.2959,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    },
+    "wrist_flex": {
+      "local_logged_range_degrees": [
+        54.11,
+        91.912
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        5.712,
+        91.781
+      ],
+      "fraction_of_saved_frames_below_q01": 0.0,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    },
+    "wrist_roll": {
+      "local_logged_range_degrees": [
+        0.044,
+        0.22
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        -63.445,
+        42.945
+      ],
+      "fraction_of_saved_frames_below_q01": 0.0,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    },
+    "gripper": {
+      "local_logged_range_degrees": [
+        1.452,
+        28.423
+      ],
+      "range_source": "control.jsonl (3537 rows of raw_present + state)",
+      "training_state_q01_q99": [
+        0.944,
+        44.138
+      ],
+      "fraction_of_saved_frames_below_q01": 0.0,
+      "fraction_of_saved_frames_above_q99": 0.0,
+      "fraction_source": "predictions.npz (196 frames at model time)"
+    }
+  },
+  "conclusion": {
+    "confirmed": [
+      "this project and LeRobot 0.6.0 use the same DEGREES/RANGE_0_100 convention: zero at the calibrated range midpoint, 360/4095 degrees per tick, gripper 0-100",
+      "the saved session's own raw->state log is reproduced to <1e-6 by that formula on all six joints, so the local logger is not the source of any mismatch",
+      "the checkpoint's normalisation clips out-of-range inputs to +-1 before the state is discretised; on the saved session shoulder_lift is below q01 in every frame and elbow_flex in part of them, so those dimensions saturate",
+      "state and action statistics are different blocks and are applied in opposite directions; both directions round-trip exactly inside the range",
+      "the official sample state is the dataset's episode-0 frame-0 observation.state, so the input side of the contract is settled"
+    ],
+    "not_confirmed": [
+      "why this arm's absolute values differ from the training mixture; the recording rigs' calibrations are not published with the dataset, so a per-joint conversion cannot be derived from public artifacts",
+      "whether the local arm's mechanical assembly (servo horn orientation) matches the training rigs; a ~150 deg offset on shoulder_lift is consistent with a different assembly/zero, but not proven",
+      "whether the saved SmolVLA frames are temporally valid observations for this checkpoint; that is a separate alignment question"
+    ],
+    "no_mapping_provided": "no per-joint offset or scale is proposed here. Aligning distributions is not a calibration, and applying one would inject an unverified transform into a robot control path",
+    "recommended_next_steps": [
+      "collect a calibration pose set on this arm (same physical poses as the training distribution, e.g. the poses visible in the sample dataset) and fit the mapping only if the training convention can be tied to physical poses",
+      "or fine-tune / re-fit normalisation statistics on data recorded with this arm's own convention, which keeps the checkpoint's code path unchanged",
+      "keep hardware out of the loop until a state->action one-step comparison on this arm is within an agreed tolerance"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "created_at": "2026-11-13T10:43:40+0800",
+  "hardware_access": "CUDA device queries only; no robot/camera/serial access",
+  "python": {
+    "version": "3.12.14 (main, Sep  1 2026, 14:17:39) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "G:\\MolmoAct2_NF4\\.venv\\Scripts\\python.exe",
+    "prefix": "G:\\MolmoAct2_NF4\\.venv",
+    "base_prefix": "G:\\LeRobot\\python\\cpython-3.12-windows-x86_64-none",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "packages": {
+    "torch": "2.10.0+cu128",
+    "transformers": "5.5.4",
+    "bitsandbytes": "0.50.2",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "huggingface_hub": "1.31.0",
+    "tokenizers": "0.22.2",
+    "numpy": "2.5.4",
+    "Pillow": "NOT INSTALLED (ModuleNotFoundError)",
+    "psutil": "7.2.2"
+  },
+  "cpu": {
+    "logical": 32,
+    "physical_note": "see nvidia-smi/wmic output in raw_cpu"
+  },
+  "raw_cpu": null,
+  "env": {
+    "PYTORCH_ALLOC_CONF": null,
+    "PYTORCH_CUDA_ALLOC_CONF": null,
+    "TEMP": "G:\\MolmoAct2_NF4\\tmp",
+    "TMP": "G:\\MolmoAct2_NF4\\tmp"
+  },
+  "host_memory": {
+    "total_GiB": 15.73,
+    "available_GiB": 5.88,
+    "percent_used": 62.6
+  },
+  "disk": {
+    "path": "G:\\MolmoAct2_NF4",
+    "total_GiB": 260.74,
+    "free_GiB": 114.71
+  },
+  "nvidia_smi": "NVIDIA GeForce RTX 5060 Laptop GPU, 8151, 1063, 6748, 582.05, 48, 6",
+  "torch": {
+    "version": "2.10.0+cu128",
+    "cuda_available": true,
+    "cuda_version": "12.8",
+    "cudnn": 91002,
+    "device_count": 1,
+    "device_name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "capability": [
+      12,
+      0
+    ],
+    "samples": [
+      {
+        "at": "2026-11-13T10:43:53+0800",
+        "cuda_free_GiB": 6.7812,
+        "cuda_total_GiB": 7.9595,
+        "nvidia_smi_free_MiB": "6647",
+        "nvidia_smi_used_MiB": "1164"
+      },
+      {
+        "at": "2026-11-13T10:43:54+0800",
+        "cuda_free_GiB": 6.7812,
+        "cuda_total_GiB": 7.9595,
+        "nvidia_smi_free_MiB": "6655",
+        "nvidia_smi_used_MiB": "1156"
+      },
+      {
+        "at": "2026-11-13T10:43:56+0800",
+        "cuda_free_GiB": 6.7812,
+        "cuda_total_GiB": 7.9595,
+        "nvidia_smi_free_MiB": "6655",
+        "nvidia_smi_used_MiB": "1156"
+      }
+    ]
+  }
+}

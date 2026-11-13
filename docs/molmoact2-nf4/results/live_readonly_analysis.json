@@ -1,0 +1,323 @@
+{
+  "run_dir": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_112916_live_predict2",
+  "spool": "G:\\MolmoAct2_NF4\\tmp\\live_spool2",
+  "capture": {
+    "status": "completed",
+    "samples_captured": 286,
+    "blocked_packets": 0,
+    "torque_before": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_after": {
+      "shoulder_pan": 0,
+      "shoulder_lift": 0,
+      "elbow_flex": 0,
+      "wrist_flex": 0,
+      "wrist_roll": 0,
+      "gripper": 0
+    },
+    "torque_unchanged": true,
+    "allowed_packets": {
+      "0x01": 6,
+      "0x02": 36,
+      "0x82": 288
+    },
+    "cameras": [
+      {
+        "index": 2,
+        "height": 480,
+        "width": 640
+      },
+      {
+        "index": 0,
+        "height": 480,
+        "width": 640
+      }
+    ]
+  },
+  "predictions": 105,
+  "hardware_command": "none - read-only capture; no goal position, torque, gain or calibration write",
+  "synchronisation": {
+    "samples": 286,
+    "image_state_skew_ms": {
+      "median": 1.76,
+      "p95": 2.36,
+      "max": 4.28
+    },
+    "left_right_view_skew_ms": {
+      "median": 0.0,
+      "max": 0.11
+    },
+    "capture_rate_hz": 2.863
+  },
+  "state_clipping": {
+    "samples": 105,
+    "note": "clipped means the normalised value saturated at +-1, i.e. outside the training q01..q99",
+    "per_joint": {
+      "shoulder_pan": {
+        "state_range_deg": [
+          -11.78,
+          -11.78
+        ],
+        "training_state_q01_q99": [
+          -41.91,
+          48.294
+        ],
+        "normalized_range": [
+          -0.332,
+          -0.332
+        ],
+        "clipped_fraction": 0.0,
+        "clipped_in_all_samples": false
+      },
+      "shoulder_lift": {
+        "state_range_deg": [
+          -102.549,
+          -102.549
+        ],
+        "training_state_q01_q99": [
+          43.668,
+          185.261
+        ],
+        "normalized_range": [
+          -1.0,
+          -1.0
+        ],
+        "clipped_fraction": 1.0,
+        "clipped_in_all_samples": true
+      },
+      "elbow_flex": {
+        "state_range_deg": [
+          96.615,
+          96.615
+        ],
+        "training_state_q01_q99": [
+          38.388,
+          173.136
+        ],
+        "normalized_range": [
+          -0.1358,
+          -0.1358
+        ],
+        "clipped_fraction": 0.0,
+        "clipped_in_all_samples": false
+      },
+      "wrist_flex": {
+        "state_range_deg": [
+          73.978,
+          73.978
+        ],
+        "training_state_q01_q99": [
+          5.712,
+          91.781
+        ],
+        "normalized_range": [
+          0.5863,
+          0.5863
+        ],
+        "clipped_fraction": 0.0,
+        "clipped_in_all_samples": false
+      },
+      "wrist_roll": {
+        "state_range_deg": [
+          0.044,
+          0.044
+        ],
+        "training_state_q01_q99": [
+          -63.445,
+          42.945
+        ],
+        "normalized_range": [
+          0.1935,
+          0.1935
+        ],
+        "clipped_fraction": 0.0,
+        "clipped_in_all_samples": false
+      },
+      "gripper": {
+        "state_range_deg": [
+          1.176,
+          1.176
+        ],
+        "training_state_q01_q99": [
+          0.944,
+          44.138
+        ],
+        "normalized_range": [
+          -0.9893,
+          -0.9893
+        ],
+        "clipped_fraction": 0.0,
+        "clipped_in_all_samples": false
+      }
+    },
+    "clipped_dimensions_per_sample": {
+      "median": 1,
+      "max": 1
+    }
+  },
+  "first_target_vs_measured": {
+    "units": "degrees for the five arm joints, 0-100 for the gripper",
+    "per_joint": {
+      "shoulder_pan": {
+        "mean_delta": -0.561,
+        "std_delta": 0.057,
+        "min_delta": -0.595,
+        "max_delta": -0.407,
+        "mean_abs_delta": 0.561,
+        "max_abs_delta": 0.595
+      },
+      "shoulder_lift": {
+        "mean_delta": 150.854,
+        "std_delta": 0.103,
+        "min_delta": 150.799,
+        "max_delta": 151.049,
+        "mean_abs_delta": 150.854,
+        "max_abs_delta": 151.049
+      },
+      "elbow_flex": {
+        "mean_delta": -2.115,
+        "std_delta": 0.0,
+        "min_delta": -2.115,
+        "max_delta": -2.115,
+        "mean_abs_delta": 2.115,
+        "max_abs_delta": 2.115
+      },
+      "wrist_flex": {
+        "mean_delta": -0.611,
+        "std_delta": 0.221,
+        "min_delta": -0.978,
+        "max_delta": -0.478,
+        "mean_abs_delta": 0.611,
+        "max_abs_delta": 0.978
+      },
+      "wrist_roll": {
+        "mean_delta": 0.322,
+        "std_delta": 0.042,
+        "min_delta": 0.228,
+        "max_delta": 0.388,
+        "mean_abs_delta": 0.322,
+        "max_abs_delta": 0.388
+      },
+      "gripper": {
+        "mean_delta": -0.979,
+        "std_delta": 0.042,
+        "min_delta": -1.037,
+        "max_delta": -0.949,
+        "mean_abs_delta": 0.979,
+        "max_abs_delta": 1.037
+      }
+    },
+    "max_abs_delta_overall": 151.049,
+    "note": "the arm was stationary with torque disabled, so this is a one-pose comparison"
+  },
+  "travel_range_check": {
+    "calibrated_ranges": {
+      "shoulder_pan": [
+        -114.55,
+        114.55
+      ],
+      "shoulder_lift": [
+        -102.73,
+        102.73
+      ],
+      "elbow_flex": [
+        -97.67,
+        97.67
+      ],
+      "wrist_flex": [
+        -103.34,
+        103.34
+      ],
+      "wrist_roll": [
+        -0.4,
+        0.4
+      ],
+      "gripper": [
+        0.0,
+        100.0
+      ]
+    },
+    "predicted_action_values": 18900,
+    "fraction_outside_calibrated_range": 0.15212,
+    "per_joint_outside_fraction": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.9127,
+      "gripper": 0.0
+    },
+    "per_joint_worst_excursion": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 11.354,
+      "gripper": 0.0
+    }
+  },
+  "action_range_saturation": {
+    "fraction_at_or_below_minus1": 0.0,
+    "fraction_at_or_above_plus1": 0.0,
+    "per_joint_fraction_saturated": {
+      "shoulder_pan": 0.0,
+      "shoulder_lift": 0.0,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.0,
+      "wrist_roll": 0.0,
+      "gripper": 0.0
+    },
+    "note": "the checkpoint clips actions to the action q01..q99 range on un-normalisation"
+  },
+  "continuity": {
+    "samples": 105,
+    "first_target_std": {
+      "shoulder_pan": 0.0566,
+      "shoulder_lift": 0.1034,
+      "elbow_flex": 0.0,
+      "wrist_flex": 0.2211,
+      "wrist_roll": 0.0418,
+      "gripper": 0.0417
+    },
+    "consecutive_delta": {
+      "shoulder_pan": {
+        "mean_abs": 0.0535,
+        "max_abs": 0.1875
+      },
+      "shoulder_lift": {
+        "mean_abs": 0.0793,
+        "max_abs": 0.25
+      },
+      "elbow_flex": {
+        "mean_abs": 0.0,
+        "max_abs": 0.0
+      },
+      "wrist_flex": {
+        "mean_abs": 0.2019,
+        "max_abs": 0.5
+      },
+      "wrist_roll": {
+        "mean_abs": 0.0442,
+        "max_abs": 0.1601
+      },
+      "gripper": {
+        "mean_abs": 0.0355,
+        "max_abs": 0.0879
+      }
+    },
+    "max_consecutive_jump_overall": 0.5,
+    "note": "arm and scene were static during the session, so this measures repeatability under identical observations; it does not test continuity under motion"
+  },
+  "latency_ms": {
+    "median": 558.9,
+    "p95": 599.3,
+    "max": 7558.8,
+    "min": 515.5
+  }
+}

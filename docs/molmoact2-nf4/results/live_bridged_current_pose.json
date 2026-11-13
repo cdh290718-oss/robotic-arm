@@ -1,0 +1,117 @@
+{
+  "created_at": "2026-11-13T12:01:27+0800",
+  "run_dir": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_120127_live_bridged_current_pose",
+  "argv": [
+    "G:\\MolmoAct2_NF4\\coordinate_bridge_20261113\\predict_live_bridged.py",
+    "--spool",
+    "G:\\MolmoAct2_NF4\\tmp\\live_spool3",
+    "--duration",
+    "90",
+    "--run-name",
+    "live_bridged_current_pose"
+  ],
+  "mode": "consume saved paired observations with official frame bridge; no hardware access",
+  "hardware_access": false,
+  "joint_frame": {
+    "signs": [
+      1,
+      -1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "offsets": [
+      0,
+      90,
+      90,
+      0,
+      0,
+      0
+    ],
+    "state": "arm_to_model before normalization",
+    "action": "model_to_arm after unnormalization"
+  },
+  "delta_units": [
+    "degree",
+    "degree",
+    "degree",
+    "degree",
+    "degree",
+    "percentage_point"
+  ],
+  "status": "completed",
+  "allocator": {
+    "env_before": {
+      "PYTORCH_ALLOC_CONF": null,
+      "PYTORCH_CUDA_ALLOC_CONF": null
+    },
+    "cuda_initialized_before": false,
+    "applied": true,
+    "torch_version": "2.10.0+cu128",
+    "cuda_available": true,
+    "env_after": {
+      "PYTORCH_ALLOC_CONF": "expandable_segments:True",
+      "PYTORCH_CUDA_ALLOC_CONF": "expandable_segments:True"
+    },
+    "allocator_probe_warnings": [
+      "expandable_segments not supported on this platform (Triggered internally at C:\\actions-runner\\_work\\pytorch\\pytorch\\pytorch\\c10/cuda/CUDAAllocatorConfig.h:39.)"
+    ],
+    "expandable_segments_effective": false,
+    "note": "torch reports expandable_segments is not supported on this platform; the setting is recorded as requested but NOT active"
+  },
+  "embedding_patch": {
+    "installed": true,
+    "already": false
+  },
+  "load": {
+    "seconds": 15.83,
+    "audit": {
+      "param_dtype_elements": {
+        "torch.bfloat16": 926712624,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_bytes": {
+        "torch.bfloat16": 1853425248,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_GiB": {
+        "torch.bfloat16": 1.7261,
+        "torch.uint8": 2.1027,
+        "torch.float32": 0.0
+      },
+      "devices": {
+        "cuda:0": 1295,
+        "meta": 2
+      },
+      "linear4bit_modules": 234,
+      "plain_linear_modules": 364,
+      "quant_types": {
+        "nf4": 234
+      },
+      "quant_state_devices": {
+        "cuda:0": 234
+      },
+      "cuda_allocated_GiB": 3.9558,
+      "cuda_reserved_GiB": 4.0098
+    },
+    "key_accounting": {
+      "file_keys": 2465,
+      "assigned_dense_tensors": 1061,
+      "packed_nf4_weights": 234,
+      "quant_state_tensors_consumed_by_quantstate": 1170,
+      "sum": 2465
+    }
+  },
+  "saved_to": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_120127_live_bridged_current_pose\\report.json",
+  "samples_processed": 67,
+  "first_seq": 36,
+  "last_seq": 179,
+  "samples_jsonl": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_120127_live_bridged_current_pose\\samples.jsonl",
+  "cuda_mem_end": {
+    "peak_allocated_GiB": 4.262,
+    "peak_reserved_GiB": 4.682
+  }
+}

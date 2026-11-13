@@ -1,0 +1,248 @@
+{
+  "created_at": "2026-11-13T10:15:25+0800",
+  "model_dir": "G:\\MolmoAct2_NF4\\model",
+  "bitsandbytes": "0.50.2",
+  "torch": "2.10.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "status": "passed",
+  "calibration": {
+    "candidates": [
+      {
+        "order": "high_first",
+        "offset_sign": 1.0,
+        "max_abs_err": 0.003884553909301758
+      },
+      {
+        "order": "high_first",
+        "offset_sign": -1.0,
+        "max_abs_err": 3.5140671730041504
+      },
+      {
+        "order": "low_first",
+        "offset_sign": 1.0,
+        "max_abs_err": 3.060589075088501
+      },
+      {
+        "order": "low_first",
+        "offset_sign": -1.0,
+        "max_abs_err": 3.509516954421997
+      }
+    ],
+    "chosen": {
+      "order": "high_first",
+      "offset_sign": 1.0,
+      "max_abs_err": 0.003884553909301758
+    },
+    "tolerance": 0.036376953125,
+    "quant_state_api": {
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "has_state2": true,
+      "offset": 1.755859375,
+      "code_len": 16
+    }
+  },
+  "selected_layers": [
+    "model.transformer.blocks.0.self_attn.attn_out",
+    "model.transformer.blocks.1.self_attn.attn_out",
+    "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w1",
+    "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w2",
+    "model.action_expert.blocks.0.modulation.linear",
+    "model.action_expert.blocks.1.modulation.linear",
+    "model.vision_backbone.image_projector.w1",
+    "model.vision_backbone.image_projector.w3"
+  ],
+  "checked": [
+    {
+      "family": "text_attn",
+      "module": "model.transformer.blocks.0.self_attn.attn_out",
+      "shape": [
+        2560,
+        4096
+      ],
+      "numel": 10485760,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.0009129345417022705,
+      "decode_tolerance": 0.0078125,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 0.0,
+      "matmul_tolerance": 0.2734375,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.055568184703588486,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 5242880,
+      "dense_bf16_bytes": 20971520
+    },
+    {
+      "family": "text_attn",
+      "module": "model.transformer.blocks.1.self_attn.attn_out",
+      "shape": [
+        2560,
+        4096
+      ],
+      "numel": 10485760,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.0008506476879119873,
+      "decode_tolerance": 0.00537109375,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 6.103515625e-05,
+      "matmul_tolerance": 0.19921875,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.05631503090262413,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 5242880,
+      "dense_bf16_bytes": 20971520
+    },
+    {
+      "family": "vision_ff",
+      "module": "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w1",
+      "shape": [
+        4304,
+        1152
+      ],
+      "numel": 4958208,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.00027967989444732666,
+      "decode_tolerance": 0.0027618408203125,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 5.4836273193359375e-06,
+      "matmul_tolerance": 0.1455078125,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.07151146978139877,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 2479104,
+      "dense_bf16_bytes": 9916416
+    },
+    {
+      "family": "vision_ff",
+      "module": "model.vision_backbone.image_vit.transformer.resblocks.0.feed_forward.w2",
+      "shape": [
+        1152,
+        4304
+      ],
+      "numel": 4958208,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.00024332106113433838,
+      "decode_tolerance": 0.0027313232421875,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 0.0,
+      "matmul_tolerance": 0.15625,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.05908337980508804,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 2479104,
+      "dense_bf16_bytes": 9916416
+    },
+    {
+      "family": "action_expert",
+      "module": "model.action_expert.blocks.0.modulation.linear",
+      "shape": [
+        6912,
+        768
+      ],
+      "numel": 5308416,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 1.2826640158891678e-05,
+      "decode_tolerance": 8.0108642578125e-05,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 1.1920928955078125e-07,
+      "matmul_tolerance": 0.0306396484375,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.0029190811328589916,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 2654208,
+      "dense_bf16_bytes": 10616832
+    },
+    {
+      "family": "action_expert",
+      "module": "model.action_expert.blocks.1.modulation.linear",
+      "shape": [
+        6912,
+        768
+      ],
+      "numel": 5308416,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 1.4403369277715683e-05,
+      "decode_tolerance": 0.00010919570922851562,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 7.62939453125e-06,
+      "matmul_tolerance": 0.0126953125,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.0036601561587303877,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 2654208,
+      "dense_bf16_bytes": 10616832
+    },
+    {
+      "family": "image_projector",
+      "module": "model.vision_backbone.image_projector.w1",
+      "shape": [
+        9728,
+        1152
+      ],
+      "numel": 11206656,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.00024337321519851685,
+      "decode_tolerance": 0.001617431640625,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 0.0,
+      "matmul_tolerance": 0.11328125,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.06598242372274399,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 5603328,
+      "dense_bf16_bytes": 22413312
+    },
+    {
+      "family": "image_projector",
+      "module": "model.vision_backbone.image_projector.w3",
+      "shape": [
+        9728,
+        1152
+      ],
+      "numel": 11206656,
+      "rows_checked": 8,
+      "decode_max_abs_diff": 0.00023128092288970947,
+      "decode_tolerance": 0.00146484375,
+      "decode_ok": true,
+      "matmul_max_abs_diff": 0.0,
+      "matmul_tolerance": 0.11474609375,
+      "matmul_ok": true,
+      "blocksize": 64,
+      "nested_blocksize": 256,
+      "offset": 0.06522061675786972,
+      "storage_dtype": "torch.uint8",
+      "output_dtype": "torch.bfloat16",
+      "packed_bytes": 5603328,
+      "dense_bf16_bytes": 22413312
+    }
+  ],
+  "n_checked": 8,
+  "families": [
+    "action_expert",
+    "image_projector",
+    "text_attn",
+    "vision_ff"
+  ]
+}

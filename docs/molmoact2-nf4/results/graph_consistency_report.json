@@ -1,0 +1,516 @@
+{
+  "created_at": "2026-11-13T10:39:10+0800",
+  "run_dir": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_103910_graph_consistency",
+  "argv": [
+    "G:\\MolmoAct2_NF4\\graph_input_consistency.py"
+  ],
+  "status": "passed",
+  "load": {
+    "load_seconds": null,
+    "audit": {
+      "param_dtype_elements": {
+        "torch.bfloat16": 926712624,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_bytes": {
+        "torch.bfloat16": 1853425248,
+        "torch.uint8": 2257741824,
+        "torch.float32": 0
+      },
+      "param_dtype_GiB": {
+        "torch.bfloat16": 1.7261,
+        "torch.uint8": 2.1027,
+        "torch.float32": 0.0
+      },
+      "devices": {
+        "cuda:0": 1295,
+        "meta": 2
+      },
+      "linear4bit_modules": 234,
+      "plain_linear_modules": 364,
+      "quant_types": {
+        "nf4": 234
+      },
+      "quant_state_devices": {
+        "cuda:0": 234
+      },
+      "cuda_allocated_GiB": 3.9558,
+      "cuda_reserved_GiB": 4.0098
+    },
+    "key_accounting": {
+      "file_keys": 2465,
+      "assigned_dense_tensors": 1061,
+      "packed_nf4_weights": 234,
+      "quant_state_tensors_consumed_by_quantstate": 1170,
+      "sum": 2465
+    }
+  },
+  "observations": [
+    {
+      "name": "saved_last_frame",
+      "state_degrees": [
+        -11.516500473022461,
+        26.857099533081055,
+        -27.604400634765625,
+        88.39559936523438,
+        0.21979999542236328,
+        2.1438000202178955
+      ]
+    },
+    {
+      "name": "saved_before_frame",
+      "state_degrees": [
+        -11.516500473022461,
+        26.857099533081055,
+        -27.604400634765625,
+        88.39559936523438,
+        0.21979999542236328,
+        2.1438000202178955
+      ]
+    },
+    {
+      "name": "saved_last_images_other_state",
+      "state_degrees": [
+        3.7802000045776367,
+        -102.37359619140625,
+        96.61540222167969,
+        73.71430206298828,
+        0.21979999542236328,
+        1.452299952507019
+      ]
+    },
+    {
+      "name": "synthetic_images_and_state",
+      "state_degrees": [
+        3.7802000045776367,
+        -102.37359619140625,
+        96.61540222167969,
+        73.71430206298828,
+        0.21979999542236328,
+        1.452299952507019
+      ]
+    }
+  ],
+  "tolerance_degrees": 0.001,
+  "min_separation_degrees": 0.5,
+  "graph_counters_total": {
+    "capture": 1,
+    "replay": 8,
+    "graph_miss": 1,
+    "fallback": 4,
+    "eligible": 9
+  },
+  "graph_counters_graph_on_phase": {
+    "capture": 1,
+    "replay": 8,
+    "graph_miss": 1,
+    "fallback": 0,
+    "eligible": 9
+  },
+  "graph_counters_graph_off_phase": {
+    "capture": 0,
+    "replay": 0,
+    "graph_miss": 0,
+    "fallback": 4,
+    "eligible": 0
+  },
+  "calls": [
+    {
+      "observation": "saved_last_frame",
+      "cuda_graph": true,
+      "wall_ms": 3192.93,
+      "action_checksum": 5335.252441,
+      "first_row": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 1,
+        "replay": 0,
+        "graph_miss": 1,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_before_frame",
+      "cuda_graph": true,
+      "wall_ms": 595.96,
+      "action_checksum": 5689.484375,
+      "first_row": [
+        -12.0,
+        46.25,
+        36.25,
+        87.0,
+        0.75,
+        1.2812
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_last_images_other_state",
+      "cuda_graph": true,
+      "wall_ms": 700.64,
+      "action_checksum": 7000.235565,
+      "first_row": [
+        3.4062,
+        48.5,
+        93.5,
+        72.5,
+        -0.1011,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "synthetic_images_and_state",
+      "cuda_graph": true,
+      "wall_ms": 614.81,
+      "action_checksum": 7201.55127,
+      "first_row": [
+        4.0,
+        50.75,
+        93.0,
+        73.0,
+        -0.4746,
+        0.2266
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_last_frame",
+      "cuda_graph": true,
+      "wall_ms": 657.82,
+      "action_checksum": 5335.252441,
+      "first_row": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_before_frame",
+      "cuda_graph": true,
+      "wall_ms": 653.66,
+      "action_checksum": 5689.484375,
+      "first_row": [
+        -12.0,
+        46.25,
+        36.25,
+        87.0,
+        0.75,
+        1.2812
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_last_images_other_state",
+      "cuda_graph": true,
+      "wall_ms": 639.03,
+      "action_checksum": 7000.235565,
+      "first_row": [
+        3.4062,
+        48.5,
+        93.5,
+        72.5,
+        -0.1011,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "synthetic_images_and_state",
+      "cuda_graph": true,
+      "wall_ms": 664.63,
+      "action_checksum": 7201.55127,
+      "first_row": [
+        4.0,
+        50.75,
+        93.0,
+        73.0,
+        -0.4746,
+        0.2266
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_last_frame",
+      "cuda_graph": true,
+      "wall_ms": 650.52,
+      "action_checksum": 5335.252441,
+      "first_row": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 1,
+        "graph_miss": 0,
+        "fallback": 0,
+        "eligible": 1
+      }
+    },
+    {
+      "observation": "saved_last_frame",
+      "cuda_graph": false,
+      "wall_ms": 1482.45,
+      "action_checksum": 5335.252441,
+      "first_row": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 0,
+        "graph_miss": 0,
+        "fallback": 1,
+        "eligible": 0
+      }
+    },
+    {
+      "observation": "saved_before_frame",
+      "cuda_graph": false,
+      "wall_ms": 1417.63,
+      "action_checksum": 5689.484375,
+      "first_row": [
+        -12.0,
+        46.25,
+        36.25,
+        87.0,
+        0.75,
+        1.2812
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 0,
+        "graph_miss": 0,
+        "fallback": 1,
+        "eligible": 0
+      }
+    },
+    {
+      "observation": "saved_last_images_other_state",
+      "cuda_graph": false,
+      "wall_ms": 1411.39,
+      "action_checksum": 7000.235565,
+      "first_row": [
+        3.4062,
+        48.5,
+        93.5,
+        72.5,
+        -0.1011,
+        0.4902
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 0,
+        "graph_miss": 0,
+        "fallback": 1,
+        "eligible": 0
+      }
+    },
+    {
+      "observation": "synthetic_images_and_state",
+      "cuda_graph": false,
+      "wall_ms": 1455.09,
+      "action_checksum": 7201.55127,
+      "first_row": [
+        4.0,
+        50.75,
+        93.0,
+        73.0,
+        -0.4746,
+        0.2266
+      ],
+      "graph_counters": {
+        "capture": 0,
+        "replay": 0,
+        "graph_miss": 0,
+        "fallback": 1,
+        "eligible": 0
+      }
+    }
+  ],
+  "comparisons_on_vs_off": [
+    {
+      "observation": "saved_last_frame",
+      "max_abs_diff_on_vs_off": 0.0,
+      "mean_abs_diff_on_vs_off": 0.0,
+      "allclose_tol": true,
+      "first_row_on": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ],
+      "first_row_off": [
+        -11.6875,
+        46.0,
+        36.0,
+        87.5,
+        -0.3145,
+        0.4902
+      ]
+    },
+    {
+      "observation": "saved_before_frame",
+      "max_abs_diff_on_vs_off": 0.0,
+      "mean_abs_diff_on_vs_off": 0.0,
+      "allclose_tol": true,
+      "first_row_on": [
+        -12.0,
+        46.25,
+        36.25,
+        87.0,
+        0.75,
+        1.2812
+      ],
+      "first_row_off": [
+        -12.0,
+        46.25,
+        36.25,
+        87.0,
+        0.75,
+        1.2812
+      ]
+    },
+    {
+      "observation": "saved_last_images_other_state",
+      "max_abs_diff_on_vs_off": 0.0,
+      "mean_abs_diff_on_vs_off": 0.0,
+      "allclose_tol": true,
+      "first_row_on": [
+        3.4062,
+        48.5,
+        93.5,
+        72.5,
+        -0.1011,
+        0.4902
+      ],
+      "first_row_off": [
+        3.4062,
+        48.5,
+        93.5,
+        72.5,
+        -0.1011,
+        0.4902
+      ]
+    },
+    {
+      "observation": "synthetic_images_and_state",
+      "max_abs_diff_on_vs_off": 0.0,
+      "mean_abs_diff_on_vs_off": 0.0,
+      "allclose_tol": true,
+      "first_row_on": [
+        4.0,
+        50.75,
+        93.0,
+        73.0,
+        -0.4746,
+        0.2266
+      ],
+      "first_row_off": [
+        4.0,
+        50.75,
+        93.0,
+        73.0,
+        -0.4746,
+        0.2266
+      ]
+    }
+  ],
+  "separations": [
+    {
+      "compared_with": "saved_last_frame",
+      "observation": "saved_before_frame",
+      "max_abs_diff": 12.375,
+      "distinguishable": true
+    },
+    {
+      "compared_with": "saved_last_frame",
+      "observation": "saved_last_images_other_state",
+      "max_abs_diff": 57.5,
+      "distinguishable": true
+    },
+    {
+      "compared_with": "saved_last_frame",
+      "observation": "synthetic_images_and_state",
+      "max_abs_diff": 57.5,
+      "distinguishable": true
+    }
+  ],
+  "repeat_first_observation_max_abs_diff": 0.0,
+  "verdict": {
+    "all_on_vs_off_within_tolerance": true,
+    "all_observations_distinguishable": true,
+    "replay_path_used": true,
+    "one_capture_for_one_key": true,
+    "no_fallback_while_graph_enabled": true,
+    "graph_disabled_phase_never_replays": true,
+    "repeat_of_first_observation_is_stable": true,
+    "passed": true
+  },
+  "note": "graph-off and graph-on runs share the same seed and the same observation; a stale-input replay would show a large on-vs-off difference for the later observations and near-zero separation between observations",
+  "saved_to": "G:\\MolmoAct2_NF4\\tmp\\runs\\20261113_103910_graph_consistency\\report.json"
+}
